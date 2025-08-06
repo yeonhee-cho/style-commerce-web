@@ -1,0 +1,32 @@
+[
+  {
+    "title": "첫 구매 한정\n20% 쿠폰",
+    "content": "990원부터 첫구매 인기 상품까지",
+    "image": "../image/banner/banner1.jpg"
+  },
+  {
+    "title": "사랑스러운 디즈니\n컬래버 스윔웨어",
+    "content": "르망고",
+    "image": "../image/banner/banner2.jpg"
+  },
+  {
+    "title": "산뜻한 애슬레저룩\n최대 77% 할인",
+    "content": "레이지비",
+    "image": "../image/banner/banner3.jpg"
+  },
+  {
+    "title": "무퀴즈 참여하고\n크라이베이비 받기",
+    "content": "퀴즈만 풀면 팝마트 키링 찬스",
+    "image": "../image/banner/banner4.jpg"
+  },
+  {
+    "title": "타임세일 혜택\n최대 85% 할인",
+    "content": "트릴리온, 미세키서울 외",
+    "image": "../image/banner/banner5.jpg"
+  },
+  {
+    "title": "상반기 인기 브랜드",
+    "content": "최대 80% 할인 혜택",
+    "image": "../image/banner/banner6.jpg"
+  }
+]
