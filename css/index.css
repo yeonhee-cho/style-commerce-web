@@ -7,10 +7,65 @@
   /* min-width: 743px; */
   min-width: 1000px;
   max-width: 1440px;
+  background-color: #fafafa;
   margin: 0 auto;
 }
 
+/* 메인 배너 */
 .main-banner-wrap {
-  height: 100vh;
-  background: #f00;
+  position: relative;
+  width: 100%;
+}
+.banner-list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.banner-list .banner-item {
+  position: relative;
+  width: 480px;
+  height: 480px;
+  overflow: hidden;
+}
+.banner-list .banner-item img {
+  width: 480px;
+  height: 480px;
+}
+/* 배너 텍스트 영역 */
+.banner-list .banner-item .banner-txt {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.banner-list .banner-item .banner-txt .banner-tit {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #fff;
+}
+.banner-list .banner-item .banner-txt .banner-cont {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 12px;
+}
+/* 배너 arrow */
+.banner-prev {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  width: 39px;
+  height: 39px;
+  background: url(../image/banner-prev.png) no-repeat center/100%;
+}
+.banner-next {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  width: 39px;
+  height: 39px;
+  background: url(../image/banner-next.png) no-repeat center/100%;
 }
