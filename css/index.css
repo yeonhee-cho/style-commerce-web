@@ -11,6 +11,26 @@
   margin: 0 auto;
 }
 
+/* carousel */
+.carousel-prev {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  width: 39px;
+  height: 39px;
+  background: url(../image/banner-prev.png) no-repeat center/100%;
+}
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  width: 39px;
+  height: 39px;
+  background: url(../image/banner-next.png) no-repeat center/100%;
+}
+
 /* 메인 배너 */
 .main-banner-wrap {
   position: relative;
@@ -49,25 +69,6 @@
   font-weight: 500;
   color: #fff;
   margin-top: 12px;
-}
-/* 배너 arrow */
-.banner-prev {
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  transform: translateY(-50%);
-  width: 39px;
-  height: 39px;
-  background: url(../image/banner-prev.png) no-repeat center/100%;
-}
-.banner-next {
-  position: absolute;
-  top: 50%;
-  right: 16px;
-  transform: translateY(-50%);
-  width: 39px;
-  height: 39px;
-  background: url(../image/banner-next.png) no-repeat center/100%;
 }
 
 /* 카테고리 영역 */
@@ -133,6 +134,7 @@
   width: 100%;
 }
 .products-wrap .product-scroll {
+  position: relative;
   width: 100%;
   overflow-x: scroll;
   /* NOTE 기능 입히고 변경 예정 */
@@ -231,6 +233,7 @@
   width: 100%;
 }
 .content-wrap .content-scroll {
+  position: relative;
   width: 100%;
   overflow-x: scroll;
   /* NOTE 기능 입히고 변경 예정 */
@@ -396,6 +399,7 @@
   width: 100%;
 }
 .schedule-wrap .schedule-scroll {
+  position: relative;
   width: 100%;
   overflow-x: scroll;
   /* NOTE 기능 입히고 변경 예정 */
