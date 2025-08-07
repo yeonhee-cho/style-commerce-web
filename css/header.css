@@ -8,7 +8,7 @@
   width: 100%;
   max-width: 1440px;
   height: 56px;
-  background-color: #1a1b1f;
+  background-color: #1a1b1f; /* NOTE #304391*/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,7 +53,7 @@
   min-width: 28px;
   width: 28px;
   height: 28px;
-  background: #1a1b1f url(../image/menu.png) no-repeat center / 100%;
+  background: url(../image/menu.png) no-repeat center / 100%;
   margin: 0 8px;
 }
 .snap-menu {
@@ -75,8 +75,9 @@
   justify-content: center;
   min-width: fit-content;
   height: 24px;
-  background-color: #1a1b1f;
-  border: 1px solid #cdcdce;
+  /* background-color: #1a1b1f; */
+  background-color: transparent;
+  border: 1px solid #cdcdce; /* NOTE #acbce1 */
   border-radius: 4px;
   padding: 3px 6px;
   font-size: 13px;
@@ -185,7 +186,7 @@
   width: 4px;
   height: 4px;
   border-radius: 4px;
-  background-color: #245eff;
+  background-color: #245eff; /* NOTE #ff2438 */
 }
 .segment-header .segment-wrap .segment-item a {
   font-size: 14px;
