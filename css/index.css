@@ -69,3 +69,37 @@
   height: 39px;
   background: url(../image/banner-next.png) no-repeat center/100%;
 }
+
+/* 카테고리 영역 */
+.category-wrap {
+  padding: 16px 16px 16px 24px;
+}
+.category-wrap .category-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.category-wrap .category-list .category-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: fit-content;
+  width: fit-content;
+  background-color: #fff;
+  padding: 6px 12px 6px 8px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+}
+.category-list .category-item .cate-icon {
+  width: 26px;
+  height: 26px;
+  overflow: hidden;
+}
+.category-list .category-item .cate-icon img {
+  width: 26px;
+  height: 26px;
+  object-fit: cover;
+}
