@@ -162,6 +162,10 @@
   position: relative;
 }
 /* 선택된 값 하단 표시 */
+
+.segment-header .segment-wrap .segment-item.active a {
+  color: #fff;
+}
 .segment-header .segment-wrap .segment-item.active::before {
   content: "";
   width: 100%;
