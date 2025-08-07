@@ -152,6 +152,16 @@
 .product-list .product-item {
   width: 260px;
 }
+/* 오른쪽 영역 체크 */
+.product-list .product-item:last-child::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -16px;
+  width: 16px;
+  height: 100%;
+  background-color: transparent;
+}
 .product-list .product-item .pd-image {
   position: relative;
   width: 100%;
@@ -231,13 +241,23 @@
 /* content-wrap .content-scroll::-webkit-scrollbar {
   display: none;
 } */
-
 .content-list {
   display: flex;
   align-items: center;
 }
 .content-list .content-item {
+  position: relative;
   width: 468px;
+}
+/* 오른쪽 영역 체크 */
+.content-list .content-item:last-child::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -16px;
+  width: 16px;
+  height: 100%;
+  background-color: transparent;
 }
 .content-list .content-item .con-image {
   aspect-ratio: 3 / 2;
@@ -282,7 +302,6 @@
   background-color: #fff;
   padding: 8px 12px 12px;
 }
-
 .con-image-list .con-image-item {
   position: relative;
   width: 72px;
@@ -293,7 +312,6 @@
   overflow: hidden;
   display: inline-block;
 }
-
 .con-image-list .con-image-item:last-child:before {
   content: "";
   position: absolute;
@@ -320,7 +338,6 @@
   transform: translate(-50%, -50%);
   z-index: 10;
 }
-
 .cont-status-wrap {
   display: flex;
   align-items: center;
@@ -372,4 +389,82 @@
   line-height: 14px;
   font-weight: 600;
   color: #666;
+}
+
+/* 라이브 편성표 */
+.schedule-wrap {
+  width: 100%;
+}
+.schedule-wrap .schedule-scroll {
+  width: 100%;
+  overflow-x: scroll;
+  /* NOTE 기능 입히고 변경 예정 */
+  /* -ms-overflow-style: none; 
+  scrollbar-width: none;  */
+  padding: 0 16px 24px 16px;
+}
+/* schedule-wrap .schedule-scroll::-webkit-scrollbar {
+  display: none;
+} */
+.schedule-list {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.schedule-list .schedule-item {
+  min-width: 260px;
+  width: 260px;
+  position: relative;
+}
+/* 오른쪽 영역 체크 */
+.schedule-list .schedule-item:last-child::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -16px;
+  width: 16px;
+  height: 100%;
+  background-color: transparent;
+}
+.schedule-list .schedule-item .schedule-image {
+  position: relative;
+  width: 100%;
+  height: 312px;
+}
+.schedule-list .schedule-item .schedule-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.schedule-list .schedule-item .schedule-image .schdate-box {
+  background-color: #4a4a4a;
+  width: fit-content;
+  height: 16px;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #fff;
+  padding: 0 4px;
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  z-index: 10;
+}
+.schedule-list .schedule-item .schedule-text-area {
+  width: 100%;
+  height: 56px;
+  background-color: #fff;
+}
+.schedule-list .schedule-item .schedule-text-area p {
+  padding: 8px 8px 12px 8px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #000;
+  /* 여러 줄 말줄임 */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
