@@ -1,12 +1,14 @@
-/* ---------- 헤더 전체 영역 ---------- */
-.header {
-  background-color: #1a1b1f;
-}
-
 /* ---------- 상단 헤더 - 메뉴 + 로그인/회원가입 ---------- */
 .top-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  min-width: 1000px;
   width: 100%;
+  max-width: 1440px;
   height: 56px;
+  background-color: #1a1b1f;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,6 +91,7 @@
 .middle-header {
   display: flex;
   justify-content: space-between;
+  background-color: #1a1b1f;
   padding: 12px 16px;
 }
 .middle-header .logo {
@@ -107,6 +110,7 @@
 /* ---------- 검색바 영역 ---------- */
 .search-header {
   width: 100%;
+  background-color: #1a1b1f;
   padding: 0px 16px;
 }
 
@@ -140,8 +144,13 @@
 
 /* ---------- 하단 헤더 - 세그먼트 ---------- */
 .segment-header {
-  padding: 6px 12px;
+  position: sticky;
+  top: 56px;
+  left: 0;
+  z-index: 998;
   height: 48px;
+  background-color: #1a1b1f;
+  padding: 6px 12px;
 }
 .segment-header .segment-wrap {
   display: flex;

@@ -9,3 +9,8 @@
   max-width: 1440px;
   margin: 0 auto;
 }
+
+.main-banner-wrap {
+  height: 100vh;
+  background: #f00;
+}
