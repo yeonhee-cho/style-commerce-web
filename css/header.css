@@ -44,7 +44,7 @@
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.8);
+  color: #cdcdce;
 }
 /* 왼쪽 메뉴 */
 .menu-detail-btn {
@@ -74,14 +74,14 @@
   min-width: fit-content;
   height: 24px;
   background-color: #1a1b1f;
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 1px solid #cdcdce;
   border-radius: 4px;
   padding: 3px 6px;
   font-size: 13px;
   line-height: 18px;
   font-weight: 500;
   text-align: center;
-  color: rgba(255, 255, 255, 0.8);
+  color: #cdcdce;
   margin: 0 4px;
 }
 
@@ -122,7 +122,6 @@
   height: 36px;
   font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0;
   font-weight: 400;
   color: #8a8a8a;
   border: 0;
@@ -140,3 +139,45 @@
 }
 
 /* ---------- 하단 헤더 - 세그먼트 ---------- */
+.segment-header {
+  padding: 6px 12px;
+  height: 48px;
+}
+.segment-header .segment-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 100%;
+}
+.segment-header .segment-wrap .segment-item {
+  position: relative;
+}
+/* 선택된 값 하단 표시 */
+.segment-header .segment-wrap .segment-item.active::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 0px;
+  background-color: #fff;
+}
+/* 새로운 내용 업데이트 시 표시되는 뱃지 */
+.segment-header .segment-wrap .segment-item.newbadge::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #245eff;
+}
+.segment-header .segment-wrap .segment-item a {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #909092;
+  padding: 8px 4px;
+}
