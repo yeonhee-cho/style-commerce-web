@@ -61,3 +61,53 @@
 .fmenu-info a {
   text-decoration: underline;
 }
+
+/* copyright */
+.footer-copyright {
+  padding: 0 16px;
+  margin-top: 24px;
+  color: #666;
+  font-size: 13px;
+  line-height: 18px;
+}
+.footer-copyright .copyright {
+  color: #666;
+  font-size: 13px;
+  line-height: 18px;
+  padding-bottom: 4px;
+}
+.footer-copyright .cominfo,
+.footer-copyright .f-txt,
+.footer-copyright .f-notice {
+  color: #666;
+  font-size: 13px;
+  line-height: 18px;
+}
+.footer-copyright .cominfo a,
+.footer-copyright .f-txt a {
+  text-decoration: underline;
+}
+.footer-copyright .f-txt {
+  padding-bottom: 4px;
+}
+.footer-copyright .f-notice {
+  color: #8a8a8a;
+  padding: 4px 0;
+}
+.footer-copyright .f-link-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 12px 0 8px;
+}
+.footer-copyright .f-link-wrap a {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #666;
+  text-decoration: underline;
+}
+.footer-copyright .f-link-wrap a:first-child {
+  font-weight: 600;
+}
