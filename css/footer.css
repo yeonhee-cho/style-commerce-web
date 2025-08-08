@@ -1,0 +1,28 @@
+.footer {
+  background-color: #f0f0f0;
+  padding: 15px 0 72px;
+}
+/* 상단 네비게이션 */
+.top-footer {
+  border-bottom: 1px solid rgba(138, 138, 138, 0.1);
+  margin: 0 16px;
+}
+.top-footer .fnav-list {
+  display: flex;
+  gap: 4px;
+  padding: 24px 0;
+}
+.top-footer .fnav-list .fnav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 82px;
+  height: 32px;
+  background-color: #8a8a8a1a;
+  border-radius: 4px;
+}
+.top-footer .fnav-list .fnav-item img {
+  width: 70px;
+  height: 32px;
+  object-fit: cover;
+}
