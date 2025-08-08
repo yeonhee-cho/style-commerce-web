@@ -1,32 +1,128 @@
 [
   {
+    "title": "옷에 담긴 신선함\n입점 기념 할인",
+    "subtitle": "김씨네과일",
+    "image_url": "https://image.msscdn.net/display/images/2025/08/07/30aacdd71a674186a6ada14649127668.jpg",
+    "link": "https://www.musinsa.com/brand/kimsfruits/plan/74198?utm_source=/main/musinsa/recommend&utm_medium=main_display_big_banner&utm_campaign=34"
+  },
+  {
+    "title": "실루엣에 집중한\n에센셜 컬렉션",
+    "subtitle": "브로큰비트",
+    "image_url": "https://image.msscdn.net/display/images/2025/08/07/da04db4a0c0740f9983f8a5c3da40409.jpg",
+    "link": "https://www.musinsa.com/brand/brokenbeat/plan/74276?utm_source=/main/musinsa/recommend&utm_medium=main_display_big_banner&utm_campaign=35"
+  },
+  {
     "title": "첫 구매 한정\n20% 쿠폰",
-    "content": "990원부터 첫구매 인기 상품까지",
-    "image": "../image/banner/banner1.jpg"
-  },
-  {
-    "title": "사랑스러운 디즈니\n컬래버 스윔웨어",
-    "content": "르망고",
-    "image": "../image/banner/banner2.jpg"
-  },
-  {
-    "title": "산뜻한 애슬레저룩\n최대 77% 할인",
-    "content": "레이지비",
-    "image": "../image/banner/banner3.jpg"
-  },
-  {
-    "title": "무퀴즈 참여하고\n크라이베이비 받기",
-    "content": "퀴즈만 풀면 팝마트 키링 찬스",
-    "image": "../image/banner/banner4.jpg"
-  },
-  {
-    "title": "타임세일 혜택\n최대 85% 할인",
-    "content": "트릴리온, 미세키서울 외",
-    "image": "../image/banner/banner5.jpg"
+    "subtitle": "990원부터 첫구매 인기 상품까지",
+    "image_url": "https://image.msscdn.net/display/images/2025/07/14/b54783d704e7451584bcfd443d215a7b.jpg",
+    "link": "https://www.musinsa.com/onboarding/firstbuy?utm_source=/main/musinsa/recommend&utm_medium=main_display_big_banner&utm_campaign=1"
   },
   {
     "title": "상반기 인기 브랜드",
-    "content": "최대 80% 할인 혜택",
-    "image": "../image/banner/banner6.jpg"
+    "subtitle": "최대 80% 할인 혜택",
+    "image_url": "https://image.msscdn.net/display/images/2025/08/01/0c0aaad502f547f3878e96c314d1c97d.jpg",
+    "link": "https://www.musinsa.com/campaign/202508_player?utm_source=/main/musinsa/recommend&utm_medium=main_display_big_banner&utm_campaign=2"
+  },
+  {
+    "title": "상반기 인기 브랜드",
+    "subtitle": "최대 80% 할인 혜택",
+    "image_url": "https://image.msscdn.net/display/images/2025/08/01/ad317fdb4c5344358a4ea4dcd5036b7c.jpg",
+    "link": "https://www.musinsa.com/campaign/202508_player/1?utm_source=/main/musinsa/recommend&utm_medium=main_display_big_banner&utm_campaign=3"
+  },
+  {
+    "title": "이종원의 브리티시룩\n20% 쿠폰 혜택",
+    "subtitle": "브룩스 브라더스",
+    "image_url": "https://image.msscdn.net/display/images/2025/08/07/96d19ea1bffc451e92137994b3527ec9.jpg",
+    "link": "https://www.musinsa.com/app/plan/views/74499?utm_source=/main/musinsa/recommend&utm_medium=main_display_big_banner&utm_campaign=4"
+  },
+  {
+    "title": "베스트 아이템 모음\n최대 72% 할인",
+    "subtitle": "에스이에스티",
+    "image_url": "https://image.msscdn.net/display/images/2025/08/07/9852571cd0f742869bfe5d98541656f0.jpg",
+    "link": "https://www.musinsa.com/brand/selfesteem/plan/74430?utm_source=/main/musinsa/recommend&utm_medium=main_display_big_banner&utm_campaign=5"
+  },
+  {
+    "title": "데일리로 제격\n무료 반품 혜택",
+    "subtitle": "알리스",
+    "image_url": "https://image.msscdn.net/display/images/2025/08/07/ffdc15ce11de40e0b72ffb9764d970c9.jpg",
+    "link": "https://www.musinsa.com/brand/alyss/plan/73609?utm_source=/main/musinsa/recommend&utm_medium=main_display_big_banner&utm_campaign=6"
+  },
+  {
+    "title": "코디 완성은 잡화\n20% 쿠폰 혜택",
+    "subtitle": "헤브어웨일 외",
+    "image_url": "https://image.msscdn.net/display/images/2025/08/07/d20de3f11c0747cf9479ac8ede4c7ccb.jpg",
+    "link": "https://www.musinsa.com/app/plan/views/74423?utm_source=/main/musinsa/recommend&utm_medium=main_display_big_banner&utm_campaign=7"
+  },
+  {
+    "title": "오직 여기서만\n최대 50% 할인",
+    "subtitle": "웨스트 그랜드 블러바드",
+    "image_url": "https://image.msscdn.net/display/images/2025/08/07/ee1adbdcd57645afae4c7a783cc4c3fd.jpg",
+    "link": "https://www.musinsa.com/brand/westgrandblvd/plan/73987?utm_source=/main/musinsa/recommend&utm_medium=main_display_big_banner&utm_campaign=8"
+  },
+  {
+    "title": "럭셔리한 인기 제화\n최대 75% 할인",
+    "subtitle": "엘칸토, 락포트 외",
+    "image_url": "https://image.msscdn.net/display/images/2025/08/07/679c9abf104948bc8c1caf51084a82b8.jpg",
+    "link": "https://www.musinsa.com/app/plan/views/74414?utm_source=/main/musinsa/recommend&utm_medium=main_display_big_banner&utm_campaign=9"
+  },
+  {
+    "title": "베스트 아이템 모음\n최대 72% 할인",
+    "subtitle": "에스이에스티",
+    "image_url": "https://image.msscdn.net/display/images/2025/08/07/44907147d49246cfba0983ed84fcb685.jpg",
+    "link": "https://www.musinsa.com/brand/selfesteem/plan/74430?utm_source=/main/musinsa/recommend&utm_medium=main_display_big_banner&utm_campaign=10"
+  },
+  {
+    "title": "MD가 추천하는\n클리어런스 아이템",
+    "subtitle": "비터셀즈, 탄산마그네슘 외",
+    "image_url": "https://image.msscdn.net/display/images/2025/08/04/9b15aa9097c844599a601322db74a5ac.jpg",
+    "link": "https://www.musinsa.com/app/plan/views/74610?utm_source=/main/musinsa/recommend&utm_medium=main_display_big_banner&utm_campaign=11"
+  },
+  {
+    "title": "클럽 C 85\n나일론 컬렉션 발매",
+    "subtitle": "리복",
+    "image_url": "https://image.msscdn.net/display/images/2025/08/07/6c6b8d8d721e4296b7a62e2d459d2a93.jpg",
+    "link": "https://www.musinsa.com/app/plan/views/74392?utm_source=/main/musinsa/recommend&utm_medium=main_display_big_banner&utm_campaign=12"
+  },
+  {
+    "title": "지금 주목해야 할\n라이징 브랜드",
+    "subtitle": "애즈유아",
+    "image_url": "https://image.msscdn.net/display/images/2025/08/07/d55da5431680430c8876cbb187020028.jpg",
+    "link": "https://www.musinsa.com/brand/asyouare/plan/74589?utm_source=/main/musinsa/recommend&utm_medium=main_display_big_banner&utm_campaign=13"
+  },
+  {
+    "title": "독창적인 디테일\n20% 쿠폰 혜택",
+    "subtitle": "페인오어플레져",
+    "image_url": "https://image.msscdn.net/display/images/2025/08/07/203c14324c554defb405b7e1184687bc.jpg",
+    "link": "https://www.musinsa.com/brand/painorpleasure/products?sortCode=POPULAR&utm_source=/main/musinsa/recommend&utm_medium=main_display_big_banner&utm_campaign=14"
+  },
+  {
+    "title": "주말에 받아가는\n30% 쿠폰 혜택",
+    "subtitle": "로긴 앤 로지",
+    "image_url": "https://image.msscdn.net/display/images/2025/08/07/92d20b4aa4344d1e9760182948f56db7.jpg",
+    "link": "https://www.musinsa.com/brand/rogin/plan/74585?utm_source=/main/musinsa/recommend&utm_medium=main_display_big_banner&utm_campaign=15"
+  },
+  {
+    "title": "예술적인 그래픽\n15% 쿠폰 혜택",
+    "subtitle": "더뮤지엄비지터",
+    "image_url": "https://image.msscdn.net/display/images/2025/08/07/95b0ba31bf214d428e24a2ea1046ed61.jpg",
+    "link": "https://www.musinsa.com/brand/themuseumvisitor/plan/73937?utm_source=/main/musinsa/recommend&utm_medium=main_display_big_banner&utm_campaign=16"
+  },
+  {
+    "title": "핫한 인기 코디\nTOP 15",
+    "subtitle": "무신사 스탠다드 외",
+    "image_url": "https://image.msscdn.net/display/images/2025/08/07/45ba3f1a9f6d4235934f819736358a5f.jpg",
+    "link": "https://www.musinsa.com/snap/tag?tag=%EC%A3%BC%EA%B0%84%EB%9E%AD%ED%82%B9_%EB%AC%B4%EC%8B%A0%EC%82%AC%EC%BD%94%EB%94%94&utm_source=/main/musinsa/recommend&utm_medium=main_display_big_banner&utm_campaign=17"
+  },
+  {
+    "title": "쿨한 퍼포먼스\n스포츠웨어 발매",
+    "subtitle": "나이키",
+    "image_url": "https://image.msscdn.net/display/images/2025/08/07/a2fec18536224bc58e244892953e057f.jpg",
+    "link": "https://www.musinsa.com/brand/nike/plan/63041?utm_source=/main/musinsa/recommend&utm_medium=main_display_big_banner&utm_campaign=18"
+  },
+  {
+    "title": "인플루언서의 서머룩\n인기 아이템 할인",
+    "subtitle": "아카이브 볼드",
+    "image_url": "https://image.msscdn.net/display/images/2025/08/07/1dad4aa0b9534bf28608075756a184a9.jpg",
+    "link": "https://www.musinsa.com/brands/archivebold/plan/74615?utm_source=/main/musinsa/recommend&utm_medium=main_display_big_banner&utm_campaign=19"
   }
 ]
