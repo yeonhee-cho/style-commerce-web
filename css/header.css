@@ -55,6 +55,7 @@
   height: 28px;
   background: url(../image/menu.png) no-repeat center / 100%;
   margin: 0 8px;
+  cursor: pointer;
 }
 .snap-menu {
   padding: 0 8px;
@@ -97,6 +98,7 @@
 }
 .middle-header .logo {
   height: 27px;
+  cursor: pointer;
 }
 .middle-header .logo img {
   height: 27px;
