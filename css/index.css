@@ -38,7 +38,7 @@
 /* 메인 배너 */
 .main-banner-wrap {
   position: relative;
-  width: 100vw;
+  width: calc(100vw - (100vw - 100%));
   overflow: hidden;
 }
 .main-banner-wrap:hover .carousel-prev,
