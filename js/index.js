@@ -65,7 +65,11 @@ function swiper() {
     if (remainder !== 0) {
       const itemsToClone = 3 - remainder;
       // 남은 갯수
-      $(".banner-item").slice(0, itemsToClone).clone().appendTo("#bannerList");
+      $(".banner-item")
+        .slice(3)
+        .slice(0, itemsToClone)
+        .clone()
+        .appendTo("#bannerList");
 
       // 배너 슬라이드 임시 반복 - 첫 페이지 용
       $(".banner-item").slice(0, 3).clone().appendTo("#bannerList");
