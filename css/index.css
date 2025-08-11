@@ -21,6 +21,7 @@
   width: 39px;
   height: 39px;
   background: url(../image/banner-prev.png) no-repeat center/100%;
+  cursor: pointer;
 }
 .carousel-next {
   display: none;
@@ -31,6 +32,7 @@
   width: 39px;
   height: 39px;
   background: url(../image/banner-next.png) no-repeat center/100%;
+  cursor: pointer;
 }
 
 /* 메인 배너 */
@@ -55,6 +57,7 @@
   max-width: 33.3333%;
   aspect-ratio: 1/1;
   overflow: hidden;
+  cursor: pointer;
 }
 .banner-list .banner-item img {
   width: 480px;
@@ -103,6 +106,7 @@
   border-radius: 4px;
   box-sizing: border-box;
   border: 1px solid #e0e0e0;
+  cursor: pointer;
 }
 .category-list .category-item .cate-icon {
   width: 26px;
@@ -163,6 +167,7 @@
 }
 .product-list .product-item {
   width: 260px;
+  cursor: pointer;
 }
 /* 오른쪽 영역 체크 */
 .product-list .product-item:last-child::after {
@@ -271,6 +276,9 @@
   width: 16px;
   height: 100%;
   background-color: transparent;
+}
+.content-list .content-item .cont-item-inner {
+  cursor: pointer;
 }
 .content-list .content-item .con-image {
   aspect-ratio: 3 / 2;
@@ -429,6 +437,7 @@
   min-width: 260px;
   width: 260px;
   position: relative;
+  cursor: pointer;
 }
 /* 오른쪽 영역 체크 */
 .schedule-list .schedule-item:last-child::after {
