@@ -33,36 +33,49 @@ function swiper() {
       }
     }
 
-    $("#bannerNext").click(function () {
-      if (currentPage < totalPage - 1) {
-        currentPage++;
-        goToPage(currentPage);
-      } else {
-        alert("마지막 페이지입니다.");
-      }
-    });
-
-    $("#bannerPrev").click(function () {
-      if (currentPage > 0) {
-        currentPage--;
-        goToPage(currentPage);
-      } else {
-        alert("첫 번째 페이지입니다.");
-      }
-    });
-
+    // 자동 슬라이드
     setInterval(function () {
       currentPage++;
       goToPage(currentPage);
 
-      // 마지막 페이지 넘어가면 즉시 처음 위치로 (클론 효과)
+      // 마지막 페이지 넘어가면 즉시 처음 위치로
       if (currentPage >= totalPage - 1) {
         setTimeout(() => {
-          // 순간적으로 첫 페이지로 이동
+          // 첫 페이지로 이동
           currentPage = 0;
-          goToPage(0, true);
-        }, 510); // 애니메이션 끝난 뒤 이동
+          goToPage(currentPage, true);
+        }, 510);
       }
     }, 3000);
+
+    // 다음 버튼 클릭 시
+    $("#bannerNext").click(function () {
+      currentPage++;
+      goToPage(currentPage);
+
+      // 반복
+      if (currentPage >= totalPage - 1) {
+        setTimeout(() => {
+          currentPage = 0;
+          goToPage(currentPage, true);
+        }, 510);
+      }
+    });
+
+    // 이전 버튼 클릭시
+    $("#bannerPrev").click(function () {
+      // 반복
+      if (currentPage <= 0) {
+        currentPage = totalPage - 1;
+        goToPage(currentPage, true);
+        currentPage--;
+        setTimeout(() => {
+          goToPage(currentPage);
+        }, 10);
+      } else {
+        currentPage--;
+        goToPage(currentPage);
+      }
+    });
   }
 }
