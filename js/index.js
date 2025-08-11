@@ -3,6 +3,7 @@ $(function () {
     넣어야하는 값!!
     1. 배너 슬라이드 값 넣기
     2. 카테고리 값
+    --------------------------
     3. 상품 값
     4. 콘텐츠 값
     5. 편성표 값
@@ -13,7 +14,7 @@ $(function () {
         - 3초에 한 번씩 자동 돌아가기 (반복) : 페이지가 열리면 바로 시작할 것
         - 이전 다음 선택 시 상황에 맞게 이동되어질 것
         - 오 -> 왼으로 이동되면서 변경 : 반복되어 보여야 함!!
-    2. 
+    2. 터치로 스크롤 되어지게 하기
   */
 
   // 배너 슬라이드 등록
@@ -21,6 +22,20 @@ $(function () {
 
   // 카테고리 등록
   addCategory();
+
+  // 터치로 스크롤 기능(상품 + 콘텐츠 + 편성표)
+  touchScrollEvent();
+});
+
+// TODO 확인 필요
+// 리사이징 시 배너 크기를 맞춰주고 싶은데 일단 새로고침해서 다시 시작되는거로 넣어둠 (with debounce)
+let resizeTimer;
+
+$(window).on("resize", function () {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(function () {
+    location.reload();
+  }, 200); // 200ms 안에 resize가 안 오면 새로고침
 });
 
 // 배너 슬라이드 등록
@@ -30,7 +45,7 @@ function addBanner() {
       data.map(
         (i) => `
             <a href="${i.link}" class="banner-item" >
-              <img src="${i.image_url}" alt="배너1" />
+              <img src="${i.image_url}" alt="${i.title}" />
               <div class="banner-txt">
                 <p class="banner-tit">
                   ${i.title}
@@ -96,13 +111,10 @@ function swiper() {
 
       // 마지막 페이지 넘어가면 즉시 처음 위치로
       if (currentPage >= totalPage) {
-        console.log("문제1", currentPage);
-
         setTimeout(() => {
           // 첫 페이지로 이동
           currentPage = 0;
           goToPage(currentPage, true);
-          console.log("문제2", currentPage);
         }, 510);
       }
     }, 3000);
@@ -157,8 +169,8 @@ function addCategory() {
             `
         )
       );
-
-      console.log(document.getElementById("cateResult"));
     }
   });
 }
+
+function touchScrollEvent() {}

@@ -162,6 +162,8 @@
   position: relative;
   width: 100%;
   overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+
   /* NOTE 기능 입히고 변경 예정 */
   /* -ms-overflow-style: none; 
   scrollbar-width: none;  */
@@ -262,6 +264,8 @@
   position: relative;
   width: 100%;
   overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+
   /* NOTE 기능 입히고 변경 예정 */
   /* -ms-overflow-style: none; 
   scrollbar-width: none;  */
@@ -431,6 +435,8 @@
   position: relative;
   width: 100%;
   overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+
   /* NOTE 기능 입히고 변경 예정 */
   /* -ms-overflow-style: none; 
   scrollbar-width: none;  */
