@@ -13,6 +13,7 @@
 
 /* carousel */
 .carousel-prev {
+  display: none;
   position: absolute;
   top: 50%;
   left: 16px;
@@ -22,6 +23,7 @@
   background: url(../image/banner-prev.png) no-repeat center/100%;
 }
 .carousel-next {
+  display: none;
   position: absolute;
   top: 50%;
   right: 16px;
@@ -36,20 +38,28 @@
   position: relative;
   width: 100%;
 }
+.main-banner-wrap:hover .carousel-prev,
+.main-banner-wrap:hover .carousel-next {
+  display: block;
+}
 .banner-list {
   display: flex;
   align-items: center;
   width: 100%;
+  position: relative;
 }
 .banner-list .banner-item {
   position: relative;
+  min-width: 33.3333%;
   width: 480px;
-  height: 480px;
+  max-width: 33.3333%;
+  aspect-ratio: 1/1;
   overflow: hidden;
 }
 .banner-list .banner-item img {
   width: 480px;
-  height: 480px;
+  max-width: 100%;
+  object-fit: cover;
 }
 /* 배너 텍스트 영역 */
 .banner-list .banner-item .banner-txt {
