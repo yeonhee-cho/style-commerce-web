@@ -16,15 +16,38 @@ $(function () {
     2. 
   */
 
-  // 배너 슬라이드 임시 반복
-  $(".banner-item").slice(0, 3).clone().appendTo("#bannerList");
-
-  // 배너 슬라이드 실행
-  swiper();
+  // 배너 슬라이드 등록
+  addBanner();
 
   // 카테고리 등록
   addCategory();
 });
+
+// 배너 슬라이드 등록
+function addBanner() {
+  $.get("../json/banner.json").done(function (data) {
+    $("#bannerList").html(
+      data.map(
+        (i) => `
+            <a href="${i.link}" class="banner-item" >
+              <img src="${i.image_url}" alt="배너1" />
+              <div class="banner-txt">
+                <p class="banner-tit">
+                  ${i.title}
+                </p>
+                <p class="banner-cont">${i.subtitle}</p>
+              </div>
+            </a>
+            `
+      )
+    );
+  });
+
+  // 배너 슬라이드 실행
+  setTimeout(() => {
+    swiper();
+  }, 50);
+}
 
 // 배너 슬라이드 실행
 function swiper() {
@@ -33,8 +56,20 @@ function swiper() {
 
   if (bannerList) {
     const bannerWidth = bannerList.offsetWidth;
-    const bannerLength = $(".banner-item").length;
-    const totalPage = bannerLength / 3;
+    const bannerLength = $("#bannerList .banner-item").length;
+    const totalPage = Math.ceil(bannerLength / 3); // 올림으로 계산
+
+    // 배너 슬라이드 임시 반복 - 빈 공간이 보이지 않도록 3의 배수로 만들어주기
+    const remainder = bannerLength % 3;
+
+    if (remainder !== 0) {
+      const itemsToClone = 3 - remainder;
+      // 남은 갯수
+      $(".banner-item").slice(0, itemsToClone).clone().appendTo("#bannerList");
+
+      // 배너 슬라이드 임시 반복 - 첫 페이지 용
+      $(".banner-item").slice(0, 3).clone().appendTo("#bannerList");
+    }
 
     // 중복 함수
     function goToPage(page, instant = false) {
@@ -56,11 +91,14 @@ function swiper() {
       goToPage(currentPage);
 
       // 마지막 페이지 넘어가면 즉시 처음 위치로
-      if (currentPage >= totalPage - 1) {
+      if (currentPage >= totalPage) {
+        console.log("문제1", currentPage);
+
         setTimeout(() => {
           // 첫 페이지로 이동
           currentPage = 0;
           goToPage(currentPage, true);
+          console.log("문제2", currentPage);
         }, 510);
       }
     }, 3000);
@@ -96,10 +134,10 @@ function swiper() {
     });
   }
 }
+
 // 카테고리 등록
 function addCategory() {
   $.get("../json/category.json").done(function (data) {
-    console.log(data);
     if (data) {
       $("#cateResult").html(
         data.map(
