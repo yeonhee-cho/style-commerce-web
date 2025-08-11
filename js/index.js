@@ -14,7 +14,9 @@ $(function () {
         - 3초에 한 번씩 자동 돌아가기 (반복) : 페이지가 열리면 바로 시작할 것
         - 이전 다음 선택 시 상황에 맞게 이동되어질 것
         - 오 -> 왼으로 이동되면서 변경 : 반복되어 보여야 함!!
-    2. 터치로 스크롤 되어지게 하기
+    2. 클릭 시 스크롤 상단으로 올리기
+    3. 터치로 스크롤 되어지게 하기
+
   */
 
   // 배너 슬라이드 등록
@@ -25,6 +27,9 @@ $(function () {
 
   // 터치로 스크롤 기능(상품 + 콘텐츠 + 편성표)
   touchScrollEvent();
+
+  // 클릭 시 스크롤 상단으로 올리기
+  touchTopEvent();
 });
 
 // TODO 확인 필요
@@ -173,4 +178,22 @@ function addCategory() {
   });
 }
 
+// 터치로 스크롤 기능
 function touchScrollEvent() {}
+
+// 클릭 시 스크롤 상단으로 올리기
+function touchTopEvent() {
+  $("#scrollTopBtn").hide(); // 처음에는 버튼 숨김
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 0) {
+      $("#scrollTopBtn").fadeIn();
+    } else {
+      $("#scrollTopBtn").fadeOut();
+    }
+  });
+
+  $("#scrollTopBtn").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 500);
+  });
+}

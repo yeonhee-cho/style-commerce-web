@@ -508,3 +508,24 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
+
+.fab-btn {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.fab-btn img {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+}
