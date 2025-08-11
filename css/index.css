@@ -163,15 +163,15 @@
   width: 100%;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
+  scroll-behavior: auto; /* 부드러운 스크롤 대신 즉각 반응 */
 
-  /* NOTE 기능 입히고 변경 예정 */
-  /* -ms-overflow-style: none; 
-  scrollbar-width: none;  */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   padding: 0 16px 24px 16px;
 }
-/* products-wrap .product-scroll::-webkit-scrollbar {
+products-wrap .product-scroll::-webkit-scrollbar {
   display: none;
-} */
+}
 .products-wrap .product-list {
   display: flex;
   flex-wrap: wrap;
@@ -265,15 +265,15 @@
   width: 100%;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
+  scroll-behavior: auto; /* 부드러운 스크롤 대신 즉각 반응 */
 
-  /* NOTE 기능 입히고 변경 예정 */
-  /* -ms-overflow-style: none; 
-  scrollbar-width: none;  */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   padding: 0 16px 24px 16px;
 }
-/* content-wrap .content-scroll::-webkit-scrollbar {
+content-wrap .content-scroll::-webkit-scrollbar {
   display: none;
-} */
+}
 .content-list {
   display: flex;
   align-items: center;
@@ -436,15 +436,15 @@
   width: 100%;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
+  scroll-behavior: auto; /* 부드러운 스크롤 대신 즉각 반응 */
 
-  /* NOTE 기능 입히고 변경 예정 */
-  /* -ms-overflow-style: none; 
-  scrollbar-width: none;  */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   padding: 0 16px 24px 16px;
 }
-/* schedule-wrap .schedule-scroll::-webkit-scrollbar {
+schedule-wrap .schedule-scroll::-webkit-scrollbar {
   display: none;
-} */
+}
 .schedule-list {
   width: 100%;
   display: flex;

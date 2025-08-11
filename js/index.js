@@ -16,7 +16,7 @@ $(function () {
         - 오 -> 왼으로 이동되면서 변경 : 반복되어 보여야 함!!
     2. 클릭 시 스크롤 상단으로 올리기
     3. 터치로 스크롤 되어지게 하기
-
+    --------------------------------------------------------------------------------
   */
 
   // 배너 슬라이드 등록
@@ -26,7 +26,13 @@ $(function () {
   addCategory();
 
   // 터치로 스크롤 기능(상품 + 콘텐츠 + 편성표)
-  touchScrollEvent();
+  const pdList = document.getElementById("pdList");
+  const contList = document.getElementById("contList");
+  const scheduleList = document.getElementById("scheduleList");
+
+  touchScrollEvent(pdList);
+  touchScrollEvent(contList);
+  touchScrollEvent(scheduleList);
 
   // 클릭 시 스크롤 상단으로 올리기
   touchTopEvent();
@@ -179,7 +185,37 @@ function addCategory() {
 }
 
 // 터치로 스크롤 기능
-function touchScrollEvent() {}
+function touchScrollEvent(scrollList) {
+  let isMouseDown = false;
+  let startX, scrollLeft; // 마우스 누른 순간의 x좌표, 스크롤바 위치
+
+  // 마우스 눌렀을 경우
+  scrollList.addEventListener("mousedown", function (e) {
+    isMouseDown = true;
+    startX = e.pageX;
+    scrollLeft = scrollList.scrollLeft;
+    e.preventDefault();
+  });
+
+  // 마우스 커서가 요소 밖으로 나갈 때
+  scrollList.addEventListener("mouseleave", () => {
+    isMouseDown = false;
+  });
+
+  // 마우스 버튼을 떼는 순간
+  scrollList.addEventListener("mouseup", () => {
+    isMouseDown = false;
+  });
+
+  // 마우스가 움직일 때
+  scrollList.addEventListener("mousemove", (e) => {
+    if (!isMouseDown) return; // mouseleave, mouseup 시 함수 종료, 적용 안 함
+    e.preventDefault();
+    const x = e.pageX - scrollList.offsetLeft; // 현재 마우스 가로 위치
+    const walk = (x - startX) * 1; // 마우스의 움직인 위치 계산
+    scrollList.scrollLeft = scrollLeft - walk; // 스크롤 된 값 구한 내용 적용하기
+  });
+}
 
 // 클릭 시 스크롤 상단으로 올리기
 function touchTopEvent() {
