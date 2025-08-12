@@ -284,11 +284,13 @@ content-wrap .content-scroll::-webkit-scrollbar {
 }
 .content-list {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 .content-list .content-item {
   position: relative;
   width: 468px;
+  height: 516px;
+  background-color: #fff;
 }
 /* 오른쪽 영역 체크 */
 .content-list .content-item:last-child::after {
@@ -356,7 +358,7 @@ content-wrap .content-scroll::-webkit-scrollbar {
   overflow: hidden;
   display: inline-block;
 }
-.con-image-list .con-image-item:last-child:before {
+.con-image-list .con-image-item:nth-of-type(4):before {
   content: "";
   position: absolute;
   inset: 0px;
