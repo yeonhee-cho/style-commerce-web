@@ -173,10 +173,12 @@ products-wrap .product-scroll::-webkit-scrollbar {
   display: none;
 }
 .products-wrap .product-list {
-  display: flex;
-  flex-wrap: wrap;
   min-width: 2600px;
   width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(2, auto);
+  padding-right: 16px;
 }
 .product-list .product-item {
   width: 260px;
@@ -207,7 +209,13 @@ products-wrap .product-scroll::-webkit-scrollbar {
   bottom: 4px;
   z-index: 20;
 }
-.product-list .product-item .pd-image .pd-like-btn.like-red {
+.product-list .product-item .pd-image .pd-like-btn input[type="checkbox"] {
+  display: none;
+}
+.product-list
+  .product-item
+  .pd-image
+  .pd-like-btn:has(input[type="checkbox"]:checked) {
   background-image: url(../image/likebtn-on.png);
 }
 .product-list .product-item .pd-image img {

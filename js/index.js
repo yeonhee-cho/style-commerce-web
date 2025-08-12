@@ -36,6 +36,9 @@ $(function () {
 
   // 클릭 시 스크롤 상단으로 올리기
   touchTopEvent();
+
+  // 상품 등록
+  addProducts();
 });
 
 // TODO 확인 필요
@@ -231,5 +234,38 @@ function touchTopEvent() {
 
   $("#scrollTopBtn").click(function () {
     $("html, body").animate({ scrollTop: 0 }, 500);
+  });
+}
+
+// 상품 등록
+function addProducts() {
+  $.get("../json/products.json").done(function (data) {
+    if (data) {
+      $("#pdResult").html(
+        data.map(
+          (i) => `
+            <div class="product-item">
+              <div class="pd-image">
+                <img src="${i.image_url}" alt="${i.name}" />
+                <!-- 활성화 시 "like-red" -->
+                <label class="pd-like-btn">
+                  <input type="checkbox"  [checked]="${i.is_liked}"></input>
+                </label>
+              </div>
+              <div class="pd-text-area">
+                <p class="pd-brand">${i.brand}</p>
+                <p class="pd-tit">
+                  ${i.name}
+                </p>
+                <p class="pd-price">
+                  <span class="discount-per">${i.discount_percentage}%</span>
+                  ${i.price}원
+                </p>
+              </div>
+            </div>
+            `
+        )
+      );
+    }
   });
 }
