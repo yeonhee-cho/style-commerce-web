@@ -1,0 +1,412 @@
+[
+  {
+    "rank": 1,
+    "brand": "트릴리온",
+    "name": "헤링본 오버핏 롤업 하프 셔츠_블랙",
+    "price": 33990,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20250516/5121016/5121016_17479118566224_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/5121016",
+    "is_liked": false,
+    "discount_percentage": 32
+  },
+  {
+    "rank": 2,
+    "brand": "어반디타입",
+    "name": "7부 데님 워싱 와이드 버뮤다 팬츠_3color",
+    "price": 28990,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20250325/4943754/4943754_17536834586637_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/4943754",
+    "is_liked": false,
+    "discount_percentage": 58
+  },
+  {
+    "rank": 3,
+    "brand": "꼼파뇨",
+    "name": "키튼 패치 피그먼트 반팔티 브라운",
+    "price": 23400,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20250326/4949728/4949728_17430646128881_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/4949728",
+    "is_liked": false,
+    "discount_percentage": 55
+  },
+  {
+    "rank": 4,
+    "brand": "꼼파뇨",
+    "name": "치즈 베리 피그먼트 반팔티 스모크블랙",
+    "price": 23400,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20250507/5092402/5092402_17467024996811_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/5092402",
+    "is_liked": false,
+    "discount_percentage": 55
+  },
+  {
+    "rank": 5,
+    "brand": "나인제트",
+    "name": "소프트 테리 오버핏 티셔츠_4color",
+    "price": 38500,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20250321/4928526/4928526_17479735033053_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/4928526",
+    "is_liked": false,
+    "discount_percentage": 30
+  },
+  {
+    "rank": 6,
+    "brand": "데이",
+    "name": "부클 라운드 가디건 (Summer.Ver)_(5COLOR)",
+    "price": 19500,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20250513/5107624/5107624_17471182618492_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/5107624",
+    "is_liked": false,
+    "discount_percentage": 78
+  },
+  {
+    "rank": 7,
+    "brand": "스컬프터",
+    "name": "Stud Metallic Hobo Bag Gun Metal",
+    "price": 92990,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20250213/4787706/4787706_17401145698938_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/4787706",
+    "is_liked": false,
+    "discount_percentage": 35
+  },
+  {
+    "rank": 8,
+    "brand": "필루미네이트",
+    "name": "타슬란 윈드 테이커 자켓-블랙",
+    "price": 54990,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20230809/3455892/3455892_17150615452541_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/3455892",
+    "is_liked": false,
+    "discount_percentage": 38
+  },
+  {
+    "rank": 9,
+    "brand": "마하그리드",
+    "name": "ROCK STAR APPLIQUE TEE WHITE(MG2FMMT546A)",
+    "price": 34300,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20250602/5161178/5161178_17500328961685_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/5161178",
+    "is_liked": false,
+    "discount_percentage": 30
+  },
+  {
+    "rank": 10,
+    "brand": "미세키서울",
+    "name": "Unbalanced flow mini skirt BLACK",
+    "price": 68600,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20250205/4761169/4761169_17395209377810_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/4761169",
+    "is_liked": false,
+    "discount_percentage": 30
+  },
+  {
+    "rank": 11,
+    "brand": "우알롱",
+    "name": "Signature Logo ball cap (32colors)",
+    "price": 25900,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20241118/4620503/4620503_17509972310980_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/4620503",
+    "is_liked": false,
+    "discount_percentage": 30
+  },
+  {
+    "rank": 12,
+    "brand": "앵브록스",
+    "name": "stardust cubic earring",
+    "price": 19990,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20250224/4821061/4821061_17403605989277_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/4821061",
+    "is_liked": false,
+    "discount_percentage": 20
+  },
+  {
+    "rank": 13,
+    "brand": "닉앤니콜",
+    "name": "NICOLE SQUARE SHOULDER BAG_4 COLOR",
+    "price": 32100,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20230221/3097307/3097307_16769607992824_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/3097307",
+    "is_liked": false,
+    "discount_percentage": 73
+  },
+  {
+    "rank": 14,
+    "brand": "아디다스",
+    "name": "파이어버드 트랙탑 - 블랙 / IJ7058",
+    "price": 90160,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20230915/3563185/3563185_16950017775747_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/3563185",
+    "is_liked": false,
+    "discount_percentage": 24
+  },
+  {
+    "rank": 15,
+    "brand": "아디다스",
+    "name": "파이어버드 트랙탑 - 인디고 / IR9893",
+    "price": 90160,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20240328/3999802/3999802_17116109248923_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/3999802",
+    "is_liked": false,
+    "discount_percentage": 24
+  },
+  {
+    "rank": 16,
+    "brand": "도씨",
+    "name": "[2SET] 실크핏 퓨어 반팔 커플 잠옷 세트",
+    "price": 21200,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20250319/4917563/4917563_17423720259970_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/4917563",
+    "is_liked": false,
+    "discount_percentage": 82
+  },
+  {
+    "rank": 17,
+    "brand": "뉴에라",
+    "name": "MLB 어센틱 뉴욕 양키스 게임(홈/어웨이공통) 70331909",
+    "price": 53000,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20250415/5029138/5029138_17458938432638_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/5029138",
+    "is_liked": false,
+    "discount_percentage": 0
+  },
+  {
+    "rank": 18,
+    "brand": "아디다스",
+    "name": "도쿄 - 블랙 / JI0183",
+    "price": 120230,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20240905/4409450/4409450_17259300928016_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/4409450",
+    "is_liked": false,
+    "discount_percentage": 14
+  },
+  {
+    "rank": 19,
+    "brand": "토앤토",
+    "name": "Plumpy 헬로키티 참 태그 SET",
+    "price": 94500,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20250424/5060639/5060639_17461680681056_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/5060639",
+    "is_liked": false,
+    "discount_percentage": 10
+  },
+  {
+    "rank": 20,
+    "brand": "무신사 스탠다드",
+    "name": "헤비웨이트 오버사이즈 후디드 스웨트 집업 [더스티 카키]",
+    "price": 37690,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20210219/1803584/1803584_17026201335932_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/1803584",
+    "is_liked": false,
+    "discount_percentage": 30
+  },
+  {
+    "rank": 21,
+    "brand": "잔스포츠",
+    "name": "하프파인트 미니백팩 BLACK",
+    "price": 42700,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20210108/1740936/1740936_17296654382128_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/1740936",
+    "is_liked": false,
+    "discount_percentage": 5
+  },
+  {
+    "rank": 22,
+    "brand": "일오공칠",
+    "name": "[10PACK] 1507 빈티지 엠보 스케이트 삭스 - 아이보리 / 블랙 /스노우 화이트(M size)",
+    "price": 18300,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20200831/1572123/1572123_17192757642318_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/1572123",
+    "is_liked": false,
+    "discount_percentage": 19
+  },
+  {
+    "rank": 23,
+    "brand": "그리쉬",
+    "name": "투턱 와이드 스웨트 팬츠 [블랙]",
+    "price": 38500,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20250219/4806014/4806014_17544644833393_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/4806014",
+    "is_liked": false,
+    "discount_percentage": 65
+  },
+  {
+    "rank": 24,
+    "brand": "아디다스",
+    "name": "태권도 - 블랙 / JQ4775",
+    "price": 73990,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20240903/4397727/4397727_17254370417863_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/4397727",
+    "is_liked": false,
+    "discount_percentage": 50
+  },
+  {
+    "rank": 25,
+    "brand": "닥터마틴",
+    "name": "1461 3홀 모노 블랙 / 14345001",
+    "price": 185990,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20170728/595040/595040_5_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/595040",
+    "is_liked": false,
+    "discount_percentage": 11
+  },
+  {
+    "rank": 26,
+    "brand": "수아레",
+    "name": "쿨 코튼 워셔블 하프 니트",
+    "price": 29900,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20250407/4992561/4992561_17455602873600_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/4992561",
+    "is_liked": false,
+    "discount_percentage": 39
+  },
+  {
+    "rank": 27,
+    "brand": "그루브라임",
+    "name": "유니)C100 18수싱글 - LOCATION 티셔츠 (레귤러핏) (23COLOR) LRAMCTR702P",
+    "price": 9990,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20250211/4774342/4774342_17417655661526_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/4774342",
+    "is_liked": false,
+    "discount_percentage": 74
+  },
+  {
+    "rank": 28,
+    "brand": "소버먼트",
+    "name": "460G 컷 헤비 피그먼트 티셔츠-차콜-",
+    "price": 36600,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20210511/1944612/1944612_17153307977903_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/1944612",
+    "is_liked": false,
+    "discount_percentage": 30
+  },
+  {
+    "rank": 29,
+    "brand": "에스엠지홀딩스",
+    "name": "유루시토(YURUSHITO) 스트레스볼 + 전시 무료입장 세트",
+    "price": 32000,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20250728/5276287/5276287_17545352744013_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/5276287",
+    "is_liked": false,
+    "discount_percentage": 0
+  },
+  {
+    "rank": 30,
+    "brand": "토앤토",
+    "name": "Plumpy 탠 헬로키티 참 태그 SET",
+    "price": 85500,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20250424/5060642/5060642_17461680877372_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/5060642",
+    "is_liked": false,
+    "discount_percentage": 10
+  },
+  {
+    "rank": 31,
+    "brand": "누아트 스튜디오",
+    "name": "모던 사피아노 스퀘어 레더 벨트_7color",
+    "price": 9000,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20250421/5048321/5048321_17454774988787_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/5048321",
+    "is_liked": false,
+    "discount_percentage": 47
+  },
+  {
+    "rank": 32,
+    "brand": "에이치덱스",
+    "name": "자이언트핏 85 매쉬 숏 슬리브 3 color",
+    "price": 50100,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20250401/4973427/4973427_17526503056412_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/4973427",
+    "is_liked": false,
+    "discount_percentage": 15
+  },
+  {
+    "rank": 33,
+    "brand": "노스페이스",
+    "name": "NS83R11C 캠퍼스 플립_BROWN",
+    "price": 49000,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20250306/4866701/4866701_17412487361330_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/4866701",
+    "is_liked": false,
+    "discount_percentage": 0
+  },
+  {
+    "rank": 34,
+    "brand": "아디다스",
+    "name": "아딜렛 클로그 GZ5886",
+    "price": 44000,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20230613/3362083/3362083_17453719457132_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/3362083",
+    "is_liked": false,
+    "discount_percentage": 20
+  },
+  {
+    "rank": 35,
+    "brand": "무신사 스탠다드",
+    "name": "[쿨탠다드] 맨즈 브이 넥 언더셔츠 [블랙]",
+    "price": 8990,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20220429/2531870/2531870_17137627791205_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/2531870",
+    "is_liked": false,
+    "discount_percentage": 30
+  },
+  {
+    "rank": 36,
+    "brand": "블레스드 뷸렛",
+    "name": "1mm 논로고 라인 링_실버925",
+    "price": 13770,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20220314/2416459/2416459_1_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/2416459",
+    "is_liked": false,
+    "discount_percentage": 42
+  },
+  {
+    "rank": 37,
+    "brand": "무신사 스탠다드",
+    "name": "[쿨탠다드] 맨즈 드로즈 3팩",
+    "price": 22290,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20200702/1504726/1504726_17137755808433_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/1504726",
+    "is_liked": false,
+    "discount_percentage": 20
+  },
+  {
+    "rank": 38,
+    "brand": "나인티플러스",
+    "name": "우븐 조거 팬츠(블랙)",
+    "price": 42900,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20200221/1317598/1317598_1_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/1317598",
+    "is_liked": false,
+    "discount_percentage": 0
+  },
+  {
+    "rank": 39,
+    "brand": "일오공칠",
+    "name": "[10PACK] 1507 모노 트라우져 하프 삭스 _ 스노우화이트/화이트/블랙",
+    "price": 12400,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20190328/998051/998051_17192106437781_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/998051",
+    "is_liked": false,
+    "discount_percentage": 31
+  },
+  {
+    "rank": 40,
+    "brand": "반스",
+    "name": "스케이트 로퍼 - (스웨이드) 블랙:블랙 / VN000VA6BKA1",
+    "price": 99000,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20250707/5228975/5228975_17534094883612_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/5228975",
+    "is_liked": false,
+    "discount_percentage": 0
+  },
+  {
+    "rank": 41,
+    "brand": "나이키",
+    "name": "드라이 핏 플라이 언스트럭처 스우시 캡 - 하이퍼 핑크:앤트러사이트:화이트 / FB5624-645",
+    "price": 35000,
+    "image_url": "https://image.msscdn.net/thumbnails/images/goods_img/20250620/5199091/5199091_17508353698685_500.jpg?w=780",
+    "link": "https://www.musinsa.com/products/5199091",
+    "is_liked": false,
+    "discount_percentage": 0
+  }
+]
