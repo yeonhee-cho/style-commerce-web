@@ -319,7 +319,7 @@ function addContents() {
                 <a href="${moreBtn.url}">
                   <img src="${moreBtn.image}" alt="더보기" />
                 </a>
-                <span>${moreBtn.label.replace("개", "개")}</span>
+                <span>${moreBtn.label.replace("개", "개<br>")}</span>
               </div>
             `;
               }
@@ -373,4 +373,24 @@ function addContents() {
 }
 
 // 라이브 편성표 등록
-function addSchedule() {}
+function addSchedule() {
+  $.get("../json/schedule.json").done(function (data) {
+    if (data) {
+      $("#scheduleResult").html(
+        data.map(
+          (i) => `
+             <div class="schedule-item">
+                <div class="schedule-image">
+                  <img src="${i.thumbnail}" alt="${i.title}" />
+                  <p class="schdate-box">${i.d_day}</p>
+                </div>
+                <div class="schedule-text-area">
+                  <p>${i.title}</p>
+                </div>
+              </div>
+            `
+        )
+      );
+    }
+  });
+}
