@@ -1,7 +1,7 @@
 .login-container {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   height: 100svh;
 }
@@ -52,7 +52,7 @@
   flex: 1 1 auto;
   gap: 16px;
 }
-.login-area {
+.login-input-area {
   display: flex;
   align-items: center;
   position: relative;
@@ -76,17 +76,17 @@
   appearance: none;
   outline: 0;
 }
-.login-area:has(.login-input:focus) {
+.login-input-area:has(.login-input:focus) {
   border-color: #8a8a8a;
   transition: border 0.2s ease-in-out;
 }
-.input-type-btn {
+.login-input-area .input-type-btn {
   width: 20px;
   height: 20px;
   margin-right: 7px;
   background: url(../image/eye-closed.png) no-repeat center/100%;
 }
-.input-type-btn.active {
+.login-input-area .input-type-btn.active {
   background-image: url(../image/eye.png);
 }
 
