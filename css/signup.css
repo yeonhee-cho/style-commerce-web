@@ -1,0 +1,117 @@
+.signup-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  min-height: 100svh;
+}
+.signup-inner-container {
+  width: 100%;
+  /* min-width: 743px; */
+  min-width: 1000px;
+  max-width: 1440px;
+  height: 100%;
+  background-color: #fafafa;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* 작은 전체 영역 */
+.signup-page-wrap {
+  min-width: 600px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #fafafa;
+}
+.signup-page-wrap h2 {
+  height: 52px;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 500;
+  padding: 12px 16px;
+  background-color: #f5f5f5;
+}
+
+/* 하얀 박스 부분 */
+.signup-white-box {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  background-color: #fff;
+  padding: 24px 16px 12px;
+}
+
+/* 인풋 전체 */
+.join-input-wrap {
+  padding-bottom: 24px;
+}
+.join-input-wrap .join-label {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #000;
+}
+.join-input-wrap .join-label span {
+  font-size: 14px;
+  color: #ff4567;
+}
+.join-input-box {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 34px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: border 0.2s ease-in-out;
+  overflow: hidden;
+}
+.join-input-wrap .join-input-box:nth-of-type(2) {
+  margin-top: 8px;
+}
+
+.join-input-box input {
+  width: 100%;
+  height: 34px;
+  padding: 0 8px;
+  border: none;
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  appearance: none;
+  outline: 0;
+}
+.join-input-box .input-type-btn {
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+  background: url(../image/eye-closed.png) no-repeat center/100%;
+}
+.join-input-box .input-type-btn.active {
+  background-image: url(../image/eye.png);
+}
+.validation-wrap {
+  padding: 4px 0 0 4px;
+}
+.validation {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.validation.red {
+  color: #ff4567;
+}
+.validation.green {
+  color: #0c9e20;
+}
