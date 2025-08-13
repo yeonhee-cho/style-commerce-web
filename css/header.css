@@ -155,7 +155,7 @@
 /* ---------- 하단 헤더 - 세그먼트 ---------- */
 .segment-header {
   position: sticky;
-  top: 56px;
+  top: 55px;
   left: 0;
   z-index: 998;
   min-width: 1000px;
