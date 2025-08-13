@@ -1,0 +1,26 @@
+.pd-detail-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100svh;
+}
+.pd-detail-inner-container {
+  width: 100%;
+  /* min-width: 743px; */
+  min-width: 1000px;
+  max-width: 1440px;
+  height: 100%;
+  background-color: #1a1b1f;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.pd-detail-inner-bg {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex: 1;
+}
