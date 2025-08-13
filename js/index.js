@@ -53,14 +53,15 @@ $(function () {
   touchTopEvent();
 });
 
-// TODO 확인 필요
-// 리사이징 시 배너 크기를 맞춰주고 싶은데 일단 새로고침해서 다시 시작되는거로 넣어둠 (with debounce)
+// 리사이징 시 배너 크기를 맞춰주기
 let resizeTimer;
 
 $(window).on("resize", function () {
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(function () {
-    location.reload();
+    setTimeout(() => {
+      swiper();
+    }, 50);
   }, 200); // 200ms 안에 resize가 안 오면 새로고침
 });
 
@@ -91,11 +92,16 @@ function addBanner() {
 }
 
 // 배너 슬라이드 실행
+let currentPage = 0; // 전역 선언
 function swiper() {
-  let currentPage = 0;
   const bannerList = document.querySelector("#bannerList");
 
   if (bannerList) {
+    // 기존 자동 슬라이드 타이머 제거 (중복 방지)
+    if (window.bannerTimer) clearInterval(window.bannerTimer);
+
+    // 기존 복제된 슬라이드 제거
+    $("#bannerList .banner-item.clone").remove();
     const bannerWidth = bannerList.offsetWidth;
     const bannerLength = $("#bannerList .banner-item").length;
     const totalPage = Math.ceil(bannerLength / 3); // 올림으로 계산
@@ -110,13 +116,18 @@ function swiper() {
         .slice(3)
         .slice(0, itemsToClone)
         .clone()
+        .addClass("clone")
         .appendTo("#bannerList");
 
       // 배너 슬라이드 임시 반복 - 첫 페이지 용
-      $(".banner-item").slice(0, 3).clone().appendTo("#bannerList");
+      $(".banner-item")
+        .slice(0, 3)
+        .clone()
+        .addClass("clone")
+        .appendTo("#bannerList");
     }
 
-    // 중복 함수
+    // 이동 함수
     function goToPage(page, instant = false) {
       if (instant) {
         $("#bannerList").css("left", -bannerWidth * page);
@@ -130,8 +141,11 @@ function swiper() {
       }
     }
 
+    // 리사이즈 후 현재 위치 유지
+    goToPage(currentPage, true);
+
     // 자동 슬라이드
-    setInterval(function () {
+    window.bannerTimer = setInterval(function () {
       currentPage++;
       goToPage(currentPage);
 
