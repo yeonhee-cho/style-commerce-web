@@ -254,7 +254,7 @@ function addProducts() {
         data.map(
           (i) => `
             <div class="product-item">
-              <a href="${i.link}">
+              <a href="pages/product-detail.html">
                   <div class="pd-image">
                     <img src="${i.image_url}" alt="${i.name}" />
                     <!-- 활성화 시 "like-red" -->

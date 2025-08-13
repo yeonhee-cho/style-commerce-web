@@ -24,3 +24,41 @@
   flex-direction: column;
   flex: 1;
 }
+.pd-detail-top {
+  display: flex;
+  align-items: center;
+}
+.pd-image-wrap {
+  margin: 0px auto;
+}
+.pd-images-area {
+  width: 100%;
+  height: 715px;
+  padding: 16px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pd-image-area {
+  max-width: 600px;
+}
+.pd-image-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pd-detail-content {
+  flex: 1 1 0%;
+  align-self: flex-start;
+  position: sticky;
+  top: 56px;
+  overflow-y: auto;
+  width: 30%;
+  min-width: 300px;
+  max-width: 434px;
+  min-height: 100%;
+  margin: 0px 16px;
+  background-color: #fff;
+}
+.pd-detail-btm {
+}
