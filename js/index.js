@@ -272,11 +272,12 @@ function addProducts() {
 }
 // 상품 리스트 캐러셀 스크롤 이동
 function productSwiper() {
+  const wrapper = document.getElementById("pdListWrap"); // 호버 시 버튼 올라올 때 깜박임을 없애기 위함
   const scrollContainer = document.getElementById("pdList");
   const btnPrev = document.getElementById("pdPrev");
   const btnNext = document.getElementById("pdNext");
 
-  listSwiper(scrollContainer, btnPrev, btnNext);
+  listSwiper(wrapper, scrollContainer, btnPrev, btnNext);
 }
 
 // 콘텐츠 등록
@@ -370,11 +371,12 @@ function addContents() {
 }
 // 콘텐츠 리스트 캐러셀 스크롤 이동
 function contentSwiper() {
+  const wrapper = document.getElementById("contListWrap");
   const scrollContainer = document.getElementById("contList");
   const btnPrev = document.getElementById("contentPrev");
   const btnNext = document.getElementById("contentNext");
 
-  listSwiper(scrollContainer, btnPrev, btnNext);
+  listSwiper(wrapper, scrollContainer, btnPrev, btnNext);
 }
 
 // 라이브 편성표 등록
@@ -401,15 +403,16 @@ function addSchedule() {
 }
 // 라이브 리스트 캐러셀 스크롤 이동
 function scheduleSwiper() {
+  const wrapper = document.getElementById("scheduleListWrap");
   const scrollContainer = document.getElementById("scheduleList");
   const btnPrev = document.getElementById("schedulePrev");
   const btnNext = document.getElementById("scheduleNext");
 
-  listSwiper(scrollContainer, btnPrev, btnNext);
+  listSwiper(wrapper, scrollContainer, btnPrev, btnNext);
 }
 
 // 리스트 캐러셀 스크롤 이동
-function listSwiper(scrollContainer, btnPrev, btnNext) {
+function listSwiper(wrapper, scrollContainer, btnPrev, btnNext) {
   // 버튼 클릭 이벤트
   btnPrev.addEventListener("click", () => {
     scrollCarousel(-1);
@@ -439,18 +442,28 @@ function listSwiper(scrollContainer, btnPrev, btnNext) {
     setTimeout(updateButtons, 300);
   }
 
+  // 호버시 버튼 보이게
+  btnPrev.style.display = "none";
+  btnNext.style.display = "none";
+
+  wrapper.addEventListener("mouseenter", () => {
+    updateButtons();
+  });
+
+  wrapper.addEventListener("mouseleave", () => {
+    btnPrev.style.display = "none";
+    btnNext.style.display = "none";
+  });
+
   // 버튼 보임/숨김 상태 갱신 함수
   function updateButtons() {
     const containerWidth = scrollContainer.offsetWidth;
     const currentScroll = scrollContainer.scrollLeft;
     const maxScroll = scrollContainer.scrollWidth - containerWidth;
-    console.log(scrollContainer.scrollWidth);
-
     // 처음이면 왼쪽 버튼 숨기기
-    btnPrev.style.display = currentScroll <= 0 ? "none" : "block";
-
+    btnPrev.style.display = currentScroll > 0 ? "block" : "none";
     // 끝이면 오른쪽 버튼 숨기기
-    btnNext.style.display = currentScroll >= maxScroll ? "none" : "block";
+    btnNext.style.display = currentScroll < maxScroll ? "block" : "none";
   }
 
   // 스크롤 이벤트에도 버튼 상태 갱신
