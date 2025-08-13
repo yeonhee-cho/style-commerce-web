@@ -222,6 +222,7 @@
   background-image: url(../image/apple.png);
 }
 
+/* 회원가입 */
 .join-box {
   display: flex;
   justify-content: center;
@@ -229,7 +230,6 @@
   gap: 6px;
   padding: 8px 16px 72px;
 }
-
 .join-box span {
   font-size: 13px;
   line-height: 18px;
@@ -243,24 +243,32 @@
   border-radius: 4px;
   box-sizing: border-box;
 }
+.join-box .join-btn a {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000;
+}
 
+/* 비회원으로 주문 */
 .guest-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .guest-box p {
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
   color: #000;
 }
-
 .guest-btn {
+  text-decoration: underline;
+  background-color: transparent;
+}
+.guest-btn a {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
-  text-decoration: underline;
-  background-color: transparent;
+  color: #000;
 }
