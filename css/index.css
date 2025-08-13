@@ -12,6 +12,9 @@
 }
 
 /* carousel */
+.carouselarea-wrap {
+  position: relative;
+}
 .carousel-prev {
   display: none;
   position: absolute;

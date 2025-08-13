@@ -34,17 +34,23 @@ $(function () {
   touchScrollEvent(contList);
   touchScrollEvent(scheduleList);
 
-  // 클릭 시 스크롤 상단으로 올리기
-  touchTopEvent();
-
   // 상품 등록
   addProducts();
+  // 상품 캐러셀
+  productSwiper();
 
   // 콘텐츠 등록
   addContents();
+  // 콘텐츠 캐러셀
+  contentSwiper();
 
   // 라이브 편성표 등록
   addSchedule();
+  // 라이브 편성표 캐러셀
+  scheduleSwiper();
+
+  // 클릭 시 스크롤 상단으로 올리기
+  touchTopEvent();
 });
 
 // TODO 확인 필요
@@ -226,23 +232,6 @@ function touchScrollEvent(scrollList) {
   });
 }
 
-// 클릭 시 스크롤 상단으로 올리기
-function touchTopEvent() {
-  $("#scrollTopBtn").hide(); // 처음에는 버튼 숨김
-
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 0) {
-      $("#scrollTopBtn").fadeIn();
-    } else {
-      $("#scrollTopBtn").fadeOut();
-    }
-  });
-
-  $("#scrollTopBtn").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 500);
-  });
-}
-
 // 상품 등록
 function addProducts() {
   $.get("../json/products.json").done(function (data) {
@@ -280,6 +269,14 @@ function addProducts() {
       );
     }
   });
+}
+// 상품 리스트 캐러셀 스크롤 이동
+function productSwiper() {
+  const scrollContainer = document.getElementById("pdList");
+  const btnPrev = document.getElementById("pdPrev");
+  const btnNext = document.getElementById("pdNext");
+
+  listSwiper(scrollContainer, btnPrev, btnNext);
 }
 
 // 콘텐츠 등록
@@ -371,6 +368,14 @@ function addContents() {
     }
   });
 }
+// 콘텐츠 리스트 캐러셀 스크롤 이동
+function contentSwiper() {
+  const scrollContainer = document.getElementById("contList");
+  const btnPrev = document.getElementById("contentPrev");
+  const btnNext = document.getElementById("contentNext");
+
+  listSwiper(scrollContainer, btnPrev, btnNext);
+}
 
 // 라이브 편성표 등록
 function addSchedule() {
@@ -392,5 +397,83 @@ function addSchedule() {
         )
       );
     }
+  });
+}
+// 라이브 리스트 캐러셀 스크롤 이동
+function scheduleSwiper() {
+  const scrollContainer = document.getElementById("scheduleList");
+  const btnPrev = document.getElementById("schedulePrev");
+  const btnNext = document.getElementById("scheduleNext");
+
+  listSwiper(scrollContainer, btnPrev, btnNext);
+}
+
+// 리스트 캐러셀 스크롤 이동
+function listSwiper(scrollContainer, btnPrev, btnNext) {
+  // 버튼 클릭 이벤트
+  btnPrev.addEventListener("click", () => {
+    scrollCarousel(-1);
+  });
+
+  btnNext.addEventListener("click", () => {
+    scrollCarousel(1);
+  });
+
+  // 스크롤 이동 함수
+  function scrollCarousel(direction) {
+    const containerWidth = scrollContainer.offsetWidth; // 가로 너비 구하기
+    console.log(containerWidth);
+
+    const currentScroll = scrollContainer.scrollLeft;
+    const maxScroll = scrollContainer.scrollWidth - containerWidth;
+    let newScroll = currentScroll + containerWidth * direction;
+
+    // 스크롤 범위 제한
+    if (newScroll < 0) newScroll = 0;
+    if (newScroll > maxScroll) newScroll = maxScroll;
+
+    // 부드러운 스크롤 이동
+    scrollContainer.scrollTo({ left: newScroll, behavior: "smooth" });
+
+    // 부드러운 스크롤 후 버튼 상태 업데이트를 위해 300ms 후 호출
+    setTimeout(updateButtons, 300);
+  }
+
+  // 버튼 보임/숨김 상태 갱신 함수
+  function updateButtons() {
+    const containerWidth = scrollContainer.offsetWidth;
+    const currentScroll = scrollContainer.scrollLeft;
+    const maxScroll = scrollContainer.scrollWidth - containerWidth;
+    console.log(scrollContainer.scrollWidth);
+
+    // 처음이면 왼쪽 버튼 숨기기
+    btnPrev.style.display = currentScroll <= 0 ? "none" : "block";
+
+    // 끝이면 오른쪽 버튼 숨기기
+    btnNext.style.display = currentScroll >= maxScroll ? "none" : "block";
+  }
+
+  // 스크롤 이벤트에도 버튼 상태 갱신
+  scrollContainer.addEventListener("scroll", updateButtons);
+
+  // 초기 상태 버튼 세팅
+  updateButtons();
+  setTimeout(updateButtons, 100); // 상품 영역만 나오고 안 나와서 추가
+}
+
+// 클릭 시 스크롤 상단으로 올리기
+function touchTopEvent() {
+  $("#scrollTopBtn").hide(); // 처음에는 버튼 숨김
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 0) {
+      $("#scrollTopBtn").fadeIn();
+    } else {
+      $("#scrollTopBtn").fadeOut();
+    }
+  });
+
+  $("#scrollTopBtn").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 500);
   });
 }
