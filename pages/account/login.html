@@ -21,57 +21,59 @@
         <!-- *** header *** -->
         <div data-include-path="../header.html"></div>
 
-        <div class="login-page-wrap">
-          <h2>로그인/회원가입</h2>
+        <div class="login-inner-bg">
+          <div class="login-page-wrap">
+            <h2>로그인/회원가입</h2>
 
-          <div class="login-white-box">
-            <div class="white-box-top">
-              <div class="login-input-area">
-                <input type="text" placeholder="아이디" class="login-input" />
-              </div>
-              <div class="login-input-area">
-                <input
-                  type="password"
-                  placeholder="비밀번호"
-                  class="login-input"
-                />
-                <button
-                  type="button"
-                  class="input-type-btn"
-                  id="inputViewType"
-                ></button>
+            <div class="login-white-box">
+              <div class="white-box-top">
+                <div class="login-input-area">
+                  <input type="text" placeholder="아이디" class="login-input" />
+                </div>
+                <div class="login-input-area">
+                  <input
+                    type="password"
+                    placeholder="비밀번호"
+                    class="login-input"
+                  />
+                  <button
+                    type="button"
+                    class="input-type-btn"
+                    id="inputViewType"
+                  ></button>
+                </div>
+
+                <button class="login-btn">로그인</button>
+                <div class="login-flex">
+                  <label class="login-check">
+                    <input type="checkbox" /> 자동 로그인
+                  </label>
+                  <ul class="find-links">
+                    <li><a href="#">아이디 찾기</a></li>
+                    <li><a href="#">비밀번호 찾기</a></li>
+                  </ul>
+                </div>
+                <button type="button" class="sns-btn kakao-btn">
+                  <span> 카카오 로그인 </span>
+                </button>
+                <button type="button" class="sns-btn apple-btn">
+                  <span> Apple 로그인 </span>
+                </button>
+
+                <div class="join-box">
+                  <span>가입만 해도 즉시 20% 할인</span>
+                  <button class="join-btn">
+                    <a href="/pages/account/signup.html">회원가입</a>
+                  </button>
+                </div>
               </div>
 
-              <button class="login-btn">로그인</button>
-              <div class="login-flex">
-                <label class="login-check">
-                  <input type="checkbox" /> 자동 로그인
-                </label>
-                <ul class="find-links">
-                  <li><a href="#">아이디 찾기</a></li>
-                  <li><a href="#">비밀번호 찾기</a></li>
-                </ul>
-              </div>
-              <button type="button" class="sns-btn kakao-btn">
-                <span> 카카오 로그인 </span>
-              </button>
-              <button type="button" class="sns-btn apple-btn">
-                <span> Apple 로그인 </span>
-              </button>
-
-              <div class="join-box">
-                <span>가입만 해도 즉시 20% 할인</span>
-                <button class="join-btn">
-                  <a href="/pages/account/signup.html">회원가입</a>
+              <div class="guest-box">
+                <p>비회원으로 주문하셨나요?</p>
+                <button type="button" class="guest-btn">
+                  <a href="#">비회원 주문 조회</a>
                 </button>
               </div>
-            </div>
-
-            <div class="guest-box">
-              <p>비회원으로 주문하셨나요?</p>
-              <button type="button" class="guest-btn">
-                <a href="#">비회원 주문 조회</a>
-              </button>
             </div>
           </div>
         </div>

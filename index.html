@@ -22,92 +22,102 @@
         <!-- *** header *** -->
         <div data-include-path="./pages/header.html"></div>
 
-        <!-- ** banner ** -->
-        <div class="main-banner-wrap">
-          <!-- 베너 영역 -->
-          <div class="banner-list" id="bannerList"></div>
-          <!-- carousel -->
-          <button type="button" class="carousel-prev" id="bannerPrev"></button>
-          <button type="button" class="carousel-next" id="bannerNext"></button>
-        </div>
-
-        <!-- 카테고리(모양) -->
-        <div class="category-wrap">
-          <ul class="category-list" id="cateResult">
-            <!-- 카테고리 내용 들어 갈 부분 : js에서 확인 가능 -->
-          </ul>
-        </div>
-
-        <!-- ** products ** -->
-        <div class="products-wrap">
-          <div class="list-top-tit">
-            <p class="list-title">
-              우리 NOVER의<br />
-              인기상품을 소개합니다
-            </p>
-            <button type="button" class="list-more-btn">더보기</button>
+        <div class="main-inner-bg">
+          <!-- ** banner ** -->
+          <div class="main-banner-wrap">
+            <!-- 베너 영역 -->
+            <div class="banner-list" id="bannerList"></div>
+            <!-- carousel -->
+            <button
+              type="button"
+              class="carousel-prev"
+              id="bannerPrev"
+            ></button>
+            <button
+              type="button"
+              class="carousel-next"
+              id="bannerNext"
+            ></button>
           </div>
-          <div class="carouselarea-wrap" id="pdListWrap">
-            <div class="product-scroll" id="pdList">
-              <div class="product-list" id="pdResult">
-                <!-- 상품 내용 들어올 영역 -->
+
+          <!-- 카테고리(모양) -->
+          <div class="category-wrap">
+            <ul class="category-list" id="cateResult">
+              <!-- 카테고리 내용 들어 갈 부분 : js에서 확인 가능 -->
+            </ul>
+          </div>
+
+          <!-- ** products ** -->
+          <div class="products-wrap">
+            <div class="list-top-tit">
+              <p class="list-title">
+                우리 NOVER의<br />
+                인기상품을 소개합니다
+              </p>
+              <button type="button" class="list-more-btn">더보기</button>
+            </div>
+            <div class="carouselarea-wrap" id="pdListWrap">
+              <div class="product-scroll" id="pdList">
+                <div class="product-list" id="pdResult">
+                  <!-- 상품 내용 들어올 영역 -->
+                </div>
+                <!-- carousel -->
+              </div>
+              <button type="button" class="carousel-prev" id="pdPrev"></button>
+              <button type="button" class="carousel-next" id="pdNext"></button>
+            </div>
+          </div>
+
+          <!-- ** contents ** -->
+          <div class="content-wrap">
+            <div class="list-top-tit">
+              <p class="list-title">최신 콘텐츠</p>
+              <button type="button" class="list-more-btn">더보기</button>
+            </div>
+            <div class="carouselarea-wrap" id="contListWrap">
+              <div class="content-scroll" id="contList">
+                <div class="content-list" id="contResult">
+                  <!-- 콘텐츠 내용 들어올 영역 -->
+                </div>
               </div>
               <!-- carousel -->
+              <button
+                type="button"
+                class="carousel-prev"
+                id="contentPrev"
+              ></button>
+              <button
+                type="button"
+                class="carousel-next"
+                id="contentNext"
+              ></button>
             </div>
-            <button type="button" class="carousel-prev" id="pdPrev"></button>
-            <button type="button" class="carousel-next" id="pdNext"></button>
           </div>
-        </div>
 
-        <!-- ** contents ** -->
-        <div class="content-wrap">
-          <div class="list-top-tit">
-            <p class="list-title">최신 콘텐츠</p>
-            <button type="button" class="list-more-btn">더보기</button>
-          </div>
-          <div class="carouselarea-wrap" id="contListWrap">
-            <div class="content-scroll" id="contList">
-              <div class="content-list" id="contResult">
-                <!-- 콘텐츠 내용 들어올 영역 -->
-              </div>
+          <!-- ** schedule ** -->
+          <div class="schedule-wrap">
+            <div class="list-top-tit">
+              <p class="list-title">NOVER 라이브 편성표</p>
+              <button type="button" class="list-more-btn">더보기</button>
             </div>
-            <!-- carousel -->
-            <button
-              type="button"
-              class="carousel-prev"
-              id="contentPrev"
-            ></button>
-            <button
-              type="button"
-              class="carousel-next"
-              id="contentNext"
-            ></button>
-          </div>
-        </div>
-
-        <!-- ** schedule ** -->
-        <div class="schedule-wrap">
-          <div class="list-top-tit">
-            <p class="list-title">NOVER 라이브 편성표</p>
-            <button type="button" class="list-more-btn">더보기</button>
-          </div>
-          <div class="carouselarea-wrap" id="scheduleListWrap">
-            <div class="schedule-scroll" id="scheduleList">
-              <div class="schedule-list" id="scheduleResult">
-                <!-- 편성표 내용 들어올 영역 -->
+            <div class="carouselarea-wrap" id="scheduleListWrap">
+              <div class="schedule-scroll" id="scheduleList">
+                <div class="schedule-list" id="scheduleResult">
+                  <!-- 편성표 내용 들어올 영역 -->
+                </div>
               </div>
+              <!-- carousel -->
+              <button
+                type="button"
+                class="carousel-prev"
+                id="schedulePrev"
+              ></button>
+              <button
+                type="button"
+                class="carousel-next"
+                id="scheduleNext"
+              ></button>
             </div>
-            <!-- carousel -->
-            <button
-              type="button"
-              class="carousel-prev"
-              id="schedulePrev"
-            ></button>
-            <button
-              type="button"
-              class="carousel-next"
-              id="scheduleNext"
-            ></button>
           </div>
         </div>
         <!-- ** footer ** -->
