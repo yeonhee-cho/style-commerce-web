@@ -36,7 +36,7 @@
   flex: 1;
   background-color: #fafafa;
 }
-.login-page-wrap h2 {
+.login-page-wrap .login-main-tit {
   height: 52px;
   font-size: 16px;
   line-height: 28px;

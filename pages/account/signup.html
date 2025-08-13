@@ -24,15 +24,15 @@
 
         <div class="signup-inner-bg">
           <div class="signup-page-wrap">
-            <h2>회원가입</h2>
+            <h2 class="signup-main-tit">회원가입</h2>
 
             <div class="signup-white-box">
               <form action="#">
                 <!-- 아이디 -->
                 <div class="join-input-wrap">
-                  <label class="join-label" for="userId"
-                    >아이디 <span>*</span></label
-                  >
+                  <label class="join-label" for="userId">
+                    아이디 <span>*</span>
+                  </label>
                   <div class="join-input-box">
                     <input
                       type="text"
@@ -41,16 +41,17 @@
                     />
                   </div>
                   <div class="validation-wrap">
-                    <p class="validation red">다시 확인해주세요</p>
+                    <p class="validation red">아이디를 입력해 주세요.</p>
+                    <p class="validation red">이미 사용 중인 아이디입니다.</p>
                     <p class="validation green">사용 가능한 아이디입니다.</p>
                   </div>
                 </div>
 
                 <!-- 비밀번호 -->
                 <div class="join-input-wrap">
-                  <label class="join-label" for="password"
-                    >비밀번호 <span>*</span></label
-                  >
+                  <label class="join-label" for="password">
+                    비밀번호 <span>*</span>
+                  </label>
                   <div class="join-input-box">
                     <input
                       type="password"
@@ -76,33 +77,46 @@
                       id="inputViewType"
                     ></button>
                   </div>
+                  <div class="validation-wrap">
+                    <p class="validation red">비밀번호를 입력해 주세요.</p>
+                    <p class="validation red">비밀번호가 일치하지 않습니다.</p>
+                  </div>
                 </div>
 
                 <!-- 이름 -->
                 <div class="join-input-wrap">
-                  <label class="join-label" for="name"
-                    >이름 <span>*</span></label
-                  >
+                  <label class="join-label" for="name">
+                    이름 <span>*</span>
+                  </label>
                   <div class="join-input-box">
                     <input type="text" id="name" placeholder="이름" />
+                  </div>
+                  <div class="validation-wrap">
+                    <p class="validation red">이름을 입력해 주세요.</p>
                   </div>
                 </div>
 
                 <!-- 이메일 -->
                 <div class="join-input-wrap">
-                  <label class="join-label" for="name"
-                    >이메일 <span>*</span></label
-                  >
+                  <label class="join-label" for="name">
+                    이메일 <span>*</span>
+                  </label>
                   <div class="join-input-box">
                     <input type="text" id="name" placeholder="이메일" />
+                  </div>
+                  <div class="validation-wrap">
+                    <p class="validation red">이메일을 입력해 주세요.</p>
+                    <p class="validation red">
+                      이메일 형식에 맞지 않습니다. 다시 한 번 확인해주세요.
+                    </p>
                   </div>
                 </div>
 
                 <!-- 추천인 -->
                 <div class="join-input-wrap">
-                  <label class="join-label" for="name"
-                    >추천인(친구초대이벤트 참여 아이디)</label
-                  >
+                  <label class="join-label" for="name">
+                    추천인(친구초대이벤트 참여 아이디)
+                  </label>
                   <div class="join-input-box">
                     <input
                       type="text"
@@ -118,6 +132,66 @@
                마케팅 활용 및 광고성 정보 수신동의(선택) 약관보기
                만 14세 미만 가입 제한(필수) -->
 
+                <div class="join-input-wrap">
+                  <div class="allagree-flex">
+                    <label>
+                      <input type="checkbox" name="agree" id="" /> 전체 동의
+                    </label>
+                  </div>
+                  <div class="join-agree-wrap">
+                    <div class="join-agree-flex">
+                      <label>
+                        <input type="checkbox" name="agree" id="" /> 개인정보
+                        수집 및 이용 동의 [필수]
+                      </label>
+                      <button
+                        type="button"
+                        class="agree-more-btn"
+                        id="openPersonalModal"
+                      >
+                        약관보기
+                      </button>
+                    </div>
+                    <div class="join-agree-flex">
+                      <label>
+                        <input type="checkbox" name="agree" id="" />
+                        스토어 이용약관 동의 [필수]
+                      </label>
+                      <button
+                        type="button"
+                        class="agree-more-btn"
+                        id="openStoreModal"
+                      >
+                        약관보기
+                      </button>
+                    </div>
+                    <div class="join-agree-flex">
+                      <label>
+                        <input type="checkbox" name="agree" id="" /> 마케팅 활용
+                        및 광고성 정보 수신 동의 [선택]
+                      </label>
+                      <button
+                        type="button"
+                        class="agree-more-btn"
+                        id="openMarketingModal"
+                      >
+                        약관보기
+                      </button>
+                    </div>
+                  </div>
+                  <div class="validation-wrap">
+                    <p class="validation red">
+                      만 14세 이상만 가입할 수 있습니다.
+                    </p>
+                    <p class="validation red">
+                      개인정보 수집 및 이용 동의가 필요합니다.
+                    </p>
+                    <p class="validation red">
+                      스토어 이용약관 동의가 필요합니다.
+                    </p>
+                  </div>
+                </div>
+
                 <!-- 회원가입 버튼 -->
                 <button type="submit" class="join-btn">가입하기</button>
               </form>
@@ -130,3 +204,149 @@
     <script src="../../js/signup.js"></script>
   </body>
 </html>
+<!--  [필수] 개인정보 수집 및 이용 동의 -->
+<div id="personalModal" class="modal">
+  <div class="modal-box-wrap">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2>[필수] 개인정보 수집 및 이용 동의</h2>
+        <span class="close-btn" id="personalClose">&times;</span>
+      </div>
+      <div class="modal-cont">
+        <p>
+          [필수] 개인정보 수집 및 이용 동의<br />
+          <br />
+          1. 수집 항목<br />
+          - 이름, 연락처(휴대전화 번호), 이메일, 아이디, 비밀번호<br />
+          - (서비스 성격에 따라) 배송지 주소, 결제 정보<br />
+          <br />
+          2. 수집 목적<br />
+          - 회원 가입 및 본인 확인<br />
+          - 서비스 제공 및 상담 응대<br />
+          - 주문/배송 처리 및 결제<br />
+          - 공지사항 전달, 고객 대응<br />
+          <br />
+          3. 보유 및 이용 기간<br />
+          - 회원 탈퇴 시까지 보관 후 즉시 파기<br />
+          - 관계 법령에 따라 보존이 필요한 경우 해당 기간 동안 보관<br />
+          <br />
+          ※ 귀하는 위와 같은 개인정보 수집 및 이용에 동의하지 않을 권리가
+          있으며, 동의 거부 시 서비스 이용이 제한될 수 있습니다.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- [필수] 스토어 이용약관 동의 -->
+<div id="storeModal" class="modal">
+  <div class="modal-box-wrap">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2>[필수] 스토어 이용약관 동의</h2>
+        <span class="close-btn" id="storeClose">&times;</span>
+      </div>
+      <div class="modal-cont">
+        <p>
+          제1조 (목적) <br />
+          이 약관은 회사가 제공하는 온라인 스토어(이하 “서비스”) 이용과 관련하여
+          회사와 회원 간의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.<br />
+          <br />
+          제2조 (정의)<br />
+          1. "회사"란, 서비스를 제공하는 주체를 말합니다.<br />
+          2. "회원"이란, 이 약관에 동의하고 서비스를 이용하는 자를 말합니다.
+          <br />
+          3. "콘텐츠"란, 서비스 내에서 제공되는 이미지, 정보, 상품 등을
+          의미합니다.<br />
+          <br />
+          제3조 (약관의 효력 및 변경)<br />
+          1. 본 약관은 회원이 동의함으로써 효력이 발생합니다. <br />
+          2. 회사는 관련 법령을 위반하지 않는 범위에서 약관을 변경할 수 있으며,
+          변경 시 사전 고지합니다.<br />
+          <br />
+          제4조 (회원가입)<br />
+          1. 회원은 회사가 정한 방식에 따라 가입을 신청하고, 회사는 이를
+          승낙함으로써 회원가입이 완료됩니다.<br />
+          2. 회원가입 시 허위 정보를 기재한 경우, 서비스 이용이 제한될 수
+          있습니다.<br />
+          <br />
+          제5조 (서비스 이용)<br />
+          1. 회사는 상품 정보 제공, 결제 및 배송 서비스 등 온라인 커머스를
+          제공합니다.<br />
+          2. 서비스 제공 시간은 연중무휴 24시간이나, 회사의 사정에 따라
+          일시적으로 중단될 수 있습니다.<br />
+          <br />
+          제6조 (회원의 의무)<br />
+          1. 회원은 관련 법령 및 회사의 정책을 준수해야 합니다.<br />
+          2. 타인의 정보 도용, 불법 행위 등은 금지됩니다.<br />
+          <br />
+          제7조 (주문 및 결제)<br />
+          1. 회원은 회사가 제공하는 절차에 따라 상품을 주문하고 결제할 수
+          있습니다.<br />
+          2. 결제 완료 후에는 별도의 환불/취소 규정에 따릅니다.<br />
+          <br />
+          제8조 (배송 및 교환/반품)<br />
+          1. 배송은 회사 또는 제3자(판매자)에 의해 이루어집니다. <br />
+          2. 상품의 교환 및 반품은 관련 법령 및 회사의 정책에 따릅니다.<br />
+          <br />
+          제9조 (계약 해지 및 이용제한)<br />
+          1. 회원은 언제든지 탈퇴할 수 있으며, 회사는 부정 이용 시 서비스 이용을
+          제한하거나 계약을 해지할 수 있습니다.<br />
+          <br />
+          제10조 (개인정보 보호)<br />
+          회사는 관련 법령에 따라 회원의 개인정보를 보호하며, 수집·이용 목적
+          외로 사용하지 않습니다. 자세한 사항은 별도의 [개인정보처리방침]에
+          따릅니다.<br />
+          <br />
+          제11조 (면책)<br />
+          회사는 천재지변, 불가항력 등으로 인한 서비스 중단에 대해서는 책임을
+          지지 않습니다.<br />
+          <br />
+          제12조 (준거법 및 재판관할)<br />
+          본 약관은 대한민국 법률에 따라 해석되며, 분쟁 발생 시 관할 법원은
+          회사의 본사 소재지를 따릅니다.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- [선택] 마케팅 활용 및 광고성 정보 수신 동의 -->
+<div id="marketingModal" class="modal">
+  <div class="modal-box-wrap">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2>[선택] 마케팅 활용 및 광고성 정보 수신 동의</h2>
+        <span class="close-btn" id="marketingClose">&times;</span>
+      </div>
+      <div class="modal-cont">
+        <p>
+          회사는 회원의 동의를 받아 아래와 같은 목적으로 개인정보를
+          수집·이용하며, 광고성 정보를 전송할 수 있습니다.<br />
+          <br />
+          1. 목적<br />
+          - 신상품 안내, 할인 이벤트, 사은품 증정, 제휴 프로모션 등 마케팅 및
+          광고 정보 안내<br />
+          - 앱 푸시, 문자(SMS), 이메일(메일링 서비스), 알림톡 등 다양한 채널을
+          통한 정보 제공<br />
+          <br />
+          2. 항목<br />
+          - 연락처(휴대전화번호), 이메일 주소, 회원 가입 시 제공한 기본정보<br />
+          <br />
+          3. 보유 및 이용기간<br />
+          - 동의 철회 또는 회원 탈퇴 시까지 보유 및 이용됩니다.<br />
+          <br />
+          4. 수신 방법<br />
+          - 수신 채널: SMS, MMS, 이메일, 푸시 알림 등<br />
+          <br />
+          ※ 본 동의는 거부하실 수 있으며, 동의하지 않더라도 서비스 이용에는
+          제한이 없습니다. <br />
+          단, 마케팅 및 혜택 정보를 받으실 수 없습니다.<br />
+          <br />
+          ※ 수신 동의 후에도 [마이페이지 > 알림 설정] 또는 고객센터를 통해
+          언제든지 수신을 거부하실 수 있습니다.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
