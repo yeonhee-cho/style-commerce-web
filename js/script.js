@@ -17,7 +17,10 @@ window.addEventListener("load", async () => {
           //  특정 페이지에서만 특정 태그를 숨기기
           const currentPath = window.location.pathname;
 
-          if (currentPath.includes("login.html")) {
+          if (
+            currentPath.includes("login.html") ||
+            currentPath.includes("signup.html")
+          ) {
             const search = tempDiv.querySelector(".search-header");
             const segment = tempDiv.querySelector(".segment-header");
             const middle = tempDiv.querySelector(".middle-header");
