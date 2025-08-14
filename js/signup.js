@@ -1,6 +1,8 @@
 $(function () {
   idCheckFn();
   pwCheckFn();
+  nameCheckFn();
+  emailCheckFn();
 
   $("#signupBtn").click(function (e) {
     e.preventDefault();
@@ -35,6 +37,13 @@ function isValidPassword(pw) {
     /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]).{8,}$/;
   return regex.test(pw);
 }
+
+// 이름 유효성 검사
+function isValidName(name) {
+  const regex = /^[가-힣a-zA-Z]+$/;
+  return regex.test(name);
+}
+
 // 이메일 체크
 function validateEmail(email) {
   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -51,7 +60,7 @@ function idCheckFn() {
     if (!userIdValue) {
       idResult.innerHTML = `<p class="validation red">아이디를 입력해 주세요.</p>`;
     } else if (users.some((u) => u.userId === userIdValue)) {
-      idResult.innerHTML = `<p class="validation red">이미 사용 중인 아이디입니다.</p>`;
+      nameResult.innerHTML = `<p class="validation red">이름에 특수문자는 사용할 수 없습니다.</p>`;
     } else {
       idResult.innerHTML = `<p class="validation green">사용 가능한 아이디입니다.</p>`;
     }
@@ -62,6 +71,7 @@ function idCheckFn() {
 function pwCheckFn() {
   passwordInput.addEventListener("input", () => {
     const passwordValue = passwordInput.value.trim();
+
     if (!passwordValue) {
       passwordResult.innerHTML = `<p class="validation red">비밀번호를 입력해 주세요.</p>`;
     } else if (!isValidPassword(passwordValue)) {
@@ -83,6 +93,41 @@ function pwCheckFn() {
     }
   });
 }
+
+// 이름 체크
+function nameCheckFn() {
+  userNameInput.addEventListener("input", () => {
+    const userNameValue = userNameInput.value.trim();
+
+    if (!userNameValue) {
+      nameResult.innerHTML = `<p class="validation red">이름을 입력해 주세요.</p>`;
+    } else if (!isValidName(userNameValue)) {
+      nameResult.innerHTML = `<p class="validation red">특수문자 및 공백은 사용할 수 없습니다.</p>`;
+    } else if (userNameValue.length < 2 || userNameValue.length > 10) {
+      nameResult.innerHTML = `<p class="validation red">이름은 최소 2자, 최대 10자 이내여야 합니다.</p>`;
+    } else {
+      nameResult.innerHTML = `<p class="validation green">사용 가능한 이름입니다.</p>`;
+    }
+  });
+}
+
+// 이메일 체크
+function emailCheckFn() {
+  userEmailInput.addEventListener("input", () => {
+    const userEmailValue = userEmailInput.value.trim();
+    if (!userEmailInput) {
+      emailResult.innerHTML = `<p class="validation red">이메일을 입력해 주세요.</p>`;
+    } else if (!validateEmail(userEmailValue)) {
+      emailResult.innerHTML = `<p class="validation red">이메일 형식에 맞지 않습니다. 다시 한 번 확인해주세요.</p>`;
+    } else {
+      emailResult.innerHTML = `<p class="validation green">사용 가능한 이메일입니다.</p>`;
+    }
+  });
+}
+
+//
+
+function signupFn() {}
 
 // 개인정보 수집 및 이용 동의
 function personalModal() {
