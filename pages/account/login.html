@@ -29,22 +29,28 @@
             <div class="login-white-box">
               <div class="white-box-top">
                 <div class="login-input-area">
-                  <input type="text" placeholder="아이디" class="login-input" />
+                  <input
+                    type="text"
+                    placeholder="아이디"
+                    class="login-input"
+                    id="userId"
+                  />
                 </div>
                 <div class="login-input-area">
                   <input
                     type="password"
                     placeholder="비밀번호"
                     class="login-input"
+                    id="password"
                   />
                   <button
                     type="button"
                     class="input-type-btn"
-                    id="inputViewType"
+                    id="pwViewType"
                   ></button>
                 </div>
 
-                <button class="login-btn">로그인</button>
+                <button class="login-btn" id="loginBtn">로그인</button>
                 <div class="login-flex">
                   <label class="login-check">
                     <input type="checkbox" /> 자동 로그인
