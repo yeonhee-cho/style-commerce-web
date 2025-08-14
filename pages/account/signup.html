@@ -142,14 +142,20 @@
                 <div class="join-input-wrap">
                   <div class="allagree-flex">
                     <label>
-                      <input type="checkbox" name="agree" /> 전체 동의
+                      <input type="checkbox" name="agree" id="agreeAll" /> 전체
+                      동의
                     </label>
                   </div>
                   <div class="join-agree-wrap">
                     <div class="join-agree-flex">
                       <label>
-                        <input type="checkbox" name="agree" required /> 개인정보
-                        수집 및 이용 동의 [필수]
+                        <input
+                          type="checkbox"
+                          name="agreePersonal"
+                          id="agreePersonal"
+                          required
+                        />
+                        개인정보 수집 및 이용 동의 [필수]
                       </label>
                       <button
                         type="button"
@@ -161,7 +167,12 @@
                     </div>
                     <div class="join-agree-flex">
                       <label>
-                        <input type="checkbox" name="agree" required />
+                        <input
+                          type="checkbox"
+                          name="agreeStore"
+                          id="agreeStore"
+                          required
+                        />
                         스토어 이용약관 동의 [필수]
                       </label>
                       <button
@@ -174,8 +185,12 @@
                     </div>
                     <div class="join-agree-flex">
                       <label>
-                        <input type="checkbox" name="agree" /> 마케팅 활용 및
-                        광고성 정보 수신 동의 [선택]
+                        <input
+                          type="checkbox"
+                          name="agreeMarketing"
+                          id="agreeMarketing"
+                        />
+                        마케팅 활용 및 광고성 정보 수신 동의 [선택]
                       </label>
                       <button
                         type="button"
@@ -186,16 +201,8 @@
                       </button>
                     </div>
                   </div>
-                  <div class="validation-wrap">
-                    <p class="validation red">
-                      만 14세 이상만 가입할 수 있습니다.
-                    </p>
-                    <p class="validation red">
-                      개인정보 수집 및 이용 동의가 필요합니다.
-                    </p>
-                    <p class="validation red">
-                      스토어 이용약관 동의가 필요합니다.
-                    </p>
+                  <div class="validation-wrap" id="agreeResult">
+                    <!-- validation 값 노출 -->
                   </div>
                 </div>
 
