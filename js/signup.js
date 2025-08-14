@@ -1,4 +1,12 @@
 $(function () {
+  idCheckFn();
+  pwCheckFn();
+
+  $("#signupBtn").click(function (e) {
+    e.preventDefault();
+    signupFn();
+  });
+
   // 개인정보 수집 및 이용 동의
   personalModal();
   // 스토어 이용약관 동의
@@ -6,6 +14,75 @@ $(function () {
   // 마케팅 활용 및 광고성 정보 수신 동의
   marketingModal();
 });
+
+// 회원가입
+const userIdInput = document.getElementById("userId");
+const passwordInput = document.getElementById("password");
+const passwordCheckInput = document.getElementById("passwordCheck");
+const userNameInput = document.getElementById("userName");
+const userEmailInput = document.getElementById("userEmail");
+const recommenderInput = document.getElementById("recommender");
+
+const idResult = document.getElementById("idResult");
+const passwordResult = document.getElementById("passwordResult");
+const nameResult = document.getElementById("nameResult");
+const emailResult = document.getElementById("emailResult");
+
+// 유효성 검사 - 비밀번호
+function isValidPassword(pw) {
+  // 최소 8자, 숫자, 영문, 특수문자 포함
+  const regex =
+    /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]).{8,}$/;
+  return regex.test(pw);
+}
+// 이메일 체크
+function validateEmail(email) {
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return regex.test(email);
+}
+
+// 아이디 체크
+function idCheckFn() {
+  userIdInput.addEventListener("input", () => {
+    const userIdValue = userIdInput.value.trim();
+
+    const users = JSON.parse(localStorage.getItem("userList") || "[]");
+
+    if (!userIdValue) {
+      idResult.innerHTML = `<p class="validation red">아이디를 입력해 주세요.</p>`;
+    } else if (users.some((u) => u.userId === userIdValue)) {
+      idResult.innerHTML = `<p class="validation red">이미 사용 중인 아이디입니다.</p>`;
+    } else {
+      idResult.innerHTML = `<p class="validation green">사용 가능한 아이디입니다.</p>`;
+    }
+  });
+}
+
+// 비밀번호 체크
+function pwCheckFn() {
+  passwordInput.addEventListener("input", () => {
+    const passwordValue = passwordInput.value.trim();
+    if (!passwordValue) {
+      passwordResult.innerHTML = `<p class="validation red">비밀번호를 입력해 주세요.</p>`;
+    } else if (!isValidPassword(passwordValue)) {
+      passwordResult.innerHTML = `<p class="validation red">비밀번호는 최소 8자, 숫자/영문/특수문자 포함이어야 합니다.</p>`;
+    } else {
+      passwordResult.innerHTML = `<p class="validation green">사용 가능한 비밀번호입니다.</p>`;
+    }
+  });
+  passwordCheckInput.addEventListener("input", () => {
+    const passwordValue = passwordInput.value.trim();
+    const passwordCheckValue = passwordCheckInput.value.trim();
+
+    if (!passwordCheckValue) {
+      passwordResult.innerHTML = `<p class="validation red">비밀번호 확인을 입력해 주세요.</p>`;
+    } else if (passwordCheckValue && passwordValue !== passwordCheckValue) {
+      passwordResult.innerHTML = `<p class="validation red">비밀번호가 일치하지 않습니다.</p>`;
+    } else {
+      passwordCheckResult.innerHTML = `<p class="validation green">비밀번호가 일치합니다.</p>`;
+    }
+  });
+}
 
 // 개인정보 수집 및 이용 동의
 function personalModal() {
