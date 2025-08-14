@@ -21,6 +21,20 @@ $(function () {
   marketingModal();
 });
 
+// 회원가입
+const userIdInput = document.getElementById("userId");
+const passwordInput = document.getElementById("password");
+const passwordCheckInput = document.getElementById("passwordCheck");
+const userNameInput = document.getElementById("userName");
+const userEmailInput = document.getElementById("userEmail");
+const recommenderInput = document.getElementById("recommender");
+
+const idResult = document.getElementById("idResult");
+const passwordResult = document.getElementById("passwordResult");
+const nameResult = document.getElementById("nameResult");
+const emailResult = document.getElementById("emailResult");
+const agreeResult = document.getElementById("agreeResult");
+
 // 비밀번호 보이기/ 안보이기
 function pwTypeCheck() {
   $("#pwViewType").click(function () {
@@ -42,20 +56,6 @@ function pwTypeCheck() {
     }
   });
 }
-
-// 회원가입
-const userIdInput = document.getElementById("userId");
-const passwordInput = document.getElementById("password");
-const passwordCheckInput = document.getElementById("passwordCheck");
-const userNameInput = document.getElementById("userName");
-const userEmailInput = document.getElementById("userEmail");
-const recommenderInput = document.getElementById("recommender");
-
-const idResult = document.getElementById("idResult");
-const passwordResult = document.getElementById("passwordResult");
-const nameResult = document.getElementById("nameResult");
-const emailResult = document.getElementById("emailResult");
-const agreeResult = document.getElementById("agreeResult");
 
 // 유효성 검사 - 비밀번호
 function isValidPassword(pw) {
