@@ -60,7 +60,7 @@ function idCheckFn() {
     if (!userIdValue) {
       idResult.innerHTML = `<p class="validation red">아이디를 입력해 주세요.</p>`;
     } else if (users.some((u) => u.userId === userIdValue)) {
-      nameResult.innerHTML = `<p class="validation red">이름에 특수문자는 사용할 수 없습니다.</p>`;
+      idResult.innerHTML = `<p class="validation red">이미 사용 중인 아이디입니다.</p>`;
     } else {
       idResult.innerHTML = `<p class="validation green">사용 가능한 아이디입니다.</p>`;
     }
@@ -126,8 +126,21 @@ function emailCheckFn() {
 }
 
 //
-
-function signupFn() {}
+function signupFn() {
+  const newUser = {
+    userId: userId,
+    password: password,
+    passwordCheck: passwordCheck,
+    userName: userName,
+    userEmail: userEmail,
+    recommender: recommender,
+  };
+  users.push(newUser);
+  localStorage.setItem("userList", JSON.stringify(users));
+  sessionStorage.setItem("loggedInUser", JSON.stringify(newUser));
+  // window.location.href = "/";
+  // alert("회원가입이 완료되었습니다.");
+}
 
 // 개인정보 수집 및 이용 동의
 function personalModal() {
