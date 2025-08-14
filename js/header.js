@@ -6,11 +6,23 @@ $(function () {
   }, 100);
 });
 
+// TODO 가져오기 마이페이지에 나열
+const loggedInUserString = sessionStorage.getItem("loggedInUser");
+let loggedInUser = null;
+
 //로그인 되어 있을 시 변경
 function loginCheck() {
   const loginBtn = document.getElementById("loginBtn");
   const logoutBtn = document.getElementById("logoutBtn");
-  const loggedInUser = sessionStorage.getItem("loggedInUser");
+
+  // TODO 가져오기 마이페이지에 나열
+  if (loggedInUserString) {
+    loggedInUser = JSON.parse(loggedInUserString);
+  }
+  if (loggedInUser) {
+    console.log(loggedInUser.userId); // 안전하게 접근 가능
+    console.log(loggedInUser.userName);
+  }
 
   if (loggedInUser) {
     // 로그인 상태

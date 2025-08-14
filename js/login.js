@@ -60,8 +60,11 @@ function loginFn() {
   sessionStorage.setItem(
     "loggedInUser",
     JSON.stringify({
+      userId: foundUser.userId,
       userName: foundUser.userName,
       userEmail: foundUser.userEmail,
+      recommender: foundUser.recommender,
+      marketingSwitch: foundUser.marketingSwitch,
     })
   );
 

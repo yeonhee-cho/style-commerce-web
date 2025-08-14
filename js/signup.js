@@ -190,6 +190,7 @@ function signupFn() {
   const userNameValue = userNameInput.value.trim();
   const userEmailValue = userEmailInput.value.trim();
   const recommenderValue = recommenderInput.value.trim();
+  const agreeMarketing = document.getElementById("agreeMarketing");
 
   const users = JSON.parse(localStorage.getItem("userList") || "[]");
 
@@ -250,6 +251,7 @@ function signupFn() {
     agreeStore.scrollIntoView({ behavior: "smooth", block: "center" });
     return;
   }
+  console.log("agreeMarketing.checked", agreeMarketing.checked);
 
   const newUser = {
     userId: userIdValue,
@@ -258,6 +260,7 @@ function signupFn() {
     userName: userNameValue,
     userEmail: userEmailValue,
     recommender: recommenderValue,
+    marketingSwitch: agreeMarketing.checked,
   };
 
   users.push(newUser);
