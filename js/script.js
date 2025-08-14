@@ -42,3 +42,12 @@ window.addEventListener("load", async () => {
     }
   }
 });
+
+$(function () {
+  $(".notWork").click(workInProgress);
+});
+
+// 추후 작업 중인 영역입니다 버튼마다 넣어주기
+function workInProgress() {
+  alert("아직 작업 중인 영역입니다.");
+}
