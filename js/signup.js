@@ -1,10 +1,13 @@
 $(function () {
+  // validation 확인
   idCheckFn();
   pwCheckFn();
   nameCheckFn();
   emailCheckFn();
   agreeCheck();
+  pwTypeCheck();
 
+  // 회원가입 버튼
   $("#signupBtn").click(function (e) {
     e.preventDefault();
     signupFn();
@@ -17,6 +20,28 @@ $(function () {
   // 마케팅 활용 및 광고성 정보 수신 동의
   marketingModal();
 });
+
+// 비밀번호 보이기/ 안보이기
+function pwTypeCheck() {
+  $("#pwViewType").click(function () {
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+      pwViewType.classList.add("active");
+    } else {
+      passwordInput.type = "password";
+      pwViewType.classList.remove("active");
+    }
+  });
+  $("#pwCheckViewType").click(function () {
+    if (passwordCheckInput.type === "password") {
+      passwordCheckInput.type = "text";
+      pwCheckViewType.classList.add("active");
+    } else {
+      passwordCheckInput.type = "password";
+      pwCheckViewType.classList.remove("active");
+    }
+  });
+}
 
 // 회원가입
 const userIdInput = document.getElementById("userId");
@@ -245,6 +270,7 @@ function signupFn() {
   }, 50);
 }
 
+// 전체 동의
 function agreeCheck() {
   const agreeAll = document.getElementById("agreeAll");
 
