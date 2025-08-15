@@ -55,7 +55,10 @@
                 </button>
               </div>
               <!-- 카테고리 -->
-              <p class="pd-category">상의 > 반소매 티셔츠 (로라로라)</p>
+              <p class="pd-category">
+                <span class="pd-cate-main">상의</span> >
+                <span class="pd-cate-sub">반소매 티셔츠 (로라로라)</span>
+              </p>
               <!-- 타이틀 -->
               <p class="pd-title">
                 [장원영 pick] MAISON DE ROLA EMBROIDERY T-SHIRT WHITE
@@ -66,17 +69,11 @@
                   <img src="../image/star.png" alt="별점" />
                   <p class="star-txt">4.8</p>
                 </div>
-                <div class="review">후기 3,928개</div>
+                <div class="review notWork">후기 3,928개</div>
               </div>
               <!--  이미지(상품 하위 카테고리) -->
               <div class="pds-image-wrap">
-                <div class="pds-image-box">
-                  <img src="../image/product/product1-1.webp" alt="" />
-                </div>
-                <div class="pds-image-box">
-                  <img src="../image/product/product1-1.webp" alt="" />
-                </div>
-                <div class="pds-image-box">
+                <div class="pds-image-box notWork">
                   <img src="../image/product/product1-1.webp" alt="" />
                 </div>
               </div>
@@ -100,17 +97,28 @@
                 </div>
                 <div class="select-pdbox-btm">
                   <div class="select-count-box">
-                    <button type="button" class="minus-btn" disabled>-</button>
-                    <p class="total-count">1</p>
-                    <button type="button" class="plus-btn">+</button>
+                    <button
+                      type="button"
+                      class="minus-btn"
+                      id="minusBtn"
+                      disabled
+                    >
+                      -
+                    </button>
+                    <p class="total-count" id="totalCount">1</p>
+                    <button type="button" class="plus-btn" id="plusBtn">
+                      +
+                    </button>
                   </div>
-                  <span class="select-total-price">34,400원 </span>
+                  <span class="select-total-price" id="selectTotalPrice"
+                    >34,400원
+                  </span>
                 </div>
               </div>
               <!-- 총 n개 총가격 -->
               <p class="total-select-txt">
-                <span>총 1개</span>
-                <span>34,400원</span>
+                <span id="totalCountTxt">총 1개</span>
+                <span id="totalSelectTxt">34,400원</span>
               </p>
 
               <div class="pd-btns">
