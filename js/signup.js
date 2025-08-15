@@ -231,10 +231,18 @@ function signupFn() {
     return;
   }
 
+  const agreeAge = document.getElementById("agreeAge");
   const agreePersonal = document.getElementById("agreePersonal");
   const agreeStore = document.getElementById("agreeStore");
-  console.log(agreePersonal.checked, agreeStore.checked);
+  console.log(agreeAge.checked, agreePersonal.checked, agreeStore.checked);
 
+  if (!agreeAge.checked) {
+    agreeResult.innerHTML = `<p class="validation red">
+                                  만 14세 이상 가입 가능합니다.
+                                </p>`;
+    agreeAge.focus();
+    agreeAge.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
   if (!agreePersonal.checked) {
     agreeResult.innerHTML = `<p class="validation red">
                                   개인정보 수집 및 이용 동의가 필요합니다.
@@ -278,7 +286,7 @@ function agreeCheck() {
   const agreeAll = document.getElementById("agreeAll");
 
   const agreeItems = document.querySelectorAll(
-    "#agreePersonal, #agreeStore, #agreeMarketing"
+    "agreeAge, #agreePersonal, #agreeStore, #agreeMarketing"
   );
 
   // 전체 동의 클릭 시 -> 나머지 체크박스 전부 선택/해제

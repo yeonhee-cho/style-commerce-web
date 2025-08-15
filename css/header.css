@@ -60,6 +60,10 @@
 }
 .snap-menu {
   padding: 0 8px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #cdcdce;
 }
 /* 오른쪽 메뉴 */
 .right-menu .out-menu li {
