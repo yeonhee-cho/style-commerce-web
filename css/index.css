@@ -175,7 +175,7 @@
   scrollbar-width: none;
   padding: 0 16px 24px 16px;
 }
-products-wrap .product-scroll::-webkit-scrollbar {
+.products-wrap .product-scroll::-webkit-scrollbar {
   display: none;
 }
 .products-wrap .product-list {
