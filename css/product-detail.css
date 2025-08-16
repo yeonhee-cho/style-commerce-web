@@ -116,7 +116,7 @@
   width: 30%;
   min-width: 300px;
   max-width: 434px;
-  min-height: 100%;
+  min-height: calc(100% - 32px);
   margin: 16px;
   padding: 12px 16px 24px;
   background-color: #fff;
@@ -477,4 +477,53 @@
 
 /* 하단 영역 */
 .pd-detail-btm {
+  width: 100%;
+  padding: 20px 16px;
+}
+
+.seg {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 58px;
+  margin-bottom: 10px;
+  /* background-color: #ebebeb; */
+}
+.seg .seg-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #8a8a8a;
+  text-align: center;
+}
+.seg .seg-item.active {
+  font-weight: 600;
+  color: #fff;
+  background-color: #666;
+  /* box-shadow: inset 0px -2px 4px -3px rgba(0, 0, 0, 0.3); */
+}
+
+.detailinfo-img-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 16px 0;
+}
+
+.detailinfo-img-area {
+  min-width: 960px;
+  width: 100%;
+  max-width: 1400px;
+  background-color: #fff;
+}
+.detailinfo-img-area img {
+  width: 100%;
+  object-fit: contain;
 }

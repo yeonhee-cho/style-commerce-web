@@ -14,6 +14,8 @@ function productData() {
     const productData = JSON.parse(productDataString);
 
     // 데이터 넣기
+    document.title = `${productData.product_name} - 상품 상세 | NOVER`;
+
     // 이미지 배열
     imgListScroll(productData);
 
@@ -67,41 +69,22 @@ function productData() {
       ".like-btn span"
     ).textContent = `${productData.product_likes.toLocaleString()}`;
 
-    // 수량 증가 값 변경
-    const minusBtn = document.getElementById("minusBtn");
-    const plusBtn = document.getElementById("plusBtn");
-    const totalCount = document.getElementById("totalCount");
-    const selectTotalPrice = document.getElementById("selectTotalPrice");
-    const totalSelectTxt = document.getElementById("totalSelectTxt");
+    // 수량 영역
+    numCheckFn(productData);
 
-    let count = 1;
-    const optionPrice = Number(productData.sale_price);
-    console.log(optionPrice);
+    // detailInfoImg
+    const detailInfoImg = document.querySelector("#detailInfoImg");
 
-    minusBtn.addEventListener("click", () => {
-      if (count > 1) count--;
-      updatePrice();
+    productData.image_detail.forEach((imgUrl, index) => {
+      const img = document.createElement("img");
+      img.src = imgUrl;
+      img.alt = `${productData.product_name} ${index + 1}`;
+      detailInfoImg.appendChild(img);
     });
-
-    plusBtn.addEventListener("click", () => {
-      count++;
-      updatePrice();
-    });
-
-    function updatePrice() {
-      totalCount.textContent = count;
-      totalCountTxt.textContent = `총 ${count}개`;
-      selectTotalPrice.textContent =
-        (optionPrice * count).toLocaleString() + "원";
-      totalSelectTxt.textContent =
-        (optionPrice * count).toLocaleString() + "원";
-      minusBtn.disabled = count === 1;
-    }
-
-    updatePrice();
   }
 }
 
+// 이미지 왼쪽 영역 데이터 불러오기 + 슬라이드 기능
 function imgListScroll(productData) {
   const imgList = document.querySelector(".pd-imglist-box");
   const prevBtn = document.getElementById("leftImgPrev");
@@ -170,6 +153,7 @@ function imgListScroll(productData) {
   window.addEventListener("load", updateBtns);
 }
 
+// 이미지 디테일 보기 모달
 function imgDetailModal() {
   // 큰 이미지 클릭 → 모달 열기
   const mainImage = document.querySelector(".pd-image-area img");
@@ -193,4 +177,39 @@ function imgDetailModal() {
   modalContent.addEventListener("click", (e) => {
     if (e.target === modalContent) modalContent.style.display = "none";
   });
+}
+
+// 수량 체크 기능
+function numCheckFn(productData) {
+  // 수량 증가 값 변경
+  const minusBtn = document.getElementById("minusBtn");
+  const plusBtn = document.getElementById("plusBtn");
+  const totalCount = document.getElementById("totalCount");
+  const selectTotalPrice = document.getElementById("selectTotalPrice");
+  const totalSelectTxt = document.getElementById("totalSelectTxt");
+
+  let count = 1;
+  const optionPrice = Number(productData.sale_price);
+  console.log(optionPrice);
+
+  minusBtn.addEventListener("click", () => {
+    if (count > 1) count--;
+    updatePrice();
+  });
+
+  plusBtn.addEventListener("click", () => {
+    count++;
+    updatePrice();
+  });
+
+  function updatePrice() {
+    totalCount.textContent = count;
+    totalCountTxt.textContent = `총 ${count}개`;
+    selectTotalPrice.textContent =
+      (optionPrice * count).toLocaleString() + "원";
+    totalSelectTxt.textContent = (optionPrice * count).toLocaleString() + "원";
+    minusBtn.disabled = count === 1;
+  }
+
+  updatePrice();
 }
