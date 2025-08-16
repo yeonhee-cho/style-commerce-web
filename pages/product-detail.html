@@ -31,10 +31,15 @@
             <!-- 상품 이미지 영역(왼) -->
             <div class="pd-image-wrap">
               <!-- 이미지 다수 존재, 클릭 시 이미지디테일 존재 -->
-              <div class="pd-images-area">
-                <div class="pd-image-area">
-                  <img src="../image/product/product1-1.webp" alt="" />
+              <div class="pd-imglist-wrap">
+                <div class="pd-imglist-box">
+                  <!-- 이미지 들어가는 곳 -->
                 </div>
+                <div class="left-img-prev" id="leftImgPrev"></div>
+                <div class="left-img-next" id="leftImgNext"></div>
+              </div>
+              <div class="pd-image-area">
+                <img src="" alt="" />
               </div>
             </div>
 
@@ -145,3 +150,11 @@
     <script src="../js/product-detail.js"></script>
   </body>
 </html>
+
+<div class="image-modal" id="imageModal">
+  <div class="close-modal">&times;</div>
+
+  <div class="modal-content" id="modalContent">
+    <img class="modaldetail-img" id="modalImage" alt="상품 이미지 디테일" />
+  </div>
+</div>

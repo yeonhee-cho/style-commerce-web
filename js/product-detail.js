@@ -2,6 +2,7 @@
 // 2.js 데이터 추출해서 구현
 $(function () {
   productData();
+  imgDetailModal();
 });
 
 function productData() {
@@ -13,7 +14,10 @@ function productData() {
     const productData = JSON.parse(productDataString);
 
     // 데이터 넣기
-    // 이미지
+    // 이미지 배열
+    imgListScroll(productData);
+
+    // 큰 이미지
     document.querySelector(".pd-image-area img").src =
       productData.image_urls[0];
 
@@ -96,4 +100,97 @@ function productData() {
 
     updatePrice();
   }
+}
+
+function imgListScroll(productData) {
+  const imgList = document.querySelector(".pd-imglist-box");
+  const prevBtn = document.getElementById("leftImgPrev");
+  const nextBtn = document.getElementById("leftImgNext");
+  const mainImage = document.querySelector(".pd-image-area img");
+  const imageUrls = productData.image_urls;
+
+  // 이미지 넣기
+  imageUrls.forEach((url, index) => {
+    const div = document.createElement("div");
+    div.classList.add("pdimg-item");
+
+    const img = document.createElement("img");
+    img.src = url;
+    img.alt = `상품 이미지 ${index + 1}`;
+
+    // 클릭이벤트 -> 큰 이미지 변경
+    img.addEventListener("click", () => {
+      mainImage.src = url;
+    });
+
+    div.appendChild(img);
+    imgList.appendChild(div);
+  });
+
+  // 이미지 로딩된 후 스크롤 버튼 생성
+  const images = imgList.querySelectorAll("img");
+  let loaded = 0;
+  images.forEach((img) => {
+    img.onload = () => {
+      loaded++;
+      if (loaded === images.length) updateBtns(); // 이미지 다 로드되면 버튼 상태 체크
+    };
+  });
+
+  // 스크롤 이동 거리 계산
+  function pageStep() {
+    return Math.max(1, imgList.clientHeight - 16);
+  }
+
+  // 버튼 생성
+  function updateBtns() {
+    const scrollable = imgList.scrollHeight > imgList.clientHeight + 5;
+    // 스크롤 필요 없는 경우 → 둘 다 숨김
+    if (!scrollable) {
+      prevBtn.style.display = "none";
+      nextBtn.style.display = "none";
+      return;
+    }
+    // 버튼 조건 숩김 보임 체크
+    prevBtn.style.display = imgList.scrollTop <= 0 ? "none" : "block";
+    nextBtn.style.display =
+      imgList.scrollTop + imgList.clientHeight >= imgList.scrollHeight - 1
+        ? "none"
+        : "block";
+  }
+
+  // 버튼 클릭 시
+  prevBtn.onclick = () =>
+    imgList.scrollBy({ top: -pageStep(), behavior: "smooth" });
+  nextBtn.onclick = () =>
+    imgList.scrollBy({ top: pageStep(), behavior: "smooth" });
+
+  // 스크롤 이벤트
+  imgList.addEventListener("scroll", updateBtns);
+  window.addEventListener("load", updateBtns);
+}
+
+function imgDetailModal() {
+  // 큰 이미지 클릭 → 모달 열기
+  const mainImage = document.querySelector(".pd-image-area img");
+  const modal = document.getElementById("imageModal");
+  const modalContent = document.getElementById("modalContent");
+  const modalImage = document.getElementById("modalImage");
+  const closeModal = modal.querySelector(".close-modal");
+
+  mainImage.addEventListener("click", () => {
+    modal.style.display = "block";
+    modalImage.src = mainImage.src;
+  });
+
+  closeModal.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) modal.style.display = "none";
+  });
+  modalContent.addEventListener("click", (e) => {
+    if (e.target === modalContent) modalContent.style.display = "none";
+  });
 }
