@@ -115,11 +115,21 @@
   overflow-y: auto;
   width: 30%;
   min-width: 300px;
-  max-width: 434px;
+  max-width: 464px;
   min-height: calc(100% - 32px);
   margin: 16px;
   padding: 12px 16px 24px;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-between;*/ /* TODO */
+  align-items: center;
+}
+.pddetail-cont-top {
+  width: 100%;
+}
+.pddetail-cont-btm {
+  width: 100%;
 }
 
 /* 모달 */
