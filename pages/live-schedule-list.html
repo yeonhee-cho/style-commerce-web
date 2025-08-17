@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      maximum-scale="1.0,"
+      user-scalable="no"
+    />
+    <title>상품 리스트 | NOVER</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/live-schedule-list.css" />
+    <link rel="icon" type="image/png" href="../image/logo/favicon.png" />
+  </head>
+  <body>
+    <div class="schedule-list-container">
+      <div class="schedule-list-inner-container">
+        <!-- *** header *** -->
+        <div data-include-path="header.html"></div>
+
+        <div class="schedule-list-inner-bg">
+          <h3>NOVER 라이브 편성표 전체 리스트</h3>
+          <div class="schedule-wrap">
+            <div class="schedule-list" id="scheduleResult">
+              <!-- 편성표 내용 들어올 영역 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/live-schedule-list.js"></script>
+    <script src="../js/header.js"></script>
+  </body>
+</html>
