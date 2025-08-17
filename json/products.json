@@ -1418,7 +1418,10 @@
     "product_likes": 23456,
     "is_liked": false,
     "image_urls": [
-      "https://image.msscdn.net/thumbnails/images/goods_img/20250306/4866701/4866701_17412487361330_500.jpg?w=780"
+      "https://image.msscdn.net/thumbnails/images/goods_img/20250306/4866701/4866701_17412487361330_500.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/20250306/4866701/detail_4866701_17412487381949_500.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/20250306/4866701/detail_4866701_17412487393240_500.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/20250306/4866701/detail_4866701_17412487405849_500.jpg"
     ],
     "image_detail": [
       "https://www.leecom01.kr//img/img/nf/notice.jpg",
