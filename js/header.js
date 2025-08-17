@@ -6,28 +6,40 @@ $(function () {
   }, 100);
 });
 
-// TODO 가져오기 마이페이지에 나열
-const loggedInUserString = sessionStorage.getItem("loggedInUser");
-let loggedInUser = null;
-
 //로그인 되어 있을 시 변경
 function loginCheck() {
   const loginBtn = document.getElementById("loginBtn");
   const logoutBtn = document.getElementById("logoutBtn");
+  const mypageLink = document.querySelector('a[href="/pages/mypage.html"]');
 
-  // TODO 가져오기 마이페이지에 나열
+  // 가져오기
+  const loggedInUserString = sessionStorage.getItem("loggedInUser");
+  let loggedInUser = null;
   if (loggedInUserString) {
     loggedInUser = JSON.parse(loggedInUserString);
+  } else {
   }
 
   if (loggedInUser) {
     // 로그인 상태
     loginBtn.style.display = "none";
     logoutBtn.style.display = "block";
+    if (mypageLink) {
+      mypageLink.setAttribute("href", "/pages/mypage.html");
+      mypageLink.onclick = null;
+    }
   } else {
     // 로그아웃 상태
     loginBtn.style.display = "block";
     logoutBtn.style.display = "none";
+    if (mypageLink) {
+      mypageLink.setAttribute("href", "#");
+      mypageLink.onclick = function (e) {
+        e.preventDefault();
+        alert("로그인이 필요합니다. \n로그인 페이지로 이동합니다.");
+        window.location.href = "/pages/account/login.html";
+      };
+    }
   }
 }
 
