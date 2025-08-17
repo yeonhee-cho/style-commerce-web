@@ -17,6 +17,41 @@ window.addEventListener("load", async () => {
           //  특정 페이지에서만 특정 태그를 숨기기
           const currentPath = window.location.pathname;
 
+          const segmentItems = tempDiv.querySelectorAll(
+            ".segment-header .segment-wrap .segment-item"
+          );
+          segmentItems.forEach((el) => el.classList.remove("active"));
+
+          const homeSeg = tempDiv.querySelector("#home");
+          const productSeg = tempDiv.querySelector("#productAll");
+          const recommendSeg = tempDiv.querySelector("#recommend");
+          const rankingSeg = tempDiv.querySelector("#ranking");
+          const saleSeg = tempDiv.querySelector("#sale");
+          const liveScheduleSeg = tempDiv.querySelector("#liveSchedule");
+          const contentSeg = tempDiv.querySelector("#contentList");
+          if (currentPath === "/" || currentPath.includes("index.html")) {
+            console.log("home");
+            if (homeSeg) homeSeg.classList.add("active");
+          } else if (currentPath.includes("/product-list.html")) {
+            console.log("product");
+            if (productSeg) productSeg.classList.add("active");
+          } else if (currentPath.includes("/recommend-list.html")) {
+            console.log("recommend");
+            if (recommendSeg) recommendSeg.classList.add("active");
+          } else if (currentPath.includes("/ranking-list.html")) {
+            console.log("ranking");
+            if (rankingSeg) rankingSeg.classList.add("active");
+          } else if (currentPath.includes("/sale-list.html")) {
+            console.log("sale");
+            if (saleSeg) saleSeg.classList.add("active");
+          } else if (currentPath.includes("/live-schedule-list.html")) {
+            console.log("schedule");
+            if (liveScheduleSeg) liveScheduleSeg.classList.add("active");
+          } else if (currentPath.includes("/content-list.html")) {
+            console.log("content");
+            if (contentSeg) contentSeg.classList.add("active");
+          }
+
           if (
             currentPath.includes("login.html") ||
             currentPath.includes("signup.html") ||

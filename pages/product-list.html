@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      maximum-scale="1.0,"
+      user-scalable="no"
+    />
+    <title>상품 리스트 | NOVER</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/product-list.css" />
+    <link rel="icon" type="image/png" href="../image/logo/favicon.png" />
+  </head>
+  <body>
+    <div class="pd-list-container">
+      <div class="pd-list-inner-container">
+        <!-- *** header *** -->
+        <div data-include-path="header.html"></div>
+
+        <div class="pd-list-inner-bg">
+          <h3>전체 상품 리스트</h3>
+          <div class="products-wrap">
+            <div class="product-list" id="pdResult">
+              <!-- 상품 내용 들어올 영역 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/product-list.js"></script>
+    <script src="../js/header.js"></script>
+  </body>
+</html>
