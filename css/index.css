@@ -458,7 +458,7 @@ content-wrap .content-scroll::-webkit-scrollbar {
   scrollbar-width: none;
   padding: 0 16px 24px 16px;
 }
-schedule-wrap .schedule-scroll::-webkit-scrollbar {
+.schedule-wrap .schedule-scroll::-webkit-scrollbar {
   display: none;
 }
 .schedule-list {
