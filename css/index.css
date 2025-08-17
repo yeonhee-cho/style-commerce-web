@@ -64,7 +64,7 @@
   max-width: 33.3333%;
   aspect-ratio: 1/1;
   overflow: hidden;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .banner-list .banner-item img {
   width: 480px;
