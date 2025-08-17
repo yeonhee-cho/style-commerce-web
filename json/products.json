@@ -5,6 +5,7 @@
     "sale_order": 1,
     "brand_logo": "../image/brand/trillion.png",
     "brand_name": "트릴리온",
+    "brand_likes_count": false,
     "brand_likes": 28451,
     "category_main": "상의",
     "category_sub": "셔츠",
@@ -45,6 +46,7 @@
     "sale_order": 2,
     "brand_logo": "../image/brand/urbandtype.png",
     "brand_name": "어반디타입",
+    "brand_likes_count": false,
     "brand_likes": 105823,
     "category_main": "하의",
     "category_sub": "데님 팬츠",
@@ -72,7 +74,20 @@
       "https://image.msscdn.net/thumbnails/images/prd_img/20250325/4943754/detail_4943754_17428926905039_500.jpg",
       "https://image.msscdn.net/thumbnails/snap/images/2025/05/19/d5bd1ec9253a417ab3d26bd709dc4108.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      [
+        "https://image.msscdn.net/thumbnails/images/prd_img/20250623160059436402952156858fbab6a8be.jpg?w=1200",
+        "https://image.msscdn.net/thumbnails/images/prd_img/20250623160058381252852906858fbaa5d150.jpg?w=1200",
+        "https://image.msscdn.net/thumbnails/images/prd_img/20250623160102118596608756858fbae1cf50.jpg?w=1200",
+        "https://image.msscdn.net/thumbnails/images/prd_img/20250623160101925590172586858fbade1fa2.jpg?w=1200",
+        "https://image.msscdn.net/thumbnails/images/prd_img/20250623160101769482405596858fbadbbdd4.jpg?w=1200",
+        "https://image.msscdn.net/thumbnails/images/prd_img/20250623160101711572275746858fbadadba0.jpg?w=1200",
+        "https://image.msscdn.net/thumbnails/images/prd_img/20250623160103740753985316858fbafb4d9c.jpg?w=1200",
+        "https://image.msscdn.net/thumbnails/images/prd_img/20250623160101458768346066858fbad7001b.jpg?w=1200",
+        "https://image.msscdn.net/thumbnails/images/prd_img/20250623160059160668913836858fbab273a8.jpg?w=1200",
+        "https://image.msscdn.net/thumbnails/images/prd_img/20250623160100864652457276858fbacd319a.jpg?w=1200"
+      ]
+    ],
     "link": "https://www.musinsa.com/products/4943754"
   },
   {
@@ -81,6 +96,7 @@
     "sale_order": 3,
     "brand_logo": "../image/brand/compagno.png",
     "brand_name": "꼼파뇨",
+    "brand_likes_count": false,
     "brand_likes": 76542,
     "category_main": "상의",
     "category_sub": "반소매 티셔츠",
@@ -101,7 +117,12 @@
       "https://image.msscdn.net/thumbnails/images/prd_img/20250326/4949728/detail_4949728_17436427365896_500.jpg",
       "https://image.msscdn.net/thumbnails/snap/images/2025/06/02/b1597ece7ebf404b84d9a1d954185983.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://image.msscdn.net/thumbnails/images/prd_img/202503271224509728292629967e4c502ed824.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202503271224509932942689067e4c502f2814.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202504031012213710732370667ede0755a98a.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202504031012211402702917067ede075223f5.jpg?w=1200"
+    ],
     "link": "https://www.musinsa.com/products/4949728"
   },
   {
@@ -110,6 +131,7 @@
     "sale_order": 4,
     "brand_logo": "../image/brand/compagno.png",
     "brand_name": "꼼파뇨",
+    "brand_likes_count": false,
     "brand_likes": 76542,
     "category_main": "상의",
     "category_sub": "반소매 티셔츠",
@@ -130,7 +152,12 @@
       "https://image.msscdn.net/thumbnails/images/prd_img/20250507/5092402/detail_5092402_17467025119811_500.jpg",
       "https://image.msscdn.net/thumbnails/images/prd_img/20250507/5092402/detail_5092402_17467025129128_500.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025050820083905127994083681c90b70c857.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025050820083900804251404681c90b701f73.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025050820083907185993651681c90b7118bc.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025050820083841256318747681c90b664b9f.jpg?w=1200"
+    ],
     "link": "https://www.musinsa.com/products/5092402"
   },
   {
@@ -139,6 +166,7 @@
     "sale_order": 5,
     "brand_logo": "../image/brand/ninez.png",
     "brand_name": "나인제트",
+    "brand_likes_count": false,
     "brand_likes": 15234,
     "category_main": "상의",
     "category_sub": "반소매 티셔츠",
@@ -170,7 +198,24 @@
       "https://image.msscdn.net/thumbnails/images/prd_img/20250321/4928526/detail_4928526_17433981050998_500.jpg",
       "https://image.msscdn.net/thumbnails/images/prd_img/20250321/4928526/detail_4928526_17433981058322_500.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://ninezshop.co.kr/web/product/ninez/musinsa/25PK02-MG-R.png",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202503311421458297821679467ea2669ca961.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202503311421456240265712967ea2669985a2.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025070914394306544760681686e009f0ffb2.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025070914394172823334218686e009db1cb2.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025070914394281669072884686e009ec763c.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025070914394240072153748686e009e61d5b.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025070914394290032768888686e009edbcf2.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025070914394207400652940686e009e12121.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025070914394245813171339686e009e6fd9a.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025070914394212890860862686e009e1f797.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202503311421466256398092467ea266a98bf2.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202503311421458154025893367ea2669c7134.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202503311421458625698969867ea2669d2972.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202503311421453271141702467ea26694fdd4.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202503311421455991049507767ea26699244a.jpg?w=1200"
+    ],
     "link": "https://www.musinsa.com/products/4928526"
   },
   {
@@ -179,6 +224,7 @@
     "sale_order": 6,
     "brand_logo": "../image/brand/they.png",
     "brand_name": "데이",
+    "brand_likes_count": false,
     "brand_likes": 8942,
     "category_main": "아우터",
     "category_sub": "카디건",
@@ -198,7 +244,15 @@
       "https://image.msscdn.net/thumbnails/images/prd_img/20250513/5107624/detail_5107624_17471182716631_500.jpg",
       "https://image.msscdn.net/thumbnails/images/prd_img/20250513/5107624/detail_5107624_17471182724304_500.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://apmthey.cafe24.com/web/25summer/product_detail_page/thg2mkc001/thg2mkc001_colorset_01.jpg",
+      "https://apmthey.cafe24.com/web/25summer/product_detail_page/thg2mkc001/thg2mkc001_colorset_02.jpg",
+      "https://apmthey.cafe24.com/web/25summer/product_detail_page/thg2mkc001/thg2mkc001_colorset_03.jpg",
+      "https://apmthey.cafe24.com/web/25summer/product_detail_page/thg2mkc001/thg2mkc001_colorset_04.jpg",
+      "https://apmthey.cafe24.com/web/25summer/product_detail_page/thg2mkc001/thg2mkc001_colorset_05.jpg",
+      "https://apmthey.cafe24.com/web/25summer/product_detail_page/thg2mkc001/thg2mkc001_colorset_06.jpg",
+      "https://apmthey.cafe24.com/web/25summer/product_detail_page/thg2mkc001/thg2mkc001_colorset_07.jpg"
+    ],
     "link": "https://www.musinsa.com/products/5107624"
   },
   {
@@ -207,6 +261,7 @@
     "sale_order": 7,
     "brand_logo": "../image/brand/sculptor.png",
     "brand_name": "스컬프터",
+    "brand_likes_count": false,
     "brand_likes": 150489,
     "category_main": "가방",
     "category_sub": "숄더백",
@@ -236,7 +291,10 @@
       "https://image.msscdn.net/thumbnails/snap/images/2025/03/21/552c008486184d9290d46d9ad6986de4.jpg",
       "https://image.msscdn.net/thumbnails/snap/images/2025/03/16/ef1913c8358347138260c58d1690d6ab.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://scptor123.cafe24.com/web/product/big/25SS/2nd/Stud_Metallic_Hobo_Bag_Gun_Metal_1.jpg",
+      "https://scptor123.cafe24.com/web/product/big/25SS/2nd/Stud_Metallic_Hobo_Bag_Gun_Metal_2.jpg"
+    ],
     "link": "https://www.musinsa.com/products/4787706"
   },
   {
@@ -245,6 +303,7 @@
     "sale_order": 8,
     "brand_logo": "../image/brand/filluminate.png",
     "brand_name": "필루미네이트",
+    "brand_likes_count": false,
     "brand_likes": 210345,
     "category_main": "아우터",
     "category_sub": "윈드브레이커",
@@ -275,7 +334,16 @@
       "https://image.msscdn.net/thumbnails/mfile_s01/_shopstaff/staff_652e240fc2038.jpg",
       "https://image.msscdn.net/thumbnails/mfile_s01/_shopstaff/staff_650156449e6d8.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://filluminate.diskn.com/p7KHMVSg0x",
+      "https://filluminate.diskn.com/Q7KHMVRosP",
+      "https://filluminate.diskn.com/Z7KHMVRKHN",
+      "https://filluminate.diskn.com/y7KHMVSAwc",
+      "https://filluminate.diskn.com/E7KHMVWMkS",
+      "https://filluminate.diskn.com/y7KHMVXY6I",
+      "https://filluminate.diskn.com/M7KHMVZ6DV",
+      "https://filluminate.diskn.com/o7KHMVYOQC"
+    ],
     "link": "https://www.musinsa.com/products/3455892"
   },
   {
@@ -284,6 +352,7 @@
     "sale_order": 9,
     "brand_logo": "../image/brand/mahagrid.png",
     "brand_name": "마하그리드",
+    "brand_likes_count": false,
     "brand_likes": 350123,
     "category_main": "상의",
     "category_sub": "반소매 티셔츠",
@@ -303,7 +372,10 @@
       "https://image.msscdn.net/thumbnails/snap/images/2025/06/25/fd9dd685409449f783a4a2e7765e9d7e.jpg",
       "https://image.msscdn.net/thumbnails/snap/images/2025/06/25/a083689e22174cef9eab82725eddfaa2.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://ikkorea.i.hhosting.kr/mahagrid/product/top/MG2FMMT546AWH.jpg",
+      "https://ikkorea.i.hhosting.kr/mahagrid/notice_bottom.jpg"
+    ],
     "link": "https://www.musinsa.com/products/5161178"
   },
   {
@@ -312,6 +384,7 @@
     "sale_order": 10,
     "brand_logo": "../image/brand/misekiseoul.png",
     "brand_name": "미세키서울",
+    "brand_likes_count": false,
     "brand_likes": 12345,
     "category_main": "하의",
     "category_sub": "미니스커트",
@@ -332,7 +405,12 @@
       "https://image.msscdn.net/thumbnails/snap/images/2025/04/01/3b80cc6e667f47ff9b958e54081f4389.jpg",
       "https://image.msscdn.net/thumbnails/snap/images/2025/03/26/a5979f30d8d443d781adbefe4eda2f0c.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://image.msscdn.net/thumbnails/images/prd_img/20250617150419592961434726851056390c4d.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025061715042064944131725685105649e8ea.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202506171504203491056272668510564553bd.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202506171504185981888221068510562920b8.jpg?w=1200"
+    ],
     "link": "https://www.musinsa.com/products/4761169"
   },
   {
@@ -341,6 +419,7 @@
     "sale_order": 11,
     "brand_logo": "../image/brand/wooalong.png",
     "brand_name": "우알롱",
+    "brand_likes_count": false,
     "brand_likes": 289456,
     "category_main": "모자",
     "category_sub": "볼캡",
@@ -359,7 +438,47 @@
       "https://image.msscdn.net/thumbnails/snap/images/2025/07/04/0ea89c5cb67a45e18ad5e54cf8b6a0c8.jpg",
       "https://image.msscdn.net/thumbnails/snap/images/2025/06/23/96a2f33e482f4cafae06dcc921f7409f.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085720680354692685e1959327dc.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085859588170044685e195a917b0.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085551818094340685e19577e82d.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085655287798670685e195886fb4.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085708680268838685e19591531b.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085795218934636685e1959e8784.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085783250350246685e1959cb3fe.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085785923691940685e1959d1c6a.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085779354479000685e1959c1bcf.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085824892416141685e195a3cc70.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085789428388957685e1959da552.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085770876994239685e1959ad0a9.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085792913577467685e1959e2d76.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085822707175192685e195a37707.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085800156460908685e195a00623.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085759063984227685e195990339.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085784339212245685e1959cde87.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085788659962519685e1959d874e.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085772792581985685e1959b1b7e.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085791561660296685e1959df8a7.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085801557239938685e195a03cdb.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085783384192146685e1959cb93a.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085775922312720685e1959b95be.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085754559234672685e195985342.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085784830960340685e1959cf1bc.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085771222628994685e1959ade29.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085768170337950685e1959a66ef.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085732675143735685e19594fc67.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085765933957032685e1959a0f95.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085777204457110685e1959bc7d5.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085825824846425685e195a3f0d6.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085771227084188685e1959ade56.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085778655274883685e1959c007f.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085812875890694685e195a1f700.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085783878314259685e1959ccc86.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085778743624946685e1959c03f4.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085581645472951685e1957c754f.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085528426136642685e195745670.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062713085538225891927685e19575d53a.jpg?w=1200"
+    ],
     "link": "https://www.musinsa.com/products/4620503"
   },
   {
@@ -368,6 +487,7 @@
     "sale_order": 12,
     "brand_logo": "../image/brand/engbrox.png",
     "brand_name": "앵브록스",
+    "brand_likes_count": false,
     "brand_likes": 67890,
     "category_main": "액세서리",
     "category_sub": "귀걸이",
@@ -383,7 +503,9 @@
       "https://image.msscdn.net/thumbnails/images/goods_img/20250224/4821061/4821061_17403605989277_500.jpg",
       "https://image.msscdn.net/thumbnails/images/prd_img/20250224/4821061/detail_4821061_17403889006119_500.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://image.msscdn.net/images/prd_img/202503051514490207443681867c7ebd905112.jpg"
+    ],
     "link": "https://www.musinsa.com/products/4821061"
   },
   {
@@ -392,6 +514,7 @@
     "sale_order": 13,
     "brand_logo": "../image/brand/nicknicole.png",
     "brand_name": "닉앤니콜",
+    "brand_likes_count": false,
     "brand_likes": 98765,
     "category_main": "가방",
     "category_sub": "숄더백",
@@ -430,7 +553,15 @@
       "https://image.msscdn.net/thumbnails/snap/images/2024/11/28/8cb96a7cec504b63a2068b886b8ff87f.jpg",
       "https://image.msscdn.net/thumbnails/snap/images/2024/09/27/06d4d259e2564f58ae6f33d702ec0b3e.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://tcloud.hgodo.com/N_W_2023/w0221_top.jpg",
+      "https://tcloud.hgodo.com/N_W_2023/w0221_35_1.jpg",
+      "https://tcloud.hgodo.com/N_W_2023/w0221_35_2-1.jpg",
+      "https://tcloud.hgodo.com/N_W_2023/w0221_35_2-2.jpg",
+      "https://tcloud.hgodo.com/N_W_2023/w0221_35_2-3.jpg",
+      "https://tcloud.hgodo.com/N_W_2023/w0221_35_3.jpg",
+      "https://tcloud.hgodo.com/N_W_2021/notice_1.jpg"
+    ],
     "link": "https://www.musinsa.com/products/3097307"
   },
   {
@@ -439,6 +570,7 @@
     "sale_order": 14,
     "brand_logo": "../image/brand/adidas.png",
     "brand_name": "아디다스",
+    "brand_likes_count": false,
     "brand_likes": 1234567,
     "category_main": "아우터",
     "category_sub": "트레이닝/저지",
@@ -458,7 +590,12 @@
       "https://image.msscdn.net/thumbnails/images/prd_img/20230915/3563185/detail_3563185_16950017842425_500.jpg",
       "https://image.msscdn.net/thumbnails/images/prd_img/20230915/3563185/detail_3563185_16950017850606_500.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://image.msscdn.net/thumbnails/images/prd_img/20250728133721666870649916886fe81a2cfe.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/20250728133721983120861246886fe81f0057.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/20250728133721445164849806886fe816caf5.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/display/images/common/2024/11/07/200f47b15dbc4ab2a0df1ac5b5fc174e.jpg?w=1200"
+    ],
     "link": "https://www.musinsa.com/products/3563185"
   },
   {
@@ -467,6 +604,7 @@
     "sale_order": 15,
     "brand_logo": "../image/brand/adidas.png",
     "brand_name": "아디다스",
+    "brand_likes_count": false,
     "brand_likes": 1234567,
     "category_main": "아우터",
     "category_sub": "트레이닝/저지",
@@ -486,7 +624,10 @@
       "https://image.msscdn.net/thumbnails/images/prd_img/20240328/3999802/detail_3999802_17116109371804_500.jpg",
       "https://image.msscdn.net/thumbnails/images/prd_img/20240328/3999802/detail_3999802_17116109380654_500.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://image.msscdn.net/thumbnails/display/images/common/2023/04/10/b4bc556ce7cb459cb8a31dc9d4f00edb.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202408191521333251399559066c2e46d4f61a.jpg?w=1200"
+    ],
     "link": "https://www.musinsa.com/products/3999802"
   },
   {
@@ -495,6 +636,7 @@
     "sale_order": 16,
     "brand_logo": "../image/brand/dossy.png",
     "brand_name": "도씨",
+    "brand_likes_count": false,
     "brand_likes": 5432,
     "category_main": "언더웨어",
     "category_sub": "잠옷",
@@ -517,7 +659,14 @@
       "https://image.msscdn.net/thumbnails/images/prd_img/20250319/4917563/detail_4917563_17423720432763_500.jpg",
       "https://image.msscdn.net/thumbnails/snap/images/2025/06/20/5dcc9518ea404cc682a010f8cd99c639.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://wlwhs0525.openhost.cafe24.com/25SS/brandstory2.jpg",
+      "https://wlwhs0525.openhost.cafe24.com/25SS/pure/Pure_short_sleeve_01.jpg",
+      "https://wlwhs0525.openhost.cafe24.com/25SS/pure/Pure_short_sleeve_02.jpg",
+      "https://wlwhs0525.openhost.cafe24.com/25SS/pure/Pure_short_sleeve_03.jpg",
+      "https://wlwhs0525.openhost.cafe24.com/25SS/pure/Pure_short_sleeve_04.jpg",
+      "https://wlwhs0525.openhost.cafe24.com/25SS/pure/Pure_short_sleeve_05_2pack.jpg"
+    ],
     "link": "https://www.musinsa.com/products/4917563"
   },
   {
@@ -526,6 +675,7 @@
     "sale_order": 17,
     "brand_logo": "../image/brand/newera.png",
     "brand_name": "뉴에라",
+    "brand_likes_count": false,
     "brand_likes": 450123,
     "category_main": "모자",
     "category_sub": "볼캡",
@@ -547,7 +697,10 @@
       "https://image.msscdn.net/thumbnails/images/prd_img/20250415/5029138/detail_5029138_17458938557247_500.jpg",
       "https://image.msscdn.net/thumbnails/images/prd_img/20250415/5029138/detail_5029138_17458938568802_500.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025072118011741918193563687e01dd66578.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025072118011786460277141687e01ddd3166.jpg"
+    ],
     "link": "https://www.musinsa.com/products/5029138"
   },
   {
@@ -556,6 +709,7 @@
     "sale_order": 18,
     "brand_logo": "../image/brand/adidas.png",
     "brand_name": "아디다스",
+    "brand_likes_count": false,
     "brand_likes": 1234567,
     "category_main": "신발",
     "category_sub": "스니커즈",
@@ -574,7 +728,13 @@
       "https://image.msscdn.net/thumbnails/images/prd_img/20240905/4409450/detail_4409450_17259301053260_500.jpg",
       "https://image.msscdn.net/thumbnails/images/prd_img/20240905/4409450/detail_4409450_17259301063260_500.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://image.msscdn.net/thumbnails/images/prd_img/202409101001525556831294966df9a8087aac.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202409101001526893502631266df9a80a84ce.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202409101001527505514839066df9a80b73df.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202409101001527596568916466df9a80b9770.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202409101001527474001356466df9a80b6790.jpg"
+    ],
     "link": "https://www.musinsa.com/products/4409450"
   },
   {
@@ -583,6 +743,7 @@
     "sale_order": 19,
     "brand_logo": "../image/brand/tawntoe.png",
     "brand_name": "토앤토",
+    "brand_likes_count": false,
     "brand_likes": 48321,
     "category_main": "신발",
     "category_sub": "샌들/슬리퍼",
@@ -604,7 +765,33 @@
       "https://image.msscdn.net/thumbnails/images/prd_img/20250424/5060639/detail_5060639_17461685463625_500.jpg",
       "https://image.msscdn.net/thumbnails/images/prd_img/20250424/5060639/detail_5060639_17461685474614_500.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgddh/1.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgddh/2.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgddh/3.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgddh/4.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgddh/5.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgddh/6.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgddh/7.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgddh/8.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgddh/9.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgddh/10.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgddh/11.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgddh/12.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgddh/13.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgddh/14.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgddh/15.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgddh/16.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgddh/17.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgddh/18.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgddh/19.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgddh/20.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/30.gif",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgddh/31.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgddh/32.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgddh/33.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/2025_info.jpg"
+    ],
     "link": "https://www.musinsa.com/products/5060639"
   },
   {
@@ -613,6 +800,7 @@
     "sale_order": 20,
     "brand_logo": "../image/brand/musinsastandard.png",
     "brand_name": "무신사 스탠다드",
+    "brand_likes_count": false,
     "brand_likes": 2500123,
     "category_main": "아우터",
     "category_sub": "후드 집업",
@@ -635,7 +823,20 @@
       "https://image.msscdn.net/thumbnails/images/prd_img/20210219/1803584/detail_1803584_22_500.jpg",
       "https://image.msscdn.net/thumbnails/mfile_s01/_shopstaff/staff_605461df95b69.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://image.musinsa.com/thumbnails/images/prd_img/2022061411115700000093591.jpg",
+      "https://image.musinsa.com/thumbnails/images/prd_img/2022061411115800000036245.jpg",
+      "https://image.msscdn.net/thumbnails/display/images/common/2023/07/11/cd1b0f3a4c3c4b39a79da65b8bf8ae6d.jpg",
+      "https://image.musinsa.com/thumbnails/images/prd_img/2022061411120000000078942.jpg",
+      "https://image.musinsa.com/thumbnails/images/prd_img/2022061411120600000020505.jpg",
+      "https://image.musinsa.com/thumbnails/images/prd_img/2022061411120800000041247.jpg",
+      "https://image.musinsa.com/thumbnails/images/prd_img/2023121515024400000097293.jpg",
+      "https://image.musinsa.com/thumbnails/images/prd_img/2022061411121500000040347.jpg",
+      "https://image.musinsa.com/thumbnails/images/prd_img/2022061411121600000018313.jpg",
+      "https://image.musinsa.com/thumbnails/images/prd_img/2023121515024400000052516.jpg",
+      "https://image.musinsa.com/thumbnails/images/prd_img/2022061411121700000077909.jpg",
+      "https://image.musinsa.com/thumbnails/images/prd_img/2022061411122000000007170.jpg"
+    ],
     "link": "https://www.musinsa.com/products/1803584"
   },
   {
@@ -644,6 +845,7 @@
     "sale_order": 21,
     "brand_logo": "../image/brand/jansport.png",
     "brand_name": "잔스포츠",
+    "brand_likes_count": false,
     "brand_likes": 180456,
     "category_main": "가방",
     "category_sub": "백팩",
@@ -673,7 +875,18 @@
       "https://image.msscdn.net/thumbnails/mfile_s01/_shopstaff/staff_637d7f5186a68.jpg",
       "https://image.msscdn.net/thumbnails/mfile_s01/_shopstaff/staff_637d7e7f2f147.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_jansports/2024ss/20201126_jan_bihiej/intro.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_jansports/2024ss/20201126_jan_bihiej/1.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_jansports/2024ss/20201126_jan_bihiej/2.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_jansports/2024ss/20201126_jan_bihiej/3.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_jansports/2024ss/20201126_jan_bihiej/4.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_jansports/2024ss/20201126_jan_bihiej/5.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_jansports/2024ss/20201126_jan_bihiej/6.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_jansports/2024ss/20201126_jan_bihiej/7.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_jansports/2024ss/20201126_jan_bihiej/lookbook.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_jansports/2024ss/20201126_jan_bihiej/info.jpg"
+    ],
     "link": "https://www.musinsa.com/products/1740936"
   },
   {
@@ -682,6 +895,7 @@
     "sale_order": 22,
     "brand_logo": "../image/brand/1507.png",
     "brand_name": "일오공칠",
+    "brand_likes_count": false,
     "brand_likes": 3021,
     "category_main": "양말/레그웨어",
     "category_sub": "양말",
@@ -702,7 +916,12 @@
       "https://image.msscdn.net/thumbnails/images/prd_img/20200831/1572123/detail_1572123_5_500.jpg",
       "https://img.youtube.com/vi/78X88vAVjn4/0.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://image.musinsa.com/thumbnails/images/prd_img/2022080814072200000002429.jpg?w=1200",
+      "https://image.musinsa.com/thumbnails/images/prd_img/2022111114064200000006774.jpg?w=1200",
+      "https://image.musinsa.com/thumbnails/images/prd_img/2023033013501600000001213.jpg?w=1200",
+      "https://image.musinsa.com/thumbnails/images/prd_img/2023033013502400000079507.jpg?w=1200"
+    ],
     "link": "https://www.musinsa.com/products/1572123"
   },
   {
@@ -711,6 +930,7 @@
     "sale_order": 23,
     "brand_logo": "../image/brand/grish.png",
     "brand_name": "그리쉬",
+    "brand_likes_count": false,
     "brand_likes": 9542,
     "category_main": "하의",
     "category_sub": "트레이닝/조거 팬츠",
@@ -736,7 +956,9 @@
       "https://image.msscdn.net/thumbnails/snap/images/2025/05/22/4e608cac681741659cbc6b63b85f83aa.jpg",
       "https://image.msscdn.net/thumbnails/snap/images/2025/05/17/a3037511019f47c496ed4adf3344cb1e.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://image.msscdn.net/images/prd_img/2025080616145810805614128689300f21a620.jpg"
+    ],
     "link": "https://www.musinsa.com/products/4806014"
   },
   {
@@ -745,6 +967,7 @@
     "sale_order": 24,
     "brand_logo": "../image/brand/adidas.png",
     "brand_name": "아디다스",
+    "brand_likes_count": false,
     "brand_likes": 1234567,
     "category_main": "신발",
     "category_sub": "스니커즈",
@@ -767,7 +990,17 @@
       "https://image.msscdn.net/thumbnails/images/prd_img/20240903/4397727/detail_4397727_17254370561458_500.jpg",
       "https://image.msscdn.net/thumbnails/images/prd_img/20240903/4397727/detail_4397727_17254370572162_500.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://image.msscdn.net/images/prd_img/202409041704208641552464266d81484d2fa5.jpg",
+      "https://image.msscdn.net/images/prd_img/202409041704208197082429866d81484c8207.jpg",
+      "https://image.msscdn.net/images/prd_img/202409041704208849055389666d81484d80b2.jpg",
+      "https://image.msscdn.net/images/prd_img/202409041704210249416266566d8148506176.jpg",
+      "https://image.msscdn.net/images/prd_img/202409041704211002614386166d81485187ac.jpg",
+      "https://image.msscdn.net/images/prd_img/202409041704210337807534466d81485083fc.jpg",
+      "https://image.msscdn.net/images/prd_img/202409041704211683615322366d81485291b2.jpg",
+      "https://image.msscdn.net/images/prd_img/202409041704212199047133466d8148535b0a.jpg",
+      "https://image.msscdn.net/images/prd_img/202409041704210770257456966d8148512ceb.jpg"
+    ],
     "link": "https://www.musinsa.com/products/4397727"
   },
   {
@@ -776,6 +1009,7 @@
     "sale_order": 25,
     "brand_logo": "../image/brand/drmartens.png",
     "brand_name": "닥터마틴",
+    "brand_likes_count": false,
     "brand_likes": 501234,
     "category_main": "신발",
     "category_sub": "구두",
@@ -804,7 +1038,13 @@
       "https://image.msscdn.net/thumbnails/images/prd_img/20170728/595040/detail_595040_122_500.jpg",
       "https://image.msscdn.net/thumbnails/images/prd_img/20170728/595040/detail_595040_135_500.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://image.msscdn.net/display/images/2025/04/30/6a4b650d154149588f9c1ca1eb93b262.png",
+      "https://image.msscdn.net/display/images/common/2023/04/10/424d46953ee64fb8ad6ea8f89a6bb02b.jpg",
+      "https://image.musinsa.com/images/prd_img/2023120714150500000090051.jpg",
+      "https://image.musinsa.com/images/prd_img/2023120714150500000031720.jpg",
+      "https://image.msscdn.net/display/images/common/2023/04/10/8092f566b7a24cc09c81ac27245f2b68.jpg"
+    ],
     "link": "https://www.musinsa.com/products/595040"
   },
   {
@@ -813,6 +1053,7 @@
     "sale_order": 26,
     "brand_logo": "../image/brand/suare.png",
     "brand_name": "수아레",
+    "brand_likes_count": false,
     "brand_likes": 189012,
     "category_main": "상의",
     "category_sub": "니트/스웨터",
@@ -835,7 +1076,38 @@
       "https://image.msscdn.net/thumbnails/snap/images/2025/06/19/c3a70b56027e4e47a2bcfa49adef198a.jpg",
       "https://image.msscdn.net/thumbnails/snap/images/2025/06/19/4f7909ad43304e65b12999901286f463.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://suare.diskn.com/U7Z6NMJ2Fb",
+      "https://suare.diskn.com/h7Z6NMJbza",
+      "https://suare.diskn.com/n7Z6NMJk59",
+      "https://suare.diskn.com/b7Z9yzf1Mn",
+      "https://suare.diskn.com/b7Z9yzfaRw",
+      "https://suare.diskn.com/N7Z9yzfiYh",
+      "https://suare.diskn.com/h7Z9yzfqGB",
+      "https://suare.diskn.com/Z7Z9yzfyF4",
+      "https://suare.diskn.com/E7Z9yzlklS",
+      "https://suare.diskn.com/q7Z6NMJrcV",
+      "https://suare.diskn.com/p7Z6LfZBDy",
+      "https://suare.diskn.com/F7Z6LfZJQS",
+      "https://suare.diskn.com/j7Z6Lg3y77",
+      "https://suare.diskn.com/y7Z6Lg3VRQ",
+      "https://suare.diskn.com/R7Z6Lg6rlE",
+      "https://suare.diskn.com/v7Z6Lg8rNn",
+      "https://suare.diskn.com/b7Z6NMJyGM",
+      "https://suare.diskn.com/O7Z6ET3JFN",
+      "https://suare.diskn.com/g7Z6ET3R1P",
+      "https://suare.diskn.com/A7Z6ET8K6A",
+      "https://suare.diskn.com/j7Z6ET9jei",
+      "https://suare.diskn.com/R7Z6ET9Uiz",
+      "https://suare.diskn.com/G7Z6ETbhv8",
+      "https://suare.diskn.com/M7Z6NMP8gf",
+      "https://suare.diskn.com/y7Z6NMQaEQ",
+      "https://suare.diskn.com/T7Z6NMRHkO",
+      "https://suare.diskn.com/R7Z6NMS29v",
+      "https://suare.diskn.com/b7Z6NMSmbs",
+      "https://suare.diskn.com/S7Z6NMWkR0",
+      "https://suare.diskn.com/2mkwbgJ40m"
+    ],
     "link": "https://www.musinsa.com/products/4992561"
   },
   {
@@ -844,6 +1116,7 @@
     "sale_order": 27,
     "brand_logo": "../image/brand/grooverhyme.png",
     "brand_name": "그루브라임",
+    "brand_likes_count": false,
     "brand_likes": 198765,
     "category_main": "상의",
     "category_sub": "반소매 티셔츠",
@@ -859,7 +1132,39 @@
       "https://image.msscdn.net/thumbnails/images/goods_img/20250211/4774342/4774342_17417655661526_500.jpg",
       "https://image.msscdn.net/thumbnails/images/prd_img/20250211/4774342/detail_4774342_17417655413367_500.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-1.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-2-BKA.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-3-BKA.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-2-BLA.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-3-BLA.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-2-BLL.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-3-BLL.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-2-GRA.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-2-GRB.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-3-GRB.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-2-GYL.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-3-GYL.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-2-MIA.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-3-MIA.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-2-NAA.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-3-NAA.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-2-PIL.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-3-PIL.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-2-PPA.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-3-PPA.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-2-PPD.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-3-PPD.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-2-RDA.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-3-RDA.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-2-SKR.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-2-WHA.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-3-WHA.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-2-YEA.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-3-YEA.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-4.jpg",
+      "https://k9638927.hgodo.com/SABAN/GROOVE/multi/all/LRAMCTR702P-SIZE.jpg"
+    ],
     "link": "https://www.musinsa.com/products/4774342"
   },
   {
@@ -868,6 +1173,7 @@
     "sale_order": 28,
     "brand_logo": "../image/brand/sovermentwithlomort.png",
     "brand_name": "소버먼트",
+    "brand_likes_count": false,
     "brand_likes": 56789,
     "category_main": "상의",
     "category_sub": "반소매 티셔츠",
@@ -902,7 +1208,13 @@
       "https://image.msscdn.net/thumbnails/mfile_s01/_shopstaff/staff_60fe7601661a3.jpg",
       "https://image.msscdn.net/thumbnails/mfile_s01/_shopstaff/staff_60fe75cfa8c2a.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://lomort1.cafe24.com/web/upload/product%20image%20list.jpg",
+      "https://lomort1.cafe24.com/web/upload/product%20info%20list.jpg",
+      "https://lomort1.cafe24.com/web/upload2/22summer-cut-pigment-detail-charcoal.jpg",
+      "httpS://lomort1.cafe24.com/web/upload2/22PIGSETUPIMG.jpg",
+      "https://lomort1.cafe24.com/web/upload2/22SUMMER%20FABRIC%20DETAIL-PIGMENT.jpg"
+    ],
     "link": "https://www.musinsa.com/products/1944612"
   },
   {
@@ -911,6 +1223,7 @@
     "sale_order": 29,
     "brand_logo": "../image/brand/smg.png",
     "brand_name": "에스엠지홀딩스",
+    "brand_likes_count": false,
     "brand_likes": 1234,
     "category_main": "기타",
     "category_sub": "기타",
@@ -927,7 +1240,9 @@
       "https://image.msscdn.net/thumbnails/images/prd_img/20250728/5276287/detail_5276287_17545352856128_500.jpg",
       "https://image.msscdn.net/thumbnails/images/prd_img/20250728/5276287/detail_5276287_17545352866427_500.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://image.msscdn.net/thumbnails/images/prd_img/202508071148326118242760768941400955f8.jpg"
+    ],
     "link": "https://www.musinsa.com/products/5276287"
   },
   {
@@ -936,6 +1251,7 @@
     "sale_order": 30,
     "brand_logo": "../image/brand/tawntoe.png",
     "brand_name": "토앤토",
+    "brand_likes_count": false,
     "brand_likes": 48321,
     "category_main": "신발",
     "category_sub": "샌들/슬리퍼",
@@ -956,7 +1272,42 @@
       "https://image.msscdn.net/thumbnails/images/prd_img/20250424/5060642/detail_5060642_17461686116281_500.jpg",
       "https://image.msscdn.net/thumbnails/images/prd_img/20250424/5060642/detail_5060642_17461686125489_500.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/1.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/2.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/3.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/4.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/5.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/6.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/7.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/8.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/9.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/10.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/11.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/12.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/13.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/14.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/15.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/16.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/17.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/18.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/19.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/20.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/21.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/22.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/23.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/24.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/25.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/26.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/27.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/28.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/29.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/30.gif",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/31.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/32.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/20250304_taw_dbgdea/33.jpg",
+      "https://inoo11.openhost.cafe24.com/web/open_product/open_detail/gu_tawntoe/2025ss/2025_info.jpg"
+    ],
     "link": "https://www.musinsa.com/products/5060642"
   },
   {
@@ -965,6 +1316,7 @@
     "sale_order": 31,
     "brand_logo": "../image/brand/nuartstudio.png",
     "brand_name": "누아트 스튜디오",
+    "brand_likes_count": false,
     "brand_likes": 789,
     "category_main": "액세서리",
     "category_sub": "벨트",
@@ -991,7 +1343,24 @@
       "https://image.msscdn.net/thumbnails/images/prd_img/20250421/5048321/detail_5048321_17454775965065_500.jpg",
       "https://image.msscdn.net/thumbnails/snap/images/2025/06/17/6171e435a5b648a9aac6fb47e01390c7.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://image.msscdn.net/thumbnails/images/prd_img/202506051641441667557006068414a3828b69.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/20250610162554796024400306847de02c2580.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202504291643357169631978068108327af0af.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025042916433632587352678681083284f8fa.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202504291643376555704184268108329a00dc.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/20250429164338001346355636810832a0054a.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202504291643378128484120368108329c673b.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202504291643377242439250768108329b0d1b.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202504291643377127843711968108329ae059.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202504291643378240962882568108329c932b.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202504291643379853183938068108329f08f0.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/20250429164338006332262946810832a018c3.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025042916433630065954820681083284967f.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202504291643364228496798968108328673cb.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202504291643352807538119168108327448bc.jpg?w=1200",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202506051644194521586561068414ad36e647.jpg?w=1200"
+    ],
     "link": "https://www.musinsa.com/products/5048321"
   },
   {
@@ -1000,6 +1369,7 @@
     "sale_order": 32,
     "brand_logo": "../image/brand/hadex.png",
     "brand_name": "에이치덱스",
+    "brand_likes_count": false,
     "brand_likes": 98765,
     "category_main": "상의",
     "category_sub": "반소매 티셔츠",
@@ -1015,7 +1385,18 @@
       "https://image.msscdn.net/thumbnails/images/goods_img/20250401/4973427/4973427_17526503056412_500.jpg",
       "https://image.msscdn.net/thumbnails/images/prd_img/20250401/4973427/detail_4973427_17484787057958_500.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://dfcorpo.diskn.com/HDEX/IMG/CARRYOVER/MAIN/H252MLGTS09_3_01.jpg",
+      "https://dfcorpo.diskn.com/HDEX/IMG/CARRYOVER/MAIN/H252MLGTS09_3_02.jpg",
+      "https://dfcorpo.diskn.com/HDEX/IMG/CARRYOVER/MAIN/H252MLGTS09_3_03.jpg",
+      "https://dfcorpo.diskn.com/HDEX/IMG/CARRYOVER/MAIN/H252MLGTS09_3_04.jpg",
+      "https://dfcorpo.diskn.com/HDEX/IMG/CARRYOVER/MAIN/H252MLGTS09_3_05.jpg",
+      "https://dfcorpo.diskn.com/HDEX/IMG/CARRYOVER/MAIN/H252MLGTS09_3_06.jpg",
+      "https://dfcorpo.diskn.com/HDEX/IMG/CARRYOVER/MAIN/H252MLGTS09_3_07.jpg",
+      "https://dfcorpo.diskn.com/HDEX/IMG/CARRYOVER/MAIN/H252MLGTS09_3_08.jpg",
+      "https://dfcorpo.diskn.com/HDEX/IMG/CARRYOVER/MAIN/H252MLGTS09_3_09.jpg",
+      "https://dfcorpo.diskn.com/HDEX/IMG/FIX_EXCHANGE&RETURN_RENEWAL.jpg"
+    ],
     "link": "https://www.musinsa.com/products/4973427"
   },
   {
@@ -1024,6 +1405,7 @@
     "sale_order": 33,
     "brand_logo": "../image/brand/thenorthface.png",
     "brand_name": "노스페이스",
+    "brand_likes_count": false,
     "brand_likes": 987654,
     "category_main": "신발",
     "category_sub": "샌들/슬리퍼",
@@ -1038,7 +1420,11 @@
     "image_urls": [
       "https://image.msscdn.net/thumbnails/images/goods_img/20250306/4866701/4866701_17412487361330_500.jpg?w=780"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://www.leecom01.kr//img/img/nf/notice.jpg",
+      "https://www.leecom01.kr//img/img/nf/page/NS83R11C.jpg",
+      "https://www.leecom01.kr//img/img/nf/page/footer/delivery.jpg"
+    ],
     "link": "https://www.musinsa.com/products/4866701"
   },
   {
@@ -1047,6 +1433,7 @@
     "sale_order": 34,
     "brand_logo": "../image/brand/adidas.png",
     "brand_name": "아디다스",
+    "brand_likes_count": false,
     "brand_likes": 1234567,
     "category_main": "신발",
     "category_sub": "샌들/슬리퍼",
@@ -1066,7 +1453,23 @@
       "https://image.msscdn.net/thumbnails/images/prd_img/20230613/3362083/detail_3362083_16866420921763_500.jpg",
       "https://image.msscdn.net/thumbnails/images/prd_img/20230613/3362083/detail_3362083_16866420931329_500.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://assets.adidas.com/image/upload/v1645098244/adi_brand_intro.jpg",
+      "https://assetmanagerpim-res.cloudinary.com/images/48468475b0714993b76bad6e00caea4d_9366/GZ5886_00_plp_standard.jpg",
+      "https://assetmanagerpim-res.cloudinary.com/images/8ba9ec9642154383888dad6e00811e60_9366/GZ5886_05_standard.jpg",
+      "https://assetmanagerpim-res.cloudinary.com/images/2df89744839b42309275ad6e008102bd_9366/GZ5886_06_standard.jpg",
+      "https://assetmanagerpim-res.cloudinary.com/images/426f61dae01148b9bb83ad6e00cae3a9_9366/GZ5886_09_standard.jpg",
+      "https://assetmanagerpim-res.cloudinary.com/images/e6520c5f895e4041b467ad6e0080fc35_9366/GZ5886_01_standard.jpg",
+      "https://assetmanagerpim-res.cloudinary.com/images/a0f139b5e0d94e3faa52ad6e00810915_9366/GZ5886_02_standard_hover.jpg",
+      "https://assetmanagerpim-res.cloudinary.com/images/c441817bfabd49f8bf8fad6e008110e0_9366/GZ5886_03_standard.jpg",
+      "https://assetmanagerpim-res.cloudinary.com/images/6c2165962dac4d43bec6ad6e00811646_9366/GZ5886_04_standard.jpg",
+      "https://assets.adidas.com/image/upload/v1642583576/adi_embed_sizechart_shoes.jpg",
+      "https://assets.adidas.com/image/upload/v1642583583/adi_precaution_message_apparels.jpg",
+      "https://assets.adidas.com/image/upload/v1642583587/adi_quality_assurance.jpg",
+      "https://assets.adidas.com/image/upload/v1642583588/adi_return_Process.jpg",
+      "https://assets.adidas.com/image/upload/v1645098245/adi_embed_warning.jpg",
+      "https://assets.adidas.com/image/upload/v1658916741/220223_a_musinsa_notice.jpg"
+    ],
     "link": "https://www.musinsa.com/products/3362083"
   },
   {
@@ -1075,6 +1478,7 @@
     "sale_order": 35,
     "brand_logo": "../image/brand/musinsastandard.png",
     "brand_name": "무신사 스탠다드",
+    "brand_likes_count": false,
     "brand_likes": 2500123,
     "category_main": "언더웨어",
     "category_sub": "언더셔츠",
@@ -1094,7 +1498,15 @@
       "https://image.msscdn.net/thumbnails/images/prd_img/20220429/2531870/detail_2531870_7_500.jpg",
       "https://image.msscdn.net/thumbnails/images/prd_img/20220429/2531870/detail_2531870_11_500.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025052111142544004625852682d37016b6f7.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025052111142514555728890682d3701238a0.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025052111142561486631312682d3701961db.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025052111142604023318705682d370209d30.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025052111142570062434072682d3701ab0dc.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025052111142542595522182682d370167fec.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025052111142525699227349682d37013ebea.jpg"
+    ],
     "link": "https://www.musinsa.com/products/2531870"
   },
   {
@@ -1103,6 +1515,7 @@
     "sale_order": 36,
     "brand_logo": "../image/brand/blessedbullet.png",
     "brand_name": "블레스드 뷸렛",
+    "brand_likes_count": false,
     "brand_likes": 2345,
     "category_main": "액세서리",
     "category_sub": "반지",
@@ -1119,7 +1532,9 @@
       "https://image.msscdn.net/thumbnails/images/prd_img/20220314/2416459/detail_2416459_17388990548150_500.jpg",
       "https://image.msscdn.net/thumbnails/images/prd_img/20220314/2416459/detail_2416459_17388990596342_500.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://image.msscdn.net/images/prd_img/202502071229128044453857267a57e08c4665.jpg"
+    ],
     "link": "https://www.musinsa.com/products/2416459"
   },
   {
@@ -1128,6 +1543,7 @@
     "sale_order": 37,
     "brand_logo": "../image/brand/musinsastandard.png",
     "brand_name": "무신사 스탠다드",
+    "brand_likes_count": false,
     "brand_likes": 2500123,
     "category_main": "언더웨어",
     "category_sub": "드로즈",
@@ -1156,7 +1572,27 @@
       "https://image.msscdn.net/thumbnails/images/prd_img/20200702/1504726/detail_1504726_63_500.jpg",
       "https://image.msscdn.net/thumbnails/images/prd_img/20200702/1504726/detail_1504726_64_500.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://image.msscdn.net/images/prd_img/2025052111344866062180582682d3bc8a1496.jpg",
+      "https://image.msscdn.net/images/prd_img/2025052111344894181271431682d3bc8e5f00.jpg",
+      "https://image.msscdn.net/images/prd_img/2025052111344903368391821682d3bc90839b.jpg",
+      "https://image.msscdn.net/images/prd_img/2025052111344878513230863682d3bc8bfaf6.jpg",
+      "https://image.msscdn.net/images/prd_img/2025052111344902430057150682d3bc905ef5.jpg",
+      "https://image.msscdn.net/images/prd_img/2025052111344870393320873682d3bc8abdc7.jpg",
+      "https://image.msscdn.net/images/prd_img/2025052111344923686243600682d3bc939d48.jpg",
+      "https://image.msscdn.net/images/prd_img/2025052111344899916292168682d3bc8f3f02.jpg",
+      "https://image.msscdn.net/images/prd_img/2025052111344949962289177682d3bc979fac.gif",
+      "https://image.msscdn.net/images/prd_img/2025052111345720965835607682d3bd133300.jpg",
+      "https://image.msscdn.net/images/prd_img/2025052111345790416579815682d3bd1dcbeb.gif",
+      "https://image.msscdn.net/images/prd_img/2025052111350420176769547682d3bd83142f.jpg",
+      "https://image.msscdn.net/images/prd_img/2025052111350537310991522682d3bd95b180.jpg",
+      "https://image.msscdn.net/images/prd_img/2025052111350546986429219682d3bd972b6f.jpg",
+      "https://image.msscdn.net/images/prd_img/2025052111350689371790179682d3bdada31c.jpg",
+      "https://image.msscdn.net/images/prd_img/2025052111350527984842842682d3bd944534.gif",
+      "https://image.msscdn.net/images/prd_img/2025052111351342705028116682d3be168431.jpg",
+      "https://image.msscdn.net/images/prd_img/2025052111351280656764619682d3be0c4ead.jpg",
+      "https://image.msscdn.net/images/prd_img/2025052111351316431517887682d3be1281e3.jpg"
+    ],
     "link": "https://www.musinsa.com/products/1504726"
   },
   {
@@ -1165,6 +1601,7 @@
     "sale_order": 38,
     "brand_logo": "../image/brand/ninetyplus.png",
     "brand_name": "나인티플러스",
+    "brand_likes_count": false,
     "brand_likes": 28765,
     "category_main": "하의",
     "category_sub": "트레이닝/조거 팬츠",
@@ -1185,7 +1622,11 @@
       "https://image.msscdn.net/thumbnails/mfile_s01/_shopstaff/staff_63eaf2eec2860.jpg",
       "https://image.msscdn.net/thumbnails/mfile_s01/_shopstaff/staff_63e44942b412f.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://shcompany.godohosting.com/2024/24005/18113_1%20%E2%80%93%201.jpg",
+      "https://shcompany.godohosting.com/2022/18113/18113_all_2.gif",
+      "https://shcompany.godohosting.com/2022/18113/18113.jpg"
+    ],
     "link": "https://www.musinsa.com/products/1317598"
   },
   {
@@ -1194,6 +1635,7 @@
     "sale_order": 39,
     "brand_logo": "../image/brand/1507.png",
     "brand_name": "일오공칠",
+    "brand_likes_count": false,
     "brand_likes": 3021,
     "category_main": "양말/레그웨어",
     "category_sub": "양말",
@@ -1212,7 +1654,11 @@
       "https://image.msscdn.net/thumbnails/images/prd_img/20190328/998051/detail_998051_4_500.jpg",
       "https://image.msscdn.net/thumbnails/images/prd_img/20190328/998051/detail_998051_5_500.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://image.musinsa.com/thumbnails/images/prd_img/2022091314300600000021746.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/202503251322136499043036067e22f759eabc.png",
+      "https://image.msscdn.net/images/prd_img/202503251326263277345659867e2307250042.jpg"
+    ],
     "link": "https://www.musinsa.com/products/998051"
   },
   {
@@ -1221,6 +1667,7 @@
     "sale_order": 40,
     "brand_logo": "../image/brand/vans.png",
     "brand_name": "반스",
+    "brand_likes_count": false,
     "brand_likes": 876543,
     "category_main": "신발",
     "category_sub": "스니커즈",
@@ -1240,7 +1687,19 @@
       "https://image.msscdn.net/thumbnails/images/prd_img/20250707/5228975/detail_5228975_17534095039500_500.jpg",
       "https://image.msscdn.net/thumbnails/images/prd_img/20250707/5228975/detail_5228975_17534095083558_500.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025080414224593483142908689043a5e43b9.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025080414224627859488741689043a64404d.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025080414224612128835455689043a61d9d4.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025080414224636994547643689043a65a521.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025080414224623521134536689043a6396d5.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025080414224626847461384689043a6418c2.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025073109240268152530262688ab7a2a663d.jpg",
+      "//image.msscdn.net/video/goods_detail/2025073109240876692181941688ab7a8bb3d2.mp4",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025073109240244841845237688ab7a26d7a9.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025073109240300710348260688ab7a301bc6.jpg",
+      "https://image.msscdn.net/thumbnails/display/images/common/2024/11/07/200f47b15dbc4ab2a0df1ac5b5fc174e.jpg"
+    ],
     "link": "https://www.musinsa.com/products/5228975"
   },
   {
@@ -1249,6 +1708,7 @@
     "sale_order": 41,
     "brand_logo": "../image/brand/nike.png",
     "brand_name": "나이키",
+    "brand_likes_count": false,
     "brand_likes": 3501234,
     "category_main": "모자",
     "category_sub": "캡",
@@ -1268,7 +1728,14 @@
       "https://image.msscdn.net/thumbnails/images/prd_img/20250620/5199091/detail_5199091_17508353796412_500.jpg",
       "https://image.msscdn.net/thumbnails/images/prd_img/20250620/5199091/detail_5199091_17508353803792_500.jpg"
     ],
-    "image_detail": [],
+    "image_detail": [
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062516094798154043794685ba0bbefa2c.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062516094839821774687685ba0bc61393.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062516094824356493742685ba0bc3b776.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062516094835921589540685ba0bc57b37.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062516094830950730035685ba0bc4b90b.jpg",
+      "https://image.msscdn.net/thumbnails/images/prd_img/2025062516094814502964887685ba0bc23690.jpg"
+    ],
     "link": "https://www.musinsa.com/products/5199091"
   }
 ]
