@@ -71,7 +71,7 @@ function addBanner() {
     $("#bannerList").html(
       data.map(
         (i) => `
-            <a href="${i.link}" class="banner-item" >
+            <div class="banner-item" >
               <img src="${i.image_url}" alt="${i.title}" />
               <div class="banner-txt">
                 <p class="banner-tit">
@@ -79,7 +79,7 @@ function addBanner() {
                 </p>
                 <p class="banner-cont">${i.subtitle}</p>
               </div>
-            </a>
+            </div>
             `
       )
     );
