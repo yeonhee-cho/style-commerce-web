@@ -191,7 +191,7 @@ function swiper() {
   }
 }
 
-// 카테고리 등록
+// 카테고리 등록 <a href="${i.link}"></a> 생략
 function addCategory() {
   $.get("../json/category.json").done(function (data) {
     if (data) {
@@ -199,12 +199,10 @@ function addCategory() {
         data.map(
           (i) => `
             <li class="category-item" >
-                <a href="${i.link}">
-                    <div class="cate-icon">
-                        <img src="${i.image}" alt="${i.alt}" />
-                    </div>
-                    <p class="cate-name">${i.title}</p>
-                </a>
+              <div class="cate-icon">
+                  <img src="${i.image}" alt="${i.alt}" />
+              </div>
+              <p class="cate-name">${i.title}</p>
             </li>
             `
         )

@@ -3,10 +3,11 @@ $(function () {
   setTimeout(() => {
     loginCheck();
     $("#logoutBtn").click(logoutFn);
+    goSearch();
   }, 100);
 });
 
-//로그인 되어 있을 시 변경
+// 로그인 되어 있을 시 변경
 function loginCheck() {
   const loginBtn = document.getElementById("loginBtn");
   const logoutBtn = document.getElementById("logoutBtn");
@@ -36,13 +37,14 @@ function loginCheck() {
       mypageLink.setAttribute("href", "#");
       mypageLink.onclick = function (e) {
         e.preventDefault();
-        alert("로그인이 필요합니다. \n로그인 페이지로 이동합니다.");
+        alert("로그인 후 이용할 수 있습니다.\n로그인 페이지로 이동합니다.");
         window.location.href = "/pages/account/login.html";
       };
     }
   }
 }
 
+// 로그아웃
 function logoutFn() {
   const loggedInUser = sessionStorage.getItem("loggedInUser");
   sessionStorage.removeItem("loggedInUser");
@@ -50,4 +52,13 @@ function logoutFn() {
   alert("로그아웃 완료");
 
   window.location.href = "/pages/account/login.html"; // 로그인 페이지로 이동
+}
+
+// 검색
+function goSearch() {
+  const mainSearchbar = document.getElementById("mainSearchbar");
+
+  mainSearchbar.addEventListener("click", () => {
+    window.location.href = "/pages/search-detail.html";
+  });
 }

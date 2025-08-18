@@ -14,11 +14,11 @@
   width: 100%;
   padding: 20px 0;
 }
+.schedule-list-inner-bg h3 {
+  padding: 16px;
+}
 .schedule-wrap {
   width: 100%;
-}
-.schedule-wrap h3 {
-  padding: 16px;
 }
 .schedule-list {
   width: 100%;
