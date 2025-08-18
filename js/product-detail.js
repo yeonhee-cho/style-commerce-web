@@ -1,5 +1,7 @@
-// 1.(임의 데이터) **
-// 2.js 데이터 추출해서 구현
+/* 구현 방법
+  1.(임의 데이터) **
+  2.js 데이터 추출해서 구현
+*/
 $(function () {
   productData();
   imgDetailModal();
@@ -72,7 +74,7 @@ function productData() {
     // 수량 영역
     numCheckFn(productData);
 
-    // detailInfoImg
+    // 상세 정보 이미지
     const detailInfoImg = document.querySelector("#detailInfoImg");
 
     productData.image_detail.forEach((imgUrl, index) => {

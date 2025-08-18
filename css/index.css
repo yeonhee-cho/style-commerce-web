@@ -525,6 +525,7 @@ content-wrap .content-scroll::-webkit-scrollbar {
   -webkit-line-clamp: 2;
 }
 
+/* 오른쪽 하단 fab 버튼 */
 .fab-btn {
   position: fixed;
   right: 16px;
@@ -539,7 +540,6 @@ content-wrap .content-scroll::-webkit-scrollbar {
   justify-content: center;
   overflow: hidden;
 }
-
 .fab-btn img {
   width: 28px;
   height: 28px;

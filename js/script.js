@@ -14,9 +14,10 @@ window.addEventListener("load", async () => {
           const tempDiv = document.createElement("div");
           tempDiv.innerHTML = html;
 
-          //  특정 페이지에서만 특정 태그를 숨기기
+          // 페이지 확인하기
           const currentPath = window.location.pathname;
 
+          // 세그먼트 같은 메뉴 영역 변경해주기(임의값 있음 // TODO)
           const segmentItems = tempDiv.querySelectorAll(
             ".segment-header .segment-wrap .segment-item"
           );
@@ -52,6 +53,7 @@ window.addEventListener("load", async () => {
             if (contentSeg) contentSeg.classList.add("active");
           }
 
+          // 페이지 별 헤더 확인
           if (
             currentPath.includes("login.html") ||
             currentPath.includes("signup.html") ||
@@ -66,6 +68,7 @@ window.addEventListener("load", async () => {
             if (middle) middle.style.top = "56px";
             if (middle) middle.style.left = 0;
           }
+
           // 여기까지 로그인 뷰
           el.outerHTML = tempDiv.innerHTML;
         } else {

@@ -20,8 +20,9 @@ function getMyData() {
     document.querySelector("#myId").textContent = loggedInUser.userId;
     document.querySelector("#myName").textContent = loggedInUser.userName;
     document.querySelector("#myEmail").textContent = loggedInUser.userEmail;
-    document.querySelector("#myRecom").textContent = loggedInUser.recommender;
-    document.querySelector("#myMarketting").checked =
+    document.querySelector("#myRecommender").textContent =
+      loggedInUser.recommender;
+    document.querySelector("#myMarketing").checked =
       loggedInUser.marketingSwitch;
   }
 }
@@ -35,7 +36,7 @@ function saveMyData() {
     if (loggedInUserString) {
       let loggedInUser = JSON.parse(loggedInUserString);
       // 현재 체크박스 값 업데이트
-      const marketingSwitch = document.querySelector("#myMarketting").checked;
+      const marketingSwitch = document.querySelector("#myMarketing").checked;
       loggedInUser.marketingSwitch = marketingSwitch;
       // sessionStorage에 저장
       sessionStorage.setItem("loggedInUser", JSON.stringify(loggedInUser));

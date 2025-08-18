@@ -10,7 +10,6 @@ body,
 .mypage-container {
   width: 100%;
 }
-
 .mypage-inner-container {
   width: 100%;
   /* min-width: 743px; */
@@ -102,7 +101,6 @@ body,
   background-color: #000;
   border-color: #000;
 }
-
 .mypage-item-toggle[type="checkbox"]:checked::before {
   left: 20px;
 }

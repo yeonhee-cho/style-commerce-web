@@ -421,7 +421,6 @@
   background-color: #f5f5f5;
   color: #ccc;
 }
-
 .total-select-txt {
   display: flex;
   justify-content: space-between;
@@ -430,13 +429,14 @@
   margin-top: 12px;
   border-top: 1px solid #f3f3f3;
 }
-
 .total-select-txt span {
   font-size: 13px;
   line-height: 18px;
   font-weight: 600;
   color: #000;
 }
+
+/* 버튼 영역 */
 .pd-btns {
   display: flex;
   align-items: center;
@@ -491,6 +491,7 @@
   padding: 20px 16px;
 }
 
+/* 세그먼트 였던.. 하단 메뉴 */
 .seg {
   display: flex;
   justify-content: flex-start;
@@ -519,6 +520,7 @@
   /* box-shadow: inset 0px -2px 4px -3px rgba(0, 0, 0, 0.3); */
 }
 
+/* 하단 상품 정보 */
 .detailinfo-img-wrap {
   width: 100%;
   display: flex;
@@ -526,7 +528,6 @@
   align-items: flex-start;
   padding: 16px 0;
 }
-
 .detailinfo-img-area {
   display: flex;
   flex-direction: column;
@@ -539,6 +540,6 @@
 }
 .detailinfo-img-area img {
   width: 100%;
-  max-width: 1000px;
+  max-width: 600px;
   object-fit: contain;
 }

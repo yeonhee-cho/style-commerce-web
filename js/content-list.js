@@ -1,6 +1,7 @@
 $(function () {
   addContents();
 });
+
 // 콘텐츠 등록
 function addContents() {
   $.get("../json/contents.json").done(function (datas) {

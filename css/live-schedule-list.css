@@ -1,7 +1,6 @@
 .schedule-list-container {
   width: 100%;
 }
-
 .schedule-list-inner-container {
   width: 100%;
   /* min-width: 743px; */
@@ -14,14 +13,12 @@
   background-color: #fafafa;
   padding: 20px 0;
 }
-
 .schedule-wrap {
   width: 100%;
 }
-h3 {
+.schedule-wrap h3 {
   padding: 16px;
 }
-
 .schedule-list {
   width: 100%;
   display: flex;
@@ -33,6 +30,7 @@ h3 {
   position: relative;
   cursor: pointer;
 }
+
 /* 오른쪽 영역 체크 */
 .schedule-list .schedule-item:last-child::after {
   content: "";

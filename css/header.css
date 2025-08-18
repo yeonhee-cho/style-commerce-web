@@ -196,6 +196,7 @@
   left: 0px;
   background-color: #fff;
 }
+
 /* 새로운 내용 업데이트 시 표시되는 뱃지 */
 .segment-header .segment-wrap .segment-item.newbadge::after {
   content: "";
