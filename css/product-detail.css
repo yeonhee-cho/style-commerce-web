@@ -122,7 +122,6 @@
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  /*justify-content: space-between;*/ /* TODO */
   align-items: center;
 }
 .pddetail-cont-top {

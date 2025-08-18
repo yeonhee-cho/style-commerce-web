@@ -17,7 +17,8 @@ window.addEventListener("load", async () => {
           // 페이지 확인하기
           const currentPath = window.location.pathname;
 
-          // 세그먼트 같은 메뉴 영역 변경해주기(임의값 있음 // TODO)
+          // 세그먼트 같은 메뉴 영역 변경해주기
+          // TODO 임의값 있음 수정 혹은 삭제 필요
           const segmentItems = tempDiv.querySelectorAll(
             ".segment-header .segment-wrap .segment-item"
           );
@@ -58,10 +59,8 @@ window.addEventListener("load", async () => {
             currentPath.includes("login.html") ||
             currentPath.includes("signup.html") ||
             currentPath.includes("product-detail.html") ||
-            currentPath.includes("/product-list.html") ||
-            currentPath.includes("/live-schedule-list.html") ||
-            currentPath.includes("/content-list.html") ||
-            currentPath.includes("/search-detail.html")
+            currentPath.includes("/search-detail.html") ||
+            currentPath.includes("/mypage.html")
           ) {
             const search = tempDiv.querySelector(".search-header");
             const segment = tempDiv.querySelector(".segment-header");
