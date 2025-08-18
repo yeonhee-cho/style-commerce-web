@@ -3,7 +3,7 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  height: 100svh;
+  min-height: 100svh;
 }
 .pd-detail-inner-container {
   width: 100%;

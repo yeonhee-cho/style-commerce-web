@@ -10,6 +10,7 @@
   margin: 0 auto;
 }
 .pd-list-inner-bg {
+  width: 100%;
   background-color: #fafafa;
   padding: 20px 0;
 }

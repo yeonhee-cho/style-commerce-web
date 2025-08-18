@@ -11,6 +11,7 @@
 }
 .schedule-list-inner-bg {
   background-color: #fafafa;
+  width: 100%;
   padding: 20px 0;
 }
 .schedule-wrap {
