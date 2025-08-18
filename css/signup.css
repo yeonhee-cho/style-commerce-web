@@ -1,3 +1,12 @@
+body,
+.signup-container,
+.signup-inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 1;
+}
 .signup-container {
   width: 100%;
   display: flex;
@@ -18,6 +27,8 @@
   flex-direction: column;
 }
 .signup-inner-bg {
+  flex: 1;
+  width: 100%;
   background-color: #fafafa;
   display: flex;
   justify-content: flex-start;
