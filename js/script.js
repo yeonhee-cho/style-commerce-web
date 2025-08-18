@@ -60,7 +60,8 @@ window.addEventListener("load", async () => {
             currentPath.includes("product-detail.html") ||
             currentPath.includes("/product-list.html") ||
             currentPath.includes("/live-schedule-list.html") ||
-            currentPath.includes("/content-list.html")
+            currentPath.includes("/content-list.html") ||
+            currentPath.includes("/search-detail.html")
           ) {
             const search = tempDiv.querySelector(".search-header");
             const segment = tempDiv.querySelector(".segment-header");

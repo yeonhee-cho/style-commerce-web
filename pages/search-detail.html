@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>상품 검색 | NOVER</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/search-detail.css" />
+    <link rel="icon" type="image/png" href="../image/logo/favicon.png" />
+  </head>
+  <body>
+    <div class="search-container">
+      <div class="search-inner-container">
+        <!-- *** header *** -->
+        <div data-include-path="header.html"></div>
+        <div class="search-inner-bg">
+          <!-- 검색 -->
+          <div class="searchbar">
+            <input
+              type="search"
+              name="search"
+              class="search-input"
+              id="searchInput"
+              placeholder="검색어를 입력해주세요 (상품명, 브랜드명, 카테고리)"
+            />
+          </div>
+
+          <!-- 상품 보이는 곳 -->
+          <div class="product-num" id="searchNum"></div>
+          <div class="product-list" id="result"></div>
+        </div>
+
+        <!-- ** footer ** -->
+        <div data-include-path="../pages/footer.html"></div>
+      </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/search-detail.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+  </body>
+</html>
