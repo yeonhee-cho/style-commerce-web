@@ -4,7 +4,7 @@ $(function () {
     loginCheck();
     $("#logoutBtn").click(logoutFn);
     goSearch();
-  }, 100);
+  }, 1000);
 });
 
 // 로그인 되어 있을 시 변경

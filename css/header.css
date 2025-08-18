@@ -148,6 +148,7 @@
   font-weight: 400;
   color: #8a8a8a;
   padding: 0 8px;
+  cursor: pointer;
 }
 
 .search-header .searchbar::after {
