@@ -142,7 +142,15 @@ body,
   color: #f31110;
   margin-right: 2px;
 }
-
+.no-search,
+.no-result {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+}
 .highlight {
   font-weight: 600;
   color: #0294ff;

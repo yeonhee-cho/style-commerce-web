@@ -11,6 +11,8 @@ function productData() {
   // localStorage에서 데이터 꺼내기
   const productDataString = localStorage.getItem("selectedProduct");
 
+  console.log(productDataString);
+
   if (productDataString) {
     // 문자열 -> 객체
     const productData = JSON.parse(productDataString);
@@ -192,7 +194,6 @@ function numCheckFn(productData) {
 
   let count = 1;
   const optionPrice = Number(productData.sale_price);
-  console.log(optionPrice);
 
   minusBtn.addEventListener("click", () => {
     if (count > 1) count--;

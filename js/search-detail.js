@@ -46,11 +46,19 @@ function searchFn() {
 function displayResults(result, keyword) {
   const searchResult = $("#result");
 
-  if (result.length === 0) {
+  if (!result || result.length === 0) {
     $("#searchNum").text(``);
-    searchResult.html(`<div class="no-result"> 검색 결과가 없습니다.</div>`);
+    searchResult.html(
+      `<div class="no-result"> ${
+        $("#searchInput").val().trim()
+          ? "검색 결과가 없습니다."
+          : "검색어를 입력해주세요."
+      }</div>`
+    );
     return;
   }
+
+  $("#searchNum").text(`총 ${result.length} 개`);
 
   // 검색 결과가 존재한다면
   const productHTMLS = result.map((product) => {
@@ -60,29 +68,24 @@ function displayResults(result, keyword) {
     // let categorySub = product.category_sub;
 
     if (keyword) {
-      $("#searchNum").text(`총 ${result.length} 개`);
+      const regex = new RegExp(keyword, "gi");
       brandName = product.brand_name.replace(
-        new RegExp(keyword, "gi"),
+        regex,
         `<span class="highlight">${keyword}</span>`
       );
       productName = product.product_name.replace(
-        new RegExp(keyword, "gi"),
+        regex,
         `<span class="highlight">${keyword}</span>`
       );
-    } else {
-      $("#searchNum").text(``);
-      searchResult.html(`<div class="no-result"> 검색어를 입력해주세요.</div>`);
     }
+
     return `
         <div class="product-item">
-            <a href="product-detail.html" data-product='${JSON.stringify(
-              product
-            )}'>
+            <a href="product-detail.html" data-id='${product.productId}'>
                 <div class="pd-image">
                 <img src="${product.image_urls[0]}" alt="${
       product.brand_name
     }" />
-                <!-- 활성화 시 "like-red" -->
                 <label class="pd-like-btn">
                     <input type="checkbox"  ${
                       product.is_liked ? "checked" : ""
@@ -90,7 +93,7 @@ function displayResults(result, keyword) {
                 </label>
                 </div>
                 <div class="pd-text-area">
-                <p class="pd-brand">    ${brandName}</p>
+                <p class="pd-brand">${brandName}</p>
                 <p class="pd-tit">
                     ${productName}
                 </p>
@@ -103,4 +106,26 @@ function displayResults(result, keyword) {
         </div>`;
   });
   searchResult.html(productHTMLS.join(""));
+
+  if (result && result.length > 0) {
+    goDetail(result);
+  }
+}
+
+function goDetail(result) {
+  document.querySelectorAll(".product-item a").forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const id = this.dataset.id;
+      const product = result.find((p) => String(p.productId) === id);
+      if (product) {
+        localStorage.setItem("selectedProduct", JSON.stringify(product));
+      } else {
+        console.error("상품을 찾을 수 없습니다:", id);
+      }
+
+      window.location.href = this.getAttribute("href");
+    });
+  });
 }
