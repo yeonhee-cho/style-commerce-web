@@ -71,6 +71,10 @@ h3 {
   font-weight: 400;
   color: #666;
   padding: 4px 0 8px;
+  /* 한 줄 말줄임 */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .con-image-list {
   display: flex;
