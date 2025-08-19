@@ -58,12 +58,15 @@ function productData() {
     document.querySelector(".pds-image-box img").alt = productData.product_name;
 
     // 가격
-    document.querySelector(
-      ".pd-price"
-    ).textContent = `${productData.original_price.toLocaleString()}원`;
-    document.querySelector(
-      ".sale-per"
-    ).textContent = `${productData.discount_rate}%`;
+    document.querySelector(".pd-price").textContent = `${
+      productData.discount_rate === 0
+        ? ""
+        : productData.original_price.toLocaleString() + "원"
+    }`;
+    document.querySelector(".sale-per").textContent = `${
+      productData.discount_rate === 0 ? "" : productData.discount_rate + "%"
+    }`;
+
     document.querySelector(
       ".price-res"
     ).textContent = `${productData.sale_price.toLocaleString()}원`;

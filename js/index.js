@@ -291,7 +291,9 @@ function addProducts() {
                       ${i.product_name}
                     </p>
                     <p class="pd-price">
-                      <span class="discount-per">${i.discount_rate}%</span>
+                      <span class="discount-per">${
+                        i.discount_rate === 0 ? "" : i.discount_rate + "%"
+                      }</span>
                       ${i.sale_price.toLocaleString()}원
                     </p>
                   </div>
