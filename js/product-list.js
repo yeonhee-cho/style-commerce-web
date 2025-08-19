@@ -3,11 +3,9 @@ $(function () {
 
   function getQueryParam(param) {
     const urlParams = new URLSearchParams(window.location.search);
-    console.log(urlParams);
     return urlParams.get(param);
   }
   const filter = getQueryParam("filter") || "recommend";
-  console.log(filter);
   if (filter) {
     addProductsWithSort(filter);
     $(function () {

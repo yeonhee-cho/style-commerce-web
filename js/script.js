@@ -36,10 +36,8 @@ window.addEventListener("load", async () => {
           if (currentPath === "/" || currentPath.includes("index.html")) {
             if (homeSeg) homeSeg.classList.add("active");
           } else if (filter === "recommend") {
-            console.log("recommendSeg:", recommendSeg);
             if (recommendSeg) recommendSeg.classList.add("active");
           } else if (filter === "ranking") {
-            console.log("ranking:", rankingSeg);
             if (rankingSeg) rankingSeg.classList.add("active");
           } else if (filter === "sale") {
             if (saleSeg) saleSeg.classList.add("active");

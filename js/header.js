@@ -67,14 +67,14 @@ function goSearch() {
 // 상품 filter
 function filter() {
   document.querySelectorAll(".sort").forEach((item) => {
-    item.addEventListener("click", (e) => {
-      console.log("?", e);
+    if (item) {
+      item.addEventListener("click", (e) => {
+        e.preventDefault();
+        const filter = item.dataset.filter; // recommend, ranking, sale 중 하나
 
-      e.preventDefault();
-      const filter = item.dataset.filter; // recommend, ranking, sale 중 하나
-
-      // product-list.html 페이지로 filter 쿼리 전달하며 이동
-      window.location.href = `/pages/product-list.html?filter=${filter}`;
-    });
+        // product-list.html 페이지로 filter 쿼리 전달하며 이동
+        window.location.href = `/pages/product-list.html?filter=${filter}`;
+      });
+    }
   });
 }
