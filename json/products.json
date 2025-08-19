@@ -1,6 +1,7 @@
 [
   {
     "productId": 1,
+    "type": "man",
     "ranking_order": 38,
     "recommend_order": 12,
     "sale_order": 25,
@@ -43,6 +44,7 @@
   },
   {
     "productId": 2,
+    "type": "woman",
     "ranking_order": 2,
     "recommend_order": 41,
     "sale_order": 1,
@@ -92,6 +94,7 @@
   },
   {
     "productId": 3,
+    "type": "woman",
     "ranking_order": 19,
     "recommend_order": 1,
     "sale_order": 28,
@@ -128,6 +131,7 @@
   },
   {
     "productId": 4,
+    "type": "woman",
     "ranking_order": 1,
     "recommend_order": 24,
     "sale_order": 17,
@@ -164,6 +168,7 @@
   },
   {
     "productId": 5,
+    "type": "man",
     "ranking_order": 13,
     "recommend_order": 29,
     "sale_order": 12,
@@ -223,6 +228,7 @@
   },
   {
     "productId": 6,
+    "type": "man",
     "ranking_order": 40,
     "recommend_order": 19,
     "sale_order": 5,
@@ -261,6 +267,7 @@
   },
   {
     "productId": 7,
+    "type": "bag",
     "ranking_order": 22,
     "recommend_order": 38,
     "sale_order": 14,
@@ -304,6 +311,7 @@
   },
   {
     "productId": 8,
+    "type": "man",
     "ranking_order": 9,
     "recommend_order": 11,
     "sale_order": 33,
@@ -354,6 +362,7 @@
   },
   {
     "productId": 9,
+    "type": "man",
     "ranking_order": 31,
     "recommend_order": 4,
     "sale_order": 20,
@@ -387,6 +396,7 @@
   },
   {
     "productId": 10,
+    "type": "woman",
     "ranking_order": 17,
     "recommend_order": 35,
     "sale_order": 8,
@@ -423,6 +433,7 @@
   },
   {
     "productId": 11,
+    "type": "acc",
     "ranking_order": 3,
     "recommend_order": 30,
     "sale_order": 27,
@@ -492,6 +503,7 @@
   },
   {
     "productId": 12,
+    "type": "acc",
     "ranking_order": 25,
     "recommend_order": 18,
     "sale_order": 3,
@@ -520,6 +532,7 @@
   },
   {
     "productId": 13,
+    "type": "bag",
     "ranking_order": 7,
     "recommend_order": 39,
     "sale_order": 31,
@@ -577,6 +590,7 @@
   },
   {
     "productId": 14,
+    "type": "man",
     "ranking_order": 33,
     "recommend_order": 2,
     "sale_order": 40,
@@ -612,6 +626,7 @@
   },
   {
     "productId": 15,
+    "type": "man",
     "ranking_order": 21,
     "recommend_order": 14,
     "sale_order": 36,
@@ -645,6 +660,7 @@
   },
   {
     "productId": 16,
+    "type": "man",
     "ranking_order": 37,
     "recommend_order": 20,
     "sale_order": 6,
@@ -685,6 +701,7 @@
   },
   {
     "productId": 17,
+    "type": "acc",
     "ranking_order": 4,
     "recommend_order": 32,
     "sale_order": 24,
@@ -720,6 +737,7 @@
   },
   {
     "productId": 18,
+    "type": "shoes",
     "ranking_order": 26,
     "recommend_order": 9,
     "sale_order": 38,
@@ -755,6 +773,7 @@
   },
   {
     "productId": 19,
+    "type": "shoes",
     "ranking_order": 11,
     "recommend_order": 25,
     "sale_order": 9,
@@ -813,6 +832,7 @@
   },
   {
     "productId": 20,
+    "type": "man",
     "ranking_order": 30,
     "recommend_order": 13,
     "sale_order": 29,
@@ -859,6 +879,7 @@
   },
   {
     "productId": 21,
+    "type": "bag",
     "ranking_order": 8,
     "recommend_order": 37,
     "sale_order": 15,
@@ -910,6 +931,7 @@
   },
   {
     "productId": 22,
+    "type": "acc",
     "ranking_order": 24,
     "recommend_order": 6,
     "sale_order": 41,
@@ -946,6 +968,7 @@
   },
   {
     "productId": 23,
+    "type": "man",
     "ranking_order": 35,
     "recommend_order": 16,
     "sale_order": 4,
@@ -984,6 +1007,7 @@
   },
   {
     "productId": 24,
+    "type": "shoes",
     "ranking_order": 12,
     "recommend_order": 3,
     "sale_order": 30,
@@ -1027,6 +1051,7 @@
   },
   {
     "productId": 25,
+    "type": "shoes",
     "ranking_order": 39,
     "recommend_order": 28,
     "sale_order": 11,
@@ -1072,6 +1097,7 @@
   },
   {
     "productId": 26,
+    "type": "man",
     "ranking_order": 18,
     "recommend_order": 5,
     "sale_order": 37,
@@ -1136,6 +1162,7 @@
   },
   {
     "productId": 27,
+    "type": "man",
     "ranking_order": 6,
     "recommend_order": 36,
     "sale_order": 13,
@@ -1194,6 +1221,7 @@
   },
   {
     "productId": 28,
+    "type": "man",
     "ranking_order": 29,
     "recommend_order": 10,
     "sale_order": 21,
@@ -1245,6 +1273,7 @@
   },
   {
     "productId": 29,
+    "type": "acc",
     "ranking_order": 16,
     "recommend_order": 31,
     "sale_order": 7,
@@ -1274,6 +1303,7 @@
   },
   {
     "productId": 30,
+    "type": "shoes",
     "ranking_order": 20,
     "recommend_order": 8,
     "sale_order": 35,
@@ -1340,6 +1370,7 @@
   },
   {
     "productId": 31,
+    "type": "acc",
     "ranking_order": 36,
     "recommend_order": 23,
     "sale_order": 10,
@@ -1394,6 +1425,7 @@
   },
   {
     "productId": 32,
+    "type": "man",
     "ranking_order": 23,
     "recommend_order": 34,
     "sale_order": 19,
@@ -1431,6 +1463,7 @@
   },
   {
     "productId": 33,
+    "type": "shoes",
     "ranking_order": 10,
     "recommend_order": 21,
     "sale_order": 32,
@@ -1463,6 +1496,7 @@
   },
   {
     "productId": 34,
+    "type": "shoes",
     "ranking_order": 34,
     "recommend_order": 17,
     "sale_order": 26,
@@ -1509,6 +1543,7 @@
   },
   {
     "productId": 35,
+    "type": "man",
     "ranking_order": 27,
     "recommend_order": 3,
     "sale_order": 16,
@@ -1547,6 +1582,7 @@
   },
   {
     "productId": 36,
+    "type": "acc",
     "ranking_order": 14,
     "recommend_order": 26,
     "sale_order": 34,
@@ -1576,6 +1612,7 @@
   },
   {
     "productId": 37,
+    "type": "man",
     "ranking_order": 32,
     "recommend_order": 27,
     "sale_order": 23,
@@ -1635,6 +1672,7 @@
   },
   {
     "productId": 38,
+    "type": "man",
     "ranking_order": 20,
     "recommend_order": 40,
     "sale_order": 13,
@@ -1670,6 +1708,7 @@
   },
   {
     "productId": 39,
+    "type": "acc",
     "ranking_order": 10,
     "recommend_order": 15,
     "sale_order": 3,
@@ -1703,6 +1742,7 @@
   },
   {
     "productId": 40,
+    "type": "shoes",
     "ranking_order": 34,
     "recommend_order": 2,
     "sale_order": 29,
@@ -1745,6 +1785,7 @@
   },
   {
     "productId": 41,
+    "type": "acc",
     "ranking_order": 24,
     "recommend_order": 4,
     "sale_order": 1,
