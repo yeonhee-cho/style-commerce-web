@@ -331,7 +331,7 @@ function addContents() {
     if (datas) {
       $("#contResult").html(
         datas
-          .map((data) => {
+          .map((data, index) => {
             const content = data.content;
             const products = data.products || [];
             const moreBtn = data.more_button;
@@ -372,7 +372,7 @@ function addContents() {
 
             return `
             <div class="content-item">
-                <div class="cont-item-inner">
+                <a href="/pages/content-detail.html" data-index="${index}"  class="cont-item-inner">
                   <div class="con-image">
                     <img src="${data.content.thumbnail}" alt="${
               data.content.title
@@ -404,13 +404,23 @@ function addContents() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
                 ${productHTML}       
               </div>
             `;
           })
           .join("")
       );
+      document.querySelectorAll(".content-item a").forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const index = this.dataset.index;
+          localStorage.setItem("allContents", JSON.stringify(datas));
+          localStorage.setItem("selectedIndex", index);
+          window.location.href = this.getAttribute("href");
+        });
+      });
     }
   });
 }
