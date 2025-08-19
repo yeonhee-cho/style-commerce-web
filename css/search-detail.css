@@ -24,14 +24,17 @@ body,
   position: relative;
   width: 100%;
   height: 36px;
+  background-color: #fff;
   border-radius: 4px;
   border: 1px solid #e5e5e5;
   overflow: hidden;
   margin-bottom: 20px;
+  padding-right: 30px;
 }
 .searchbar .search-input {
   width: 100%;
-  height: 36px;
+  height: 100%;
+
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -41,6 +44,15 @@ body,
   overflow: hidden;
   outline: none;
 }
+.search-input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  box-shadow: 0 0 0 1000px white inset;
+}
+.search-input:-webkit-autofill:active {
+  -webkit-text-fill-color: #000;
+  text-fill-color: #000;
+}
+
 .searchbar:has(.search-input:focus) {
   border-color: #1a1b1f;
 }
@@ -122,6 +134,7 @@ body,
   line-height: 18px;
   font-weight: 400;
   color: #000;
+  min-height: 36px;
   /* 여러 줄 말줄임 */
   text-overflow: ellipsis;
   overflow: hidden;

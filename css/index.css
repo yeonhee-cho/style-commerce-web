@@ -253,6 +253,7 @@
   line-height: 18px;
   font-weight: 400;
   color: #000;
+  min-height: 36px;
   /* 여러 줄 말줄임 */
   text-overflow: ellipsis;
   overflow: hidden;

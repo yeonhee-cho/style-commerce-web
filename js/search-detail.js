@@ -98,7 +98,11 @@ function displayResults(result, keyword) {
                     ${productName}
                 </p>
                 <p class="pd-price">
-                    <span class="discount-per">${product.discount_rate}%</span>
+                    <span class="discount-per">${
+                      product.discount_rate === 0
+                        ? ""
+                        : product.discount_rate + "%"
+                    }</span>
                     ${product.sale_price.toLocaleString()}원
                 </p>
                 </div>
