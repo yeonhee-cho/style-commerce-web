@@ -66,7 +66,9 @@ window.addEventListener("load", async () => {
             currentPath.includes("/inquiry.html") ||
             currentPath.includes("/location-info.html") ||
             currentPath.includes("/company-info.html") ||
-            currentPath.includes("/banner-detail.html")
+            currentPath.includes("/banner-detail.html") ||
+            currentPath.includes("/live-schedule-detail.html") ||
+            currentPath.includes("/content-detail.html")
           ) {
             const search = tempDiv.querySelector(".search-header");
             const segment = tempDiv.querySelector(".segment-header");
