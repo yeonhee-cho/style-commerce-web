@@ -68,21 +68,41 @@ $(window).on("resize", function () {
 // 배너 슬라이드 등록
 function addBanner() {
   $.get("../json/banner.json").done(function (data) {
-    $("#bannerList").html(
-      data.map(
-        (i) => `
+    if (data) {
+      $("#bannerList").html(
+        data
+          .map(
+            (i) => `
             <div class="banner-item" >
-              <img src="${i.image_url}" alt="${i.title}" />
-              <div class="banner-txt">
-                <p class="banner-tit">
-                  ${i.title}
-                </p>
-                <p class="banner-cont">${i.subtitle}</p>
-              </div>
+              <a href="/pages/banner-detail.html" data-banner='${JSON.stringify(
+                i
+              )}'>
+                <img src="${i.image_url}" alt="${i.title}" />
+                <div class="banner-txt">
+                  <p class="banner-tit">
+                    ${i.title}
+                  </p>
+                  <p class="banner-cont">${i.subtitle}</p>
+                </div>
+              </a>
             </div>
             `
-      )
-    );
+          )
+          .join("")
+      );
+      document.querySelectorAll(".banner-item a").forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const banner = this.dataset.banner;
+          console.log(banner);
+
+          localStorage.setItem("selectedBanner", banner);
+
+          window.location.href = this.getAttribute("href");
+        });
+      });
+    }
   });
 
   // 배너 슬라이드 실행
