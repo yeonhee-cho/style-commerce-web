@@ -3,8 +3,7 @@
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 999;
-  min-width: 1000px;
+  z-index: 100;
   width: 100%;
   max-width: 1440px;
   min-height: 56px;
@@ -58,6 +57,12 @@
   margin: 0 8px;
   /* cursor: pointer; */
 }
+.menu-detail-btn.mo {
+  display: none;
+}
+.menu-detail-btn.web {
+  display: block;
+}
 .snap-menu {
   padding: 0 8px;
   font-size: 16px;
@@ -104,7 +109,6 @@
 
 /* ---------- 중간 헤더 - 로고, 알람버튼 ---------- */
 .middle-header {
-  min-width: 1000px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -128,12 +132,10 @@
 
 /* ---------- 검색바 영역 ---------- */
 .search-header {
-  min-width: 1000px;
   width: 100%;
   background-color: #1a1b1f;
   padding: 0px 16px;
 }
-
 .search-header .searchbar {
   position: relative;
   display: flex;
@@ -150,7 +152,6 @@
   padding: 0 8px;
   cursor: pointer;
 }
-
 .search-header .searchbar::after {
   content: "";
   width: 20px;
@@ -167,8 +168,7 @@
   position: sticky;
   top: 55px;
   left: 0;
-  z-index: 998;
-  min-width: 1000px;
+  z-index: 99;
   height: 48px;
   background-color: #1a1b1f;
   padding: 6px 12px;
@@ -182,8 +182,8 @@
 .segment-header .segment-wrap .segment-item {
   position: relative;
 }
-/* 선택된 값 하단 표시 */
 
+/* 선택된 값 하단 표시 */
 .segment-header .segment-wrap .segment-item.active a {
   color: #fff;
 }
@@ -216,33 +216,33 @@
   color: #909092;
   padding: 8px 4px;
 }
-
 .mobile-dropdown {
   display: none;
   position: fixed;
   top: 56px;
   left: 0;
-  width: 80%;
-  max-width: 120px;
-  height: calc(100% - 56px);
+  width: 100%;
+  max-width: 100%;
+  height: 500px;
+  max-height: 80%;
   background-color: #fff;
   z-index: 101;
   padding: 20px;
   box-sizing: border-box;
   overflow-y: auto;
   color: #000;
-  transform: translateX(-100%);
+  transform: translateY(-100%);
   transition: transform 0.3s ease-in-out;
-  border-radius: 0 10px 0 0;
 }
-
 .mobile-dropdown.active {
   display: block;
-  transform: translateX(0);
+  transform: translateY(0);
 }
-
 .mobile-menu-section {
   margin-bottom: 24px;
+}
+.mobile-menu-section:last-of-type {
+  margin-bottom: 0;
 }
 .mobile-menu-section h3 {
   font-size: 16px;
@@ -261,6 +261,15 @@
   text-decoration: none;
 }
 
+.mobile-menu-list li .myname {
+  color: #5baae6;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px;
+  display: inline-block;
+  opacity: 0.7;
+}
+
 @media screen and (max-width: 1024px) {
   .out-menu.outbar,
   .snap-menu {
@@ -269,21 +278,25 @@
   .segment-header .segment-wrap {
     padding: 0 16px;
   }
+  .segment-header .segment-wrap .segment-item a span {
+    display: none;
+  }
+  .menu-detail-btn.web,
+  .mo-menu {
+    display: none;
+  }
+  .menu-detail-btn.mo {
+    display: block;
+  }
+  .mobile-dropdown {
+    height: 350px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .right-menu .out-menu {
-    display: none;
-  }
-
-  .menu-detail-btn {
-    display: block;
-  }
-
   .top-header {
     justify-content: space-between;
   }
-
   .segment-header {
     overflow-x: auto;
     -ms-overflow-style: none;
@@ -293,11 +306,17 @@
   .segment-header::-webkit-scrollbar {
     display: none;
   }
-
   .segment-wrap {
     justify-content: flex-start;
   }
   .segment-item a {
     white-space: nowrap;
+  }
+  .right-menu .out-menu {
+    display: none;
+  }
+  .menu-detail-btn,
+  .mo-menu {
+    display: block;
   }
 }

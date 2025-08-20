@@ -32,7 +32,7 @@ function getBasePath() {
 
 // NOTE Mobile 모바일 메뉴(햄버거) 기능 초기화
 function initMobileMenu() {
-  const menuBtn = document.querySelector(".menu-detail-btn");
+  const menuBtn = document.querySelector(".menu-detail-btn.mo");
   const mobileDropdown = document.querySelector(".mobile-dropdown");
 
   if (menuBtn && mobileDropdown) {
@@ -133,7 +133,7 @@ function filter() {
 // NOTE Mobile 창 크기가 데스크톱으로 돌아오면 모바일 메뉴 닫기
 window.addEventListener("resize", function () {
   const mobileDropdown = document.querySelector(".mobile-dropdown");
-  if (mobileDropdown && window.innerWidth > 768) {
+  if (mobileDropdown && window.innerWidth > 1024) {
     mobileDropdown.classList.remove("active");
     document.body.style.overflow = "";
   }

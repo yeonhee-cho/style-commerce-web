@@ -115,6 +115,13 @@ function addBanner() {
 let currentPage = 0; // 전역 선언
 function swiper() {
   const bannerList = document.querySelector("#bannerList");
+  let bannerCount = 3;
+
+  window.addEventListener("resize", function () {
+    if (bannerCount && window.innerWidth > 768) {
+      bannerCount = 1;
+    }
+  });
 
   if (bannerList) {
     // 기존 자동 슬라이드 타이머 제거 (중복 방지)
@@ -124,16 +131,16 @@ function swiper() {
     $("#bannerList .banner-item.clone").remove();
     const bannerWidth = bannerList.offsetWidth;
     const bannerLength = $("#bannerList .banner-item").length;
-    const totalPage = Math.ceil(bannerLength / 3); // 올림으로 계산
+    const totalPage = Math.ceil(bannerLength / bannerCount); // 올림으로 계산
 
     // 배너 슬라이드 임시 반복 - 빈 공간이 보이지 않도록 3의 배수로 만들어주기
-    const remainder = bannerLength % 3;
+    const remainder = bannerLength % bannerCount;
 
     if (remainder !== 0) {
-      const itemsToClone = 3 - remainder;
+      const itemsToClone = bannerCount - remainder;
       // 남은 갯수
       $(".banner-item")
-        .slice(3)
+        .slice(bannerCount)
         .slice(0, itemsToClone)
         .clone()
         .addClass("clone")
@@ -141,7 +148,7 @@ function swiper() {
 
       // 배너 슬라이드 임시 반복 - 첫 페이지 용
       $(".banner-item")
-        .slice(0, 3)
+        .slice(0, bannerCount)
         .clone()
         .addClass("clone")
         .appendTo("#bannerList");

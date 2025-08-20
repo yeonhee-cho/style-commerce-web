@@ -4,8 +4,6 @@
 
 .main-inner-container {
   width: 100%;
-  /* min-width: 743px; */
-  min-width: 1000px;
   max-width: 1440px;
   background-color: #1a1b1f;
   margin: 0 auto;
@@ -61,22 +59,23 @@
 .banner-list .banner-item {
   position: relative;
   min-width: 33.3333%;
-  width: 480px;
   max-width: 33.3333%;
   aspect-ratio: 1/1;
   overflow: hidden;
   /* cursor: pointer; */
 }
 .banner-list .banner-item img {
-  width: 480px;
   max-width: 100%;
+  aspect-ratio: 1/1;
   object-fit: cover;
 }
 /* 배너 텍스트 영역 */
 .banner-list .banner-item .banner-txt {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  word-break: keep-all;
 }
 .banner-list .banner-item .banner-txt .banner-tit {
   font-size: 22px;
@@ -191,6 +190,7 @@
   padding-right: 16px;
 }
 .product-list .product-item {
+  position: relative;
   width: 260px;
   cursor: pointer;
 }
@@ -553,4 +553,19 @@ content-wrap .content-scroll::-webkit-scrollbar {
   width: 28px;
   height: 28px;
   object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  .banner-list .banner-item .banner-txt {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner-list .banner-item .banner-txt {
+    padding: 20px;
+  }
+  .banner-list .banner-item {
+    min-width: 100%;
+    max-width: 100%;
+  }
 }
