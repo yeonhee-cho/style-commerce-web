@@ -12,7 +12,6 @@ body,
 }
 .notice-inner-container {
   width: 100%;
-  min-width: 1000px;
   max-width: 1440px;
   background-color: #1a1b1f;
   margin: 0 auto;
@@ -21,6 +20,8 @@ body,
   flex: 1;
   width: 100%;
   background-color: #fafafa;
+  padding: 0 16px;
+  box-sizing: border-box;
 }
 .notice-wrap {
   background-color: #f5f5f5;
@@ -44,13 +45,13 @@ h3 {
 .notice-list .notice-item {
   border-bottom: 1px solid #f5f5f5;
 }
-
 .notice-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
   padding: 12px 16px;
+  word-break: keep-all;
 }
 .notice-title .notice-tit {
   font-size: 14px;
@@ -58,6 +59,7 @@ h3 {
   font-weight: 500;
   color: #000;
   margin-bottom: 4px;
+  word-break: keep-all;
 }
 .notice-title .notice-date {
   font-size: 13px;
@@ -65,7 +67,7 @@ h3 {
   font-weight: 400;
   color: #666;
 }
-.notice-controll-btn {
+.notice-control-btn {
   width: 16px;
   height: 16px;
   background: #fff url(../image/arrow_down.png) no-repeat center/100%;
@@ -73,19 +75,29 @@ h3 {
   margin-left: 8px;
   border: none;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
-
-.notice-controll-btn.active {
+.notice-control-btn.active {
   transform: rotate(-180deg);
 }
-
 .notice-text {
   padding: 16px;
   background-color: #f5f5f5;
+  display: none;
 }
 .notice-text p {
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   color: #000;
+}
+
+/* 반응형 */
+@media screen and (max-width: 768px) {
+  .notice-inner-bg {
+    padding: 0 8px;
+  }
+  .notice-wrap {
+    max-width: 100%;
+  }
 }

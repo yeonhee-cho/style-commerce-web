@@ -16,8 +16,6 @@ body,
 }
 .signup-inner-container {
   width: 100%;
-  /* min-width: 743px; */
-  min-width: 1000px;
   max-width: 1440px;
   height: 100%;
   background-color: #1a1b1f;
@@ -25,6 +23,8 @@ body,
   display: flex;
   justify-content: center;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
 }
 .signup-inner-bg {
   flex: 1;
@@ -37,7 +37,6 @@ body,
 
 /* 작은 전체 영역 */
 .signup-page-wrap {
-  min-width: 600px;
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
@@ -45,6 +44,8 @@ body,
   flex-direction: column;
   flex: 1;
   background-color: #fafafa;
+  padding: 0 16px;
+  box-sizing: border-box;
 }
 .signup-page-wrap .signup-main-tit {
   height: 52px;
@@ -53,6 +54,7 @@ body,
   font-weight: 500;
   padding: 12px 16px;
   background-color: #f5f5f5;
+  margin: 0 -16px;
 }
 
 /* 하얀 박스 부분 */
@@ -62,6 +64,7 @@ body,
   flex: 1 1 auto;
   background-color: #fff;
   padding: 24px 16px 12px;
+  margin: 0 -16px;
 }
 
 /* 인풋 전체 */
@@ -178,6 +181,7 @@ body,
   accent-color: #000;
 }
 .agree-more-btn {
+  min-width: fit-content;
   background-color: #fff;
   font-size: 13px;
   line-height: 20px;
@@ -199,4 +203,22 @@ body,
   font-weight: 500;
   color: #fff;
   text-align: center;
+}
+
+/* 반응형 */
+@media screen and (max-width: 768px) {
+  .signup-inner-container {
+    min-width: 100%;
+  }
+
+  .signup-page-wrap {
+    min-width: 100%;
+    padding: 0;
+  }
+  .signup-page-wrap .signup-main-tit {
+    margin: 0;
+  }
+  .signup-white-box {
+    margin: 0;
+  }
 }

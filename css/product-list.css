@@ -3,8 +3,6 @@
 }
 .pd-list-inner-container {
   width: 100%;
-  /* min-width: 743px; */
-  min-width: 1000px;
   max-width: 1440px;
   background-color: #1a1b1f;
   margin: 0 auto;
@@ -12,15 +10,20 @@
 .pd-list-inner-bg {
   width: 100%;
   background-color: #fafafa;
-  padding: 20px 0;
+  padding: 20px 0 40px;
+  box-sizing: border-box;
 }
 
 /* 상품 영역 */
 .products-wrap {
   width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
 }
 h3 {
   padding: 16px;
+  font-size: 20px;
+  font-weight: 600;
 }
 .products-wrap .product-list {
   width: 100%;
@@ -30,11 +33,14 @@ h3 {
 .product-list .product-item {
   width: calc(100% / 5);
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
 }
 .product-list .product-item .pd-image {
   position: relative;
   width: 100%;
-  height: 312px;
+  padding-top: 125%;
   overflow: hidden;
 }
 .numtag {
@@ -46,7 +52,7 @@ h3 {
   align-items: center;
   min-width: 30px;
   height: 30px;
-  background-color: #666;
+  background-color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
@@ -55,17 +61,20 @@ h3 {
 }
 
 .product-list .product-item .pd-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 .product-list .product-item .pd-image .pd-like-btn {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   background: url(../image/likebtn-off.png) no-repeat center/100%;
   position: absolute;
-  right: 4px;
-  bottom: 4px;
+  right: 8px;
+  bottom: 8px;
   z-index: 20;
 }
 .product-list .product-item .pd-image .pd-like-btn input[type="checkbox"] {
@@ -81,6 +90,7 @@ h3 {
   min-height: 90px;
   padding: 8px 12px;
   background-color: #fff;
+  flex-grow: 1;
 }
 .product-list .product-item .pd-text-area .pd-brand {
   font-size: 11px;
@@ -118,4 +128,20 @@ h3 {
   font-weight: 600;
   color: #f31110;
   margin-right: 2px;
+}
+
+/* 반응형 */
+@media screen and (max-width: 1024px) {
+  .product-list .product-item {
+    width: calc(100% / 3);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .products-wrap {
+    padding: 0 8px;
+  }
+  .product-list .product-item {
+    width: calc(100% / 2);
+  }
 }

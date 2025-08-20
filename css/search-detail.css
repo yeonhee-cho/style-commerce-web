@@ -9,7 +9,6 @@ body,
   align-items: flex-start;
 }
 .search-inner-container {
-  min-width: 1000px;
   max-width: 1440px;
   background-color: #1a1b1f;
   margin: 0 auto;
@@ -19,6 +18,7 @@ body,
   width: 100%;
   background-color: #fafafa;
   padding: 20px 16px;
+  box-sizing: border-box;
 }
 .searchbar {
   position: relative;
@@ -30,6 +30,7 @@ body,
   overflow: hidden;
   margin-bottom: 20px;
   padding-right: 30px;
+  box-sizing: border-box;
 }
 .searchbar .search-input {
   width: 100%;
@@ -83,14 +84,16 @@ body,
 .product-list .product-item {
   width: calc(100% / 5);
   cursor: pointer;
+  box-sizing: border-box;
 }
 .product-list .product-item .pd-image {
   position: relative;
   width: 100%;
-  height: 312px;
+  padding-bottom: 125%; /* 이미지 비율 유지 */
   overflow: hidden;
 }
 .product-list .product-item .pd-image img {
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -167,4 +170,22 @@ body,
 .highlight {
   font-weight: 600;
   color: #0294ff;
+}
+
+/* 반응형 */
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  .product-list .product-item {
+    width: calc(100% / 3);
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .search-inner-bg {
+    padding: 16px 8px;
+  }
+  .product-list .product-item {
+    width: calc(100% / 2);
+  }
 }

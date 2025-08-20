@@ -13,7 +13,6 @@ body,
 }
 .banner-detail-inner-container {
   width: 100%;
-  min-width: 1000px;
   max-width: 1440px;
   background-color: #1a1b1f;
   margin: 0 auto;
@@ -21,6 +20,8 @@ body,
 .banner-detail-inner-bg {
   width: 100%;
   background-color: #fafafa;
+  padding: 20px 16px;
+  box-sizing: border-box;
 }
 .banner-detail-wrap {
   flex: 1;
@@ -63,4 +64,14 @@ h3 {
   line-height: 18px;
   font-weight: 400;
   color: #666;
+}
+
+/* 반응형 */
+@media screen and (max-width: 768px) {
+  .banner-detail-inner-bg {
+    padding: 16px 8px;
+  }
+  .banner-detail-wrap {
+    max-width: 100%;
+  }
 }

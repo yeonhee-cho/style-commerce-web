@@ -1,3 +1,4 @@
+/* TODO !!!! 반응형 확인 */
 body,
 .inquiry-container,
 .inquiry-inner-container {
@@ -12,7 +13,6 @@ body,
 }
 .inquiry-inner-container {
   width: 100%;
-  min-width: 1000px;
   max-width: 1440px;
   background-color: #1a1b1f;
   margin: 0 auto;
@@ -21,6 +21,8 @@ body,
   flex: 1;
   width: 100%;
   background-color: #fafafa;
+  padding: 0 16px;
+  box-sizing: border-box;
 }
 .inquiry-wrap {
   background-color: #f5f5f5;
@@ -70,6 +72,7 @@ h3 {
   color: #000;
   appearance: none;
   outline: 0;
+  box-sizing: border-box;
 }
 .inquiry-item textarea {
   width: 100%;
@@ -84,6 +87,7 @@ h3 {
   appearance: none;
   outline: 0;
   resize: none;
+  box-sizing: border-box;
 }
 
 .inquiry-ul {
@@ -114,4 +118,14 @@ h3 {
 }
 .inquiry-ul li.text-accent::before {
   background-color: #f00;
+}
+
+/* 반응형 */
+@media screen and (max-width: 768px) {
+  .inquiry-inner-bg {
+    padding: 0 8px;
+  }
+  .inquiry-wrap {
+    max-width: 100%;
+  }
 }
