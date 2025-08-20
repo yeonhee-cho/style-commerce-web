@@ -89,7 +89,17 @@ window.addEventListener("load", async () => {
             if (
               currentPath.includes("login.html") ||
               currentPath.includes("signup.html") ||
-              currentPath.includes("mypage.html")
+              currentPath.includes("mypage.html") ||
+              currentPath.includes("product-detail.html") ||
+              currentPath.includes("search-detail.html") ||
+              currentPath.includes("notice.html") ||
+              currentPath.includes("faq.html") ||
+              currentPath.includes("inquiry.html") ||
+              currentPath.includes("location-info.html") ||
+              currentPath.includes("company-info.html") ||
+              currentPath.includes("banner-detail.html") ||
+              currentPath.includes("live-schedule-detail.html") ||
+              currentPath.includes("content-detail.html")
             ) {
               if (search) search.style.display = "none";
               if (segment) segment.style.display = "none";
@@ -97,15 +107,6 @@ window.addEventListener("load", async () => {
                 middle.style.position = "sticky";
                 middle.style.top = "56px";
               }
-            } else if (currentPath.includes("product-detail.html")) {
-              if (search) search.style.display = "none";
-              if (segment) segment.style.display = "none";
-              if (middle) middle.style.display = "none";
-            } else if (currentPath.includes("search-detail.html")) {
-              if (search) search.style.display = "none";
-              if (middle) middle.style.display = "none";
-              if (top) top.style.position = "static";
-              if (segment) segment.style.position = "static";
             }
 
             el.outerHTML = tempDiv.innerHTML;
