@@ -30,17 +30,17 @@
   <div class="menu-flex right-menu">
     <ul class="out-menu">
       <li>
-        <a href="/pages/search-detail.html">검색</a>
+        <a href="pages/search-detail.html">검색</a>
       </li>
       <li>
-        <a href="/pages/inquiry.html">문의</a>
+        <a href="pages/inquiry.html">문의</a>
       </li>
       <li>
-        <a href="/pages/mypage.html">마이페이지</a>
+        <a href="pages/mypage.html">마이페이지</a>
       </li>
     </ul>
     <button type="button" class="h-login-btn" id="loginBtn">
-      <a href="/pages/account/login.html">로그인 / 회원가입</a>
+      <a href="pages/account/login.html">로그인 / 회원가입</a>
     </button>
     <button
       type="button"
@@ -53,11 +53,77 @@
   </div>
 </div>
 
+<!-- 모바일 -->
+<div class="mobile-dropdown">
+  <div class="mobile-menu-section">
+    <h3>카테고리</h3>
+    <ul class="mobile-menu-list">
+      <li>
+        <a
+          href="pages/product-list.html?filter=woman"
+          class="menu-sort"
+          data-filter="woman"
+          >WOMAN</a
+        >
+      </li>
+      <li>
+        <a
+          href="pages/product-list.html?filter=man"
+          class="menu-sort"
+          data-filter="man"
+          >MAN</a
+        >
+      </li>
+      <li>
+        <a
+          href="pages/product-list.html?filter=bag"
+          class="menu-sort"
+          data-filter="bag"
+          >BAG</a
+        >
+      </li>
+      <li>
+        <a
+          href="pages/product-list.html?filter=acc"
+          class="menu-sort"
+          data-filter="acc"
+          >ACC</a
+        >
+      </li>
+      <li>
+        <a
+          href="pages/product-list.html?filter=shoes"
+          class="menu-sort"
+          data-filter="shoes"
+          >SHOES</a
+        >
+      </li>
+    </ul>
+  </div>
+  <div class="mobile-menu-section">
+    <h3>메뉴</h3>
+    <ul class="mobile-menu-list">
+      <li><a href="pages/search-detail.html">검색</a></li>
+      <li><a href="pages/inquiry.html">문의</a></li>
+      <li>
+        <a href="pages/mypage.html" class="mobile-mypage-link">마이페이지</a>
+      </li>
+    </ul>
+  </div>
+  <div class="mobile-menu-section">
+    <h3>브랜드</h3>
+    <ul class="mobile-menu-list">
+      <li><a href="/">NOVER</a></li>
+      <li><span style="color: #cdcdce; font-size: 14px">YEONHEE</span></li>
+    </ul>
+  </div>
+</div>
+
 <!-- 로고, 알림 -->
 <div class="middle-header">
   <h1 class="logo">
     <a href="/">
-      <img src="/image/logo/logo-white.png" alt="NOVER 로고" />
+      <img src="image/logo/logo-white.png" alt="NOVER 로고" />
     </a>
   </h1>
   <!-- 생략 -->
@@ -75,7 +141,7 @@
 <div class="segment-header">
   <ul class="segment-wrap">
     <li class="segment-item" id="productAll">
-      <a href="/pages/product-list.html">전체 상품</a>
+      <a href="pages/product-list.html">전체 상품</a>
     </li>
     <li class="segment-item active" id="home">
       <a href="/">홈</a>
@@ -90,10 +156,10 @@
       <a href="#">세일</a>
     </li>
     <li class="segment-item newbadge" id="liveSchedule">
-      <a href="/pages/live-schedule-list.html">라이브 편성표</a>
+      <a href="pages/live-schedule-list.html">라이브 편성표</a>
     </li>
     <li class="segment-item" id="contentList">
-      <a href="/pages/content-list.html">콘텐츠</a>
+      <a href="pages/content-list.html">콘텐츠</a>
     </li>
   </ul>
 </div>

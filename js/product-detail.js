@@ -28,29 +28,42 @@ function productData() {
       productData.image_urls[0];
 
     // 브랜드
-    document.querySelector(".brand-image").src = productData.brand_logo;
+    // 브랜드 (optional 필드들에 대한 안전한 처리)
+    if (productData.brand_logo) {
+      document.querySelector(".brand-image").src = productData.brand_logo;
+    }
     document.querySelector(".brand-image").alt = productData.brand_name;
     document.querySelector(".brand-name").textContent = productData.brand_name;
-    document.querySelector(
-      ".brand-like-btn span"
-    ).textContent = `${productData.brand_likes.toLocaleString()}`;
+    if (productData.brand_likes) {
+      document.querySelector(
+        ".brand-like-btn span"
+      ).textContent = `${productData.brand_likes.toLocaleString()}`;
+    }
 
-    // 카테고리
-    document.querySelector(".pd-cate-main").textContent =
-      productData.category_main;
-    document.querySelector(".pd-cate-sub").textContent =
-      productData.category_sub;
+    // 카테고리 (optional 필드들에 대한 안전한 처리)
+    if (productData.category_main) {
+      document.querySelector(".pd-cate-main").textContent =
+        productData.category_main;
+    }
+    if (productData.category_sub) {
+      document.querySelector(".pd-cate-sub").textContent =
+        productData.category_sub;
+    }
 
     // 상품
     document.querySelector(".pd-title").textContent = productData.product_name;
 
-    // 별점
-    document.querySelector(".star-txt").textContent = productData.rating;
+    // 별점 (optional 필드들에 대한 안전한 처리)
+    if (productData.rating) {
+      document.querySelector(".star-txt").textContent = productData.rating;
+    }
 
-    // 리뷰
-    document.querySelector(
-      ".review"
-    ).textContent = `후기 ${productData.review_count.toLocaleString()}개`;
+    // 리뷰 (optional 필드들에 대한 안전한 처리)
+    if (productData.review_count) {
+      document.querySelector(
+        ".review"
+      ).textContent = `후기 ${productData.review_count.toLocaleString()}개`;
+    }
 
     // 이미지 임시
     document.querySelector(".pds-image-box img").src =
@@ -59,7 +72,7 @@ function productData() {
 
     // 가격
     document.querySelector(".pd-price").textContent = `${
-      productData.discount_rate === 0
+      productData.discount_rate === 0 || !productData.original_price
         ? ""
         : productData.original_price.toLocaleString() + "원"
     }`;
@@ -71,23 +84,27 @@ function productData() {
       ".price-res"
     ).textContent = `${productData.sale_price.toLocaleString()}원`;
 
-    // 좋아요
-    document.querySelector(
-      ".like-btn span"
-    ).textContent = `${productData.product_likes.toLocaleString()}`;
+    // 좋아요 (optional 필드들에 대한 안전한 처리)
+    if (productData.product_likes) {
+      document.querySelector(
+        ".like-btn span"
+      ).textContent = `${productData.product_likes.toLocaleString()}`;
+    }
 
     // 수량 영역
     numCheckFn(productData);
 
-    // 상세 정보 이미지
+    // 상세 정보 이미지 (optional 필드들에 대한 안전한 처리)
     const detailInfoImg = document.querySelector("#detailInfoImg");
 
-    productData.image_detail.forEach((imgUrl, index) => {
-      const img = document.createElement("img");
-      img.src = imgUrl;
-      img.alt = `${productData.product_name} ${index + 1}`;
-      detailInfoImg.appendChild(img);
-    });
+    if (productData.image_detail && productData.image_detail.length > 0) {
+      productData.image_detail.forEach((imgUrl, index) => {
+        const img = document.createElement("img");
+        img.src = imgUrl;
+        img.alt = `${productData.product_name} ${index + 1}`;
+        detailInfoImg.appendChild(img);
+      });
+    }
   }
 }
 
@@ -141,7 +158,7 @@ function imgListScroll(productData) {
       nextBtn.style.display = "none";
       return;
     }
-    // 버튼 조건 숩김 보임 체크
+    // 버튼 조건 숨김 보임 체크
     prevBtn.style.display = imgList.scrollTop <= 0 ? "none" : "block";
     nextBtn.style.display =
       imgList.scrollTop + imgList.clientHeight >= imgList.scrollHeight - 1
@@ -182,7 +199,7 @@ function imgDetailModal() {
     if (e.target === modal) modal.style.display = "none";
   });
   modalContent.addEventListener("click", (e) => {
-    if (e.target === modalContent) modalContent.style.display = "none";
+    if (e.target === modalContent) modal.style.display = "none";
   });
 }
 
@@ -194,6 +211,7 @@ function numCheckFn(productData) {
   const totalCount = document.getElementById("totalCount");
   const selectTotalPrice = document.getElementById("selectTotalPrice");
   const totalSelectTxt = document.getElementById("totalSelectTxt");
+  const totalCountTxt = document.getElementById("totalCountTxt");
 
   let count = 1;
   const optionPrice = Number(productData.sale_price);

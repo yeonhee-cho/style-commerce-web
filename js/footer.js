@@ -13,7 +13,9 @@ function personalModal() {
   const modal = document.getElementById("personalModal");
   const closeBtn = document.getElementById("personalClose");
 
-  openModal(openBtn, modal, closeBtn);
+  if (openBtn && modal && closeBtn) {
+    openModal(openBtn, modal, closeBtn);
+  }
 }
 
 // 스토어 이용약관 동의
@@ -22,7 +24,9 @@ function storeModal() {
   const modal = document.getElementById("storeModal");
   const closeBtn = document.getElementById("storeClose");
 
-  openModal(openBtn, modal, closeBtn);
+  if (openBtn && modal && closeBtn) {
+    openModal(openBtn, modal, closeBtn);
+  }
 }
 
 // 모달 열기
@@ -37,10 +41,12 @@ function openModal(openBtn, modal, closeBtn) {
     }
   }, 1000);
 
-  closeBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    modal.style.display = "none";
-  });
+  if (closeBtn) {
+    closeBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      modal.style.display = "none";
+    });
+  }
 
   // 바깥 클릭 시 닫기
   window.addEventListener("click", (e) => {

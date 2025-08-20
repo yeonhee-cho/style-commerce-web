@@ -11,7 +11,7 @@ function contentData() {
     const data = allContents[index];
     const content = data.content;
 
-    document.title = `${content.title} - 라이브 편성표 상세 | NOVER`;
+    document.title = `${content.title} - 콘텐츠 상세 | NOVER`;
 
     document.querySelector(".content-detail-img img").src = content.thumbnail;
     document.querySelector(".content-detail-img img").alt = content.title;

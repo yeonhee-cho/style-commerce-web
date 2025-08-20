@@ -286,7 +286,7 @@ function agreeCheck() {
   const agreeAll = document.getElementById("agreeAll");
 
   const agreeItems = document.querySelectorAll(
-    "agreeAge, #agreePersonal, #agreeStore, #agreeMarketing"
+    "#agreeAge, #agreePersonal, #agreeStore, #agreeMarketing"
   );
 
   // 전체 동의 클릭 시 -> 나머지 체크박스 전부 선택/해제

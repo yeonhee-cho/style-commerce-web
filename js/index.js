@@ -67,14 +67,14 @@ $(window).on("resize", function () {
 
 // 배너 슬라이드 등록
 function addBanner() {
-  $.get("../json/banner.json").done(function (data) {
+  $.get("json/banner.json").done(function (data) {
     if (data) {
       $("#bannerList").html(
         data
           .map(
             (i) => `
             <div class="banner-item" >
-              <a href="/pages/banner-detail.html" data-banner='${JSON.stringify(
+              <a href="pages/banner-detail.html" data-banner='${JSON.stringify(
                 i
               )}'>
                 <img src="${i.image_url}" alt="${i.title}" />
@@ -213,7 +213,7 @@ function swiper() {
 
 // 카테고리 등록 <a href="${i.link}"></a> 생략
 function addCategory() {
-  $.get("../json/category.json").done(function (data) {
+  $.get("json/category.json").done(function (data) {
     if (data) {
       $("#cateResult").html(
         data.map(
@@ -266,7 +266,7 @@ function touchScrollEvent(scrollList) {
 
 // 상품 등록
 function addProducts() {
-  $.get("../json/products.json").done(function (data) {
+  $.get("json/products.json").done(function (data) {
     if (data) {
       $("#pdResult").html(
         data
@@ -329,7 +329,7 @@ function productSwiper() {
 
 // 콘텐츠 등록
 function addContents() {
-  $.get("../json/contents.json").done(function (datas) {
+  $.get("json/contents.json").done(function (datas) {
     if (datas) {
       $("#contResult").html(
         datas
@@ -374,7 +374,7 @@ function addContents() {
 
             return `
             <div class="content-item">
-                <a href="/pages/content-detail.html" data-index="${index}"  class="cont-item-inner">
+                <a href="pages/content-detail.html" data-index="${index}"  class="cont-item-inner">
                   <div class="con-image">
                     <img src="${data.content.thumbnail}" alt="${
               data.content.title
@@ -438,14 +438,14 @@ function contentSwiper() {
 
 // 라이브 편성표 등록
 function addSchedule() {
-  $.get("../json/schedule.json").done(function (data) {
+  $.get("json/schedule.json").done(function (data) {
     if (data) {
       $("#scheduleResult").html(
         data
           .map(
             (i) => `
              <div class="schedule-item">
-                <a href="/pages/live-schedule-detail.html" data-schedule ='${JSON.stringify(
+                <a href="pages/live-schedule-detail.html" data-schedule ='${JSON.stringify(
                   i
                 )}' >
                   <div class="schedule-image">
