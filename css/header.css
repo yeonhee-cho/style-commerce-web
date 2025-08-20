@@ -275,9 +275,6 @@
   .snap-menu {
     display: none;
   }
-  .segment-header .segment-wrap {
-    padding: 0 16px;
-  }
   .segment-header .segment-wrap .segment-item a span {
     display: none;
   }
@@ -301,7 +298,7 @@
     overflow-x: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    padding: 0px 0px;
+    padding: 0px 16px;
   }
   .segment-header::-webkit-scrollbar {
     display: none;
