@@ -20,6 +20,43 @@ window.addEventListener("load", async () => {
               basePath = "../";
             }
 
+            // 여기부터 세그먼트 .active 효과 이벤트
+            const filter = new URLSearchParams(window.location.search).get(
+              "filter"
+            );
+
+            // 세그먼트 같은 메뉴 영역 변경해주기
+            const segmentItems = tempDiv.querySelectorAll(
+              ".segment-header .segment-wrap .segment-item"
+            );
+            segmentItems.forEach((el) => el.classList.remove("active"));
+
+            const homeSeg = tempDiv.querySelector("#home");
+            const productSeg = tempDiv.querySelector("#productAll");
+            const recommendSeg = tempDiv.querySelector("#recommend");
+            const rankingSeg = tempDiv.querySelector("#ranking");
+            const saleSeg = tempDiv.querySelector("#sale");
+            const liveScheduleSeg = tempDiv.querySelector("#liveSchedule");
+            const contentSeg = tempDiv.querySelector("#contentList");
+
+            if (currentPath === "/" || currentPath.includes("index.html")) {
+              if (homeSeg) homeSeg.classList.add("active");
+            } else if (filter === "recommend") {
+              if (recommendSeg) recommendSeg.classList.add("active");
+            } else if (filter === "ranking") {
+              if (rankingSeg) rankingSeg.classList.add("active");
+            } else if (filter === "sale") {
+              if (saleSeg) saleSeg.classList.add("active");
+            } else if (currentPath.includes("product-list.html")) {
+              if (productSeg) productSeg.classList.add("active");
+            } else if (currentPath.includes("live-schedule-list.html")) {
+              if (liveScheduleSeg) liveScheduleSeg.classList.add("active");
+            } else if (currentPath.includes("content-list.html")) {
+              if (contentSeg) contentSeg.classList.add("active");
+            }
+            // 여기까지 세그먼트 .active 효과 이벤트
+
+            // 경로 체크
             tempDiv.querySelectorAll("img").forEach((img) => {
               const src = img.getAttribute("src");
               if (src && !src.startsWith("http") && src.startsWith("image/")) {
@@ -43,6 +80,7 @@ window.addEventListener("load", async () => {
               }
             });
 
+            // 페이지 별 헤더 조건
             const search = tempDiv.querySelector(".search-header");
             const segment = tempDiv.querySelector(".segment-header");
             const middle = tempDiv.querySelector(".middle-header");
