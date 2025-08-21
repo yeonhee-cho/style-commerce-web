@@ -112,7 +112,7 @@ function filterTop() {
       console.log(filter);
 
       window.location.href =
-        getBasePath() + `/pages/product-list.html?filter=${filter}`;
+        getBasePath() + `pages/product-list.html?filter=${filter}`;
     });
   });
 }

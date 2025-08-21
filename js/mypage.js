@@ -20,8 +20,9 @@ function getMyData() {
     document.querySelector("#myId").textContent = loggedInUser.userId;
     document.querySelector("#myName").textContent = loggedInUser.userName;
     document.querySelector("#myEmail").textContent = loggedInUser.userEmail;
-    document.querySelector("#myRecommender").textContent =
-      loggedInUser.recommender;
+    document.querySelector("#myRecommender").textContent = `${
+      loggedInUser.recommender ? loggedInUser.recommender : ""
+    }`;
     document.querySelector("#myMarketing").checked =
       loggedInUser.marketingSwitch;
   }

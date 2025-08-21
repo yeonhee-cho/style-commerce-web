@@ -250,6 +250,7 @@
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 12px;
+  padding: 0;
 }
 .mobile-menu-list {
   list-style: none;
@@ -300,7 +301,7 @@
     overflow-x: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    padding: 0 16px;
+    padding: 0 8px;
   }
 
   .segment-header::-webkit-scrollbar {
